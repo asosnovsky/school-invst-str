@@ -18,11 +18,29 @@ VARs = ((scard[,dic[dic[,2]==2,1]]))
   ( suppressWarnings(VARs <- apply(VARs,2,as.numeric)) )
 Prec = ((scard[,dic[dic[,2]==3,1]])) 
   ( suppressWarnings(Prec <- apply(Prec,2,as.numeric)) )
+#c("INSTNM","PREDDEG","CURROPER")
 
-  
-sData <- cbind(Info[,c("INSTNM","PREDDEG","CURROPER")],VARs)
-sData <- merge(sData,poor_students)
+sData <- cbind(Info[,!grepl("CONTROL|LOCALE|DISTANCEONLY|CITY",names(Info))],VARs)
 
-  sData <- filter(sData,CURROPER>0) #Omit Inactive unis
-  
-write.csv('')
+#Merge
+  sData <- merge(sData,poor_students)
+
+#Filtering
+  sData <- filter(sData,CURROPER>0 & RELAFFIL >0) #Omit Inactive unis
+  sData <- sData[!apply(sData[,names(Info)[!grepl("CONTROL|LOCALE|DISTANCEONLY|CITY|UNITID|INSTNM|PREDDEG|CURROPER|RELAFFIL",names(Info))]]>0,1,any),];    
+  sData <- sData[,!grepl(paste(names(Info)[!grepl("INSTNM|UNITID|PREDDEG",names(Info))],sep='',collapse = '|'),names(sData))]
+  sData <- sData[,!grepl("CURROPER|RELAFFIL|HCM2",names(sData))]
+
+#Split by Degree
+spD <- split(sData,sData$PREDDEG)  
+omitMe <- function(DD,BY=2) apply(DD,BY,function(x) sum(is.na(x))/length(x) ) 
+
+for(name in names(spD)) {  
+  spD[[name]] = spD[[name]][,!grepl("PREDDEG",colnames(spD[[name]]))]
+  spD[[name]] = spD[[name]][,as.logical(omitMe(spD[[name]]) < 0.5)]
+  spD[[name]] = spD[[name]][as.logical(omitMe(spD[[name]],1) == 0),]
+  write.csv(spD[[name]],paste0('Analyzed-Data/',name,'-cleaned-data.csv'),row.names=FALSE)
+}
+
+write.csv(sData,'Analyzed-Data/pre-cleaned-data.csv',row.names=FALSE)
+
