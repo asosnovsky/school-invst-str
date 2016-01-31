@@ -1,0 +1,130 @@
+,Class,Distance,Name,ID
+0,0,0.01234476612285507,['Northwest Kansas Technical College'],155618
+1,0,0.018567420687200888,['Frank Phillips College'],224891
+2,0,0.03234644203825774,['Frontier Community College'],403469
+3,0,0.037417402366118714,['North Central Kansas Technical College'],155593
+4,0,0.12257542332262543,['Salina Area Technical College'],155830
+5,0,0.18596816788144493,['EHOVE Career Center'],202657
+6,0,0.20562356071847013,['Delta Montrose Technical College'],126915
+7,0,0.21421672394773292,['Lancaster County Career and Technology Center'],418533
+8,0,0.33818033192942903,['Eastland-Fairfield Career and Technical Schools'],407461
+9,0,0.3429543435941918,['Ashtabula County Technical and Career Campus'],201131
+10,0,0.4015986389150549,['Western Suffolk BOCES'],420468
+11,0,0.4564716330328005,['Greater Altoona Career & Technology Center'],383367
+12,0,0.46278094797955843,['Wayne County Schools Career Center'],433138
+13,0,0.4652872816288207,['Southeastern Technical Institute'],167871
+14,0,0.5552584843194059,['Eastern Suffolk BOCES-Practical Nursing Program'],418065
+15,0,0.6183756797377076,['Greater Johnstown Career and Technology Center'],418454
+16,0,0.8674964939106445,['Lenape Technical School Practical Nursing Program'],418515
+17,0,0.9466129142604777,['York County School of Technology-Adult & Continuing Education'],418409
+18,0,0.9824104035855006,['Dutchess BOCES-Practical Nursing Program'],431105
+19,0,1.0119789793399303,['Greene County Vocational School District'],365240
+20,1,0.003298619024027427,['Renton Technical College'],236382
+21,1,0.003573714922180079,['Lamar State College-Orange'],226107
+22,1,0.005025525589016494,['Pratt Community College'],155715
+23,1,0.005145954570654106,['Bates Technical College'],235671
+24,1,0.00805851135009145,['Morgan Community College'],127617
+25,2,0.002800150545272936,['Clarendon College'],223922
+26,2,0.0041580923400586466,['Lakeshore Technical College'],239008
+27,2,0.005613232647840803,['Glen Oaks Community College'],169974
+28,2,0.01619186198206819,['Nicolet Area Technical College'],239442
+29,2,0.01766879195835421,['Southwest Wisconsin Technical College'],239910
+30,2,0.01858394929182748,['Eastern Idaho Technical College'],142179
+31,2,0.02084367564347523,['Pine Technical College'],174570
+32,2,0.021499450157575928,['Arkansas State University-Mountain Home'],420538
+33,2,0.03126864028113441,['Washburn Institute of Technology'],155423
+34,2,0.03564796457793376,['Flint Hills Technical College'],155052
+35,2,0.03666302850501303,['Wabash Valley College'],403487
+36,3,0.0006969207659702257,['Hopkinsville Community College'],156860
+37,3,0.0007438460921918243,['Lincoln Land Community College'],146685
+38,3,0.0007814801548716025,['Gateway Community and Technical College'],157438
+39,3,0.0009759749732828589,['Northeast Wisconsin Technical College'],239488
+40,3,0.0010043533697222707,['North Arkansas College'],107460
+41,3,0.001027240326743987,['Hazard Community and Technical College'],156790
+42,3,0.0010448146935409606,['Ashland Community and Technical College'],156231
+43,3,0.0013389728544520726,['Green River Community College'],235343
+44,3,0.0013469848726756157,['Black River Technical College'],106625
+45,3,0.0014474414685717917,['Highland Community College'],155186
+46,3,0.001570478471882516,['Gateway Technical College'],238759
+47,3,0.0017235827593543149,['Hennepin Technical College'],173708
+48,3,0.0017951873095566583,['Southcentral Kentucky Community and Technical College'],156338
+49,3,0.0019358406290329372,['Maysville Community and Technical College'],157331
+50,3,0.0020395418555124775,['Southeast Kentucky Community and Technical College'],157739
+51,3,0.002120810359318429,['Lower Columbia College'],235750
+52,3,0.0021592850421122242,['Oakton Community College'],147800
+53,3,0.002210809404902473,['Bainbridge State College'],139010
+54,3,0.00258266598558765,['Lake Land College'],146506
+55,3,0.003190176614207027,['Madisonville Community College'],157304
+56,3,0.0033048489108233534,['Davidson County Community College'],198376
+57,3,0.0033907124360169193,['Walters State Community College'],222062
+58,3,0.0036180382605439806,['Aims Community College'],126207
+59,3,0.004165966090505062,['Arapahoe Community College'],126289
+60,3,0.004545014239773061,['City Colleges of Chicago-Richard J Daley College'],144193
+61,3,0.004628904184550223,['Big Sandy Community and Technical College'],157553
+62,4,0.0015760146232924165,['Kirtland Community College'],170587
+63,4,0.00202960901848333,['Clover Park Technical College'],234951
+64,4,0.0021280304677855533,['Vernon College'],229504
+65,4,0.0022422034066524733,['Nunez Community College'],158884
+66,4,0.0024607047217596566,['Cisco College'],223898
+67,4,0.0024702492019619995,['Western Technical College'],240170
+68,4,0.003218236562152891,['Waukesha County Technical College'],240125
+69,4,0.0043974170531190775,['Trinidad State Junior College'],128258
+70,5,0.0018982056135901616,['East Arkansas Community College'],106883
+71,5,0.0027586229210867447,['Henderson Community College'],156851
+72,5,0.0028343710488853875,['Wisconsin Indianhead Technical College'],240198
+73,5,0.0030691735079023024,['Blackhawk Technical College'],238397
+74,5,0.0032616151526339058,['Asnuntuck Community College'],128577
+75,5,0.003373209648726495,['Clovis Community College'],187639
+76,5,0.0036039848548662266,['Allen County Community College'],154642
+77,5,0.004034769344353365,['Dakota County Technical College'],173416
+78,5,0.004220940820601149,['Mid-State Technical College'],239220
+79,5,0.004328371725464462,['Grays Harbor College'],235334
+80,5,0.004438707828832023,['Wytheville Community College'],234377
+81,5,0.005321104663933872,['Minnesota State College-Southeast Technical'],175263
+82,5,0.005840724770168588,['Moraine Park Technical College'],239372
+83,5,0.005870761141917226,['College of the Ouachitas'],107521
+84,5,0.006219541409935791,['Neosho County Community College'],155566
+85,6,0.0007637262385308431,['Richland Community College'],148292
+86,6,0.0008333590859322498,['Danville Area Community College'],144564
+87,6,0.002473508478107166,['Illinois Valley Community College'],145831
+88,6,0.0025133803817574967,['Chippewa Valley Technical College'],240116
+89,6,0.0026812924183635465,['Ozarka College'],107549
+90,6,0.0029256307620904734,['Walla Walla Community College'],236887
+91,6,0.0030736944791448432,['Owensboro Community and Technical College'],247940
+92,6,0.0031351900256318156,['Lee College'],226204
+93,6,0.003286141296847821,['Edmonds Community College'],235103
+94,6,0.0033302464149333,['Southeast Arkansas College'],107637
+95,7,0.003441756452154395,['Hill College'],225371
+96,7,0.0034869127493021607,['Northcentral Technical College'],239460
+97,7,0.0034916829790793444,['Cleveland State Community College'],219879
+98,7,0.0035184559715683546,['Wichita Area Technical College'],156107
+99,7,0.0037965589577196655,['Danville Community College'],231882
+100,7,0.003821364173421043,['University of Arkansas Community College-Batesville'],106999
+101,8,0.001645982438698814,['Northland Community and Technical College'],174473
+102,8,0.0038351889997739544,['Minnesota West Community and Technical College'],173638
+103,9,0.0007288052107805707,['Greenville Technical College'],218113
+104,9,0.0008512723726441792,['Somerset Community College'],157711
+105,9,0.0009403661851421315,['Fox Valley Technical College'],238722
+106,9,0.00161575064146934,['Bluegrass Community and Technical College'],156392
+107,9,0.0017158985429762388,['City Colleges of Chicago-Harold Washington College'],144209
+108,9,0.001984893360735196,['Jefferson Community and Technical College'],156921
+109,9,0.002111260308599912,['Gwinnett Technical College'],140012
+110,9,0.0021806139009817207,['Pueblo Community College'],127884
+111,9,0.0021979015353327043,['Washtenaw Community College'],172617
+112,9,0.002234390310242216,['Trident Technical College'],218894
+113,9,0.002510376502872462,['Yavapai College'],106148
+114,9,0.0025840845093045048,['Central New Mexico Community College'],187532
+115,9,0.002687459817266946,['Elizabethtown Community and Technical College'],156648
+116,9,0.0027766354128714887,['Columbus State Community College'],202222
+117,9,0.0028162265783894047,['Front Range Community College'],127200
+118,9,0.0028460460024815636,['Nashville State Community College'],221184
+119,9,0.003308996306543636,['Phoenix College'],105428
+120,9,0.003529192917416233,['Albany Technical College'],138682
+121,9,0.0036180971397812944,['West Kentucky Community and Technical College'],157483
+122,9,0.003906798964284192,['Saint Paul College'],175041
+123,9,0.0040323490676458405,['Harper College'],149842
+124,9,0.00405229170962156,['GateWay Community College'],105145
+125,9,0.004134143615470274,['Delgado Community College'],158662
+126,9,0.004398386517317343,['College of Lake County'],146472
+127,9,0.00452811335274177,['Red Rocks Community College'],127909
+128,9,0.004829221574612123,['Mohave Community College'],105206
