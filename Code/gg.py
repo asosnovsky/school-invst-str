@@ -11,8 +11,9 @@ anchor : N-D array of anchor points, where N = # of anchors
 '''
 def euclid(targets,index_1):
     targ_np = targets.tolist()
+    # targ_np = school_test.iloc[3,2:]
     # temp
-    anchor = pd.read_csv('4-cleaned-data-top10.csv').iloc[:,2:]
+    anchor = pd.read_csv('3-cleaned-data-top10.csv').iloc[:,2:]
     
     targ_np = [targ_np]
     #targ_np = [[1,1]]
@@ -36,7 +37,7 @@ def euclid(targets,index_1):
     chi = []
     pval = []
     for row in anch_list:
-        chi_sum,p = chisquare(targ_np,f_exp = row,ddof = len(targ_np) - 1)
+        chi_sum, p = chisquare(targ_np,f_exp = row,ddof = len(targ_np) - 1)
         pvalc = chisqprob(chi_sum, len(targ_np) - 1)
         chi.append(chi_sum)
         pval.append(pvalc)
@@ -44,8 +45,9 @@ def euclid(targets,index_1):
     
     #mini_chi = min(chi)
     #score_chi = chi.index(mini_chi)
+
     
-    #list_scores_chi = [score_chi,mini_chi,index_1,pval[score_chi]]
+    #list_scores_chi = [score_chi,mini_chi,index_1,pval]
     
     return list_scores
 
@@ -66,15 +68,28 @@ def compute_scores(df):
     #sorted(scores)
     
     return scores
+    
+def remove_donations(donations,file_to_clean):
+    
+    for index,row in donations.iterrows():
+        file_to_clean = file_to_clean[~file_to_clean['INSTNM'].str.contains(row[0])]
+    
+    return file_to_clean    
 
 def main():
-    school_test = pd.read_csv('Tot-cleaned-data.csv')
+    #school_test = pd.read_csv('3-cleaned-data.csv')
+    donations = pd.read_csv('donations_names.csv')
 
-    scores = sorted(compute_scores(school_test))
-    df = pd.DataFrame(scores,columns=['Class','Distance','Name'])
-    df.to_csv('4-cleaned-data-chosen.csv')
+    #scores = sorted(compute_scores(school_test))
+    #df = pd.DataFrame(scores,columns=['Class','Distance','Name'])
+    #df = pd.DataFrame(scores,columns=['Class','Distance','P-Value','Name'])
+    #df.to_csv('3-cleaned-data-chosen_chi.csv')
     
-    print(scores)
+    df_1 = pd.read_csv('3-cleaned-data.csv')
+    
+    df = remove_donations(donations,df_1)
+    
+    print(df)
 
 if __name__ == "__main__":
     main()

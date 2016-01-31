@@ -1,0 +1,508 @@
+,Class,Distance,P-Value,Name
+0,0,0.0,Chattahoochee Valley Community College,1.0
+1,0,662521.542595859,Olney Central College,0.0
+2,1,0.0,Enterprise State Community College,1.0
+3,1,36451.39516282181,Danville Area Community College,0.0
+4,1,37308.981089789886,Southeastern Community College,0.0
+5,1,37309.0148602297,Southeastern Community College,0.0
+6,1,46269.39773978506,Frederick Community College,0.0
+7,1,50777.14406562316,Illinois Valley Community College,0.0
+8,1,51819.68117305461,St Clair County Community College,0.0
+9,1,61690.82428810019,Black River Technical College,0.0
+10,1,63900.51369015776,Southwestern Michigan College,0.0
+11,1,64395.51369195491,Cape Cod Community College,0.0
+12,1,66839.08318998243,Northeast Iowa Community College-Calmar,0.0
+13,1,71563.8119025161,Bay de Noc Community College,0.0
+14,1,79020.81664530073,University of Arkansas Community College-Morrilton,0.0
+15,1,79333.77430509462,Ridgewater College,0.0
+16,1,85784.10576162297,Central Lakes College-Brainerd,0.0
+17,1,89691.86480138707,South Central College,0.0
+18,1,89779.2219292281,Fulton-Montgomery Community College,0.0
+19,1,95772.00414594953,Wichita Area Technical College,0.0
+20,1,110636.40285448013,Eastern Gateway Community College,0.0
+21,1,113270.83534145523,Massachusetts Bay Community College,0.0
+22,1,115425.40464670687,Herkimer County Community College,0.0
+23,1,115851.75611594334,Southern State Community College,0.0
+24,1,121014.66669005381,Tunxis Community College,0.0
+25,1,127372.67203756547,Connors State College,0.0
+26,1,138417.76490819408,James A Rhodes State College,0.0
+27,1,139442.80168436235,Lake Michigan College,0.0
+28,1,142739.39860773375,Lehigh Carbon Community College,0.0
+29,1,142739.8891993966,Northeast Community College,0.0
+30,1,150164.891529028,Delaware Technical Community College-Terry,0.0
+31,1,156763.94293773983,Harford Community College,0.0
+32,1,158946.11947797114,Hutchinson Community College,0.0
+33,1,166217.75943753985,Wilkes Community College,0.0
+34,1,170491.56612720434,Raritan Valley Community College,0.0
+35,1,171312.46281850876,Honolulu Community College,0.0
+36,1,177930.75813728716,New River Community College,0.0
+37,1,179833.25620231783,North Central State College,0.0
+38,1,181399.95568183152,Victoria College,0.0
+39,1,188129.62038926757,Elgin Community College,0.0
+40,1,190489.81554835237,Motlow State Community College,0.0
+41,1,196575.56405912945,McHenry County College,0.0
+42,1,207375.97880283167,Zane State College,0.0
+43,1,211927.33391319576,Northwest State Community College,0.0
+44,1,218913.7423024912,Eastern Maine Community College,0.0
+45,1,223846.88751894023,Northland Community and Technical College,0.0
+46,1,228025.01832426435,NHTI-Concord's Community College,0.0
+47,1,230988.9380439644,Piedmont Virginia Community College,0.0
+48,1,231985.15249447688,Whatcom Community College,0.0
+49,1,241161.22214294327,Wisconsin Indianhead Technical College,0.0
+50,1,247060.89386796328,Vernon College,0.0
+51,1,252076.18678472366,Kirtland Community College,0.0
+52,1,252372.74834339257,Casper College,0.0
+53,1,255531.54629784919,Laramie County Community College,0.0
+54,1,261602.63082736655,Blue Ridge Community College,0.0
+55,1,261602.70798866346,Blue Ridge Community College,0.0
+56,1,263018.50237854535,Blackhawk Technical College,0.0
+57,1,265989.70406188106,Central Maine Community College,0.0
+58,1,278135.9897483978,Butler County Community College,0.0
+59,1,282032.1881946122,Middlesex Community College,0.0
+60,1,282032.27730123524,Middlesex Community College,0.0
+61,1,284752.1304489458,Waukesha County Technical College,0.0
+62,1,287812.66346847994,St Charles Community College,0.0
+63,1,294900.06220652297,East Central College,0.0
+64,1,307967.8797066541,Dyersburg State Community College,0.0
+65,1,308484.7954598643,Iowa Lakes Community College,0.0
+66,1,310798.1144931529,Wytheville Community College,0.0
+67,1,319536.6959112898,Clover Park Technical College,0.0
+68,1,324513.1899516582,Mid-State Technical College,0.0
+69,1,332384.0620624894,Linn-Benton Community College,0.0
+70,1,339386.2224844531,North Central Michigan College,0.0
+71,1,345034.46803706913,Berkshire Community College,0.0
+72,1,346066.99466988735,Inver Hills Community College,0.0
+73,1,356115.7409499358,Louisiana State University-Eunice,0.0
+74,1,380807.71057445416,Hagerstown Community College,0.0
+75,1,401462.76809072524,Barton County Community College,0.0
+76,1,407577.15462031134,Moraine Park Technical College,0.0
+77,1,412438.63324845314,Adirondack Community College,0.0
+78,1,423077.8398120712,Minnesota West Community and Technical College,0.0
+79,1,436009.1897030286,Cowley County Community College,0.0
+80,1,461950.4696792917,Terra State Community College,0.0
+81,1,462462.76374997734,Sussex County Community College,0.0
+82,1,467159.5791753507,Corning Community College,0.0
+83,1,477380.3463571326,Thaddeus Stevens College of Technology,0.0
+84,1,480954.52925102407,Central Community College,0.0
+85,1,517924.8955495384,Trinidad State Junior College,0.0
+86,1,520137.36683935364,Western Technical College,0.0
+87,1,520137.71604301326,Western Technical College,0.0
+88,1,520137.93370304385,Western Technical College,0.0
+89,1,524807.07159717,Sauk Valley Community College,0.0
+90,1,533861.1690735186,Southeast Technical Institute,0.0
+91,1,584190.6133601782,Shoreline Community College,0.0
+92,1,584538.6371057192,Dakota County Technical College,0.0
+93,1,595994.8463943254,Carl Sandburg College,0.0
+94,1,617259.1633106547,Blue Ridge Community College,0.0
+95,1,617259.4040323358,Blue Ridge Community College,0.0
+96,1,663608.1908408972,West Virginia Northern Community College,0.0
+97,1,671183.1154502193,Southwestern Oregon Community College,0.0
+98,1,671342.6435505634,North Iowa Area Community College,0.0
+99,1,688196.0366711036,Marshalltown Community College,0.0
+100,1,720850.046763843,Flathead Valley Community College,0.0
+101,1,720852.5236348001,Western Wyoming Community College,0.0
+102,1,725278.3203626613,Richard Bland College of the College of William and Mary,0.0
+103,1,730498.4072132001,Belmont College,0.0
+104,1,747148.9840120723,Kennebec Valley Community College,0.0
+105,1,748130.4579742403,Renton Technical College,0.0
+106,1,759262.4379705931,Rend Lake College,0.0
+107,1,776622.5939148288,Allen County Community College,0.0
+108,1,795362.7479009711,Minnesota State College-Southeast Technical,0.0
+109,1,804853.1900134253,Community College of Beaver County,0.0
+110,1,815523.3422181967,Lamar State College-Port Arthur,0.0
+111,1,834861.9473471816,Dodge City Community College,0.0
+112,1,847132.9918835004,Marion Technical College,0.0
+113,1,868865.2645119517,Otero Junior College,0.0
+114,1,883372.6176551228,Sheridan College,0.0
+115,1,888045.9387295145,Greenfield Community College,0.0
+116,1,892361.1244014835,Montcalm Community College,0.0
+117,1,933450.3847955458,Lamar State College-Orange,0.0
+118,1,935237.850819562,Alpena Community College,0.0
+119,1,960142.9206734021,Garden City Community College,0.0
+120,1,967313.5144345207,Blue Mountain Community College,0.0
+121,1,987180.0964180386,John Wood Community College,0.0
+122,1,1035296.2418619137,Cloud County Community College,0.0
+123,1,1062356.2128310625,Eastern Oklahoma State College,0.0
+124,1,1062681.7630496891,Heartland Community College,0.0
+125,1,1083869.8858721082,Bates Technical College,0.0
+126,1,1102924.516668318,Henderson Community College,0.0
+127,1,1124794.779386785,Western Nebraska Community College,0.0
+128,1,1129528.0930866746,Anoka Technical College,0.0
+129,1,1146191.1575021653,North Central Missouri College,0.0
+130,1,1148675.741414711,Southeastern Community College,0.0
+131,1,1148675.8630515116,Southeastern Community College,0.0
+132,1,1148702.8918552753,Western Oklahoma State College,0.0
+133,1,1193703.4688147255,Sullivan County Community College,0.0
+134,1,1225284.1355692297,Cecil College,0.0
+135,1,1232050.2845386404,Columbia-Greene Community College,0.0
+136,1,1238700.4389863426,Pierce College at Puyallup,0.0
+137,1,1242002.9264231236,Northeastern Junior College,0.0
+138,1,1269944.9394377994,Carteret Community College,0.0
+139,1,1346462.6918606327,Highland Community College,0.0
+140,1,1346462.9152501638,Highland Community College,0.0
+141,1,1355155.6901990406,Asnuntuck Community College,0.0
+142,1,1381923.6792002514,Neosho County Community College,0.0
+143,1,1405575.985941394,New Mexico Junior College,0.0
+144,1,1408880.3885228736,Arkansas State University-Mountain Home,0.0
+145,1,1494538.1068600384,Clarendon College,0.0
+146,1,1505409.09291996,Central Wyoming College,0.0
+147,1,1520416.5418292326,Mid-Plains Community College,0.0
+148,1,1529791.645107007,Lakeshore Technical College,0.0
+149,1,1535141.6430229114,Clinton Community College,0.0
+150,1,1585145.4034446955,Coconino Community College,0.0
+151,1,1622941.136896711,Helena College University of Montana,0.0
+152,1,1629668.278433266,Alexandria Technical & Community College,0.0
+153,1,1655467.5997439108,Itasca Community College,0.0
+154,1,1656112.4087169445,Hibbing Community College,0.0
+155,1,1663552.3383879056,North Dakota State College of Science,0.0
+156,1,1697983.0778124412,University of South Carolina-Lancaster,0.0
+157,1,1698963.927819173,University of South Carolina-Salkehatchie,0.0
+158,1,1724168.9415212127,Lake Area Technical Institute,0.0
+159,1,1826603.871779342,Northwest College,0.0
+160,1,1873340.31875049,West Shore Community College,0.0
+161,1,1904094.8295394385,Wabash Valley College,0.0
+162,1,1955119.1062574803,Lamar Institute of Technology,0.0
+163,1,1957223.1243669717,Pratt Community College,0.0
+164,1,2005485.445610831,Pennsylvania Highlands Community College,0.0
+165,1,2026499.9753268484,Linn State Technical College,0.0
+166,1,2033909.349950766,Nicolet Area Technical College,0.0
+167,1,2043811.614635735,Western Dakota Technical Institute,0.0
+168,1,2177872.1525626676,Northern Maine Community College,0.0
+169,1,2249049.6854365417,Nashua Community College,0.0
+170,1,2281080.8349744417,North Country Community College,0.0
+171,1,2379472.3076658365,Washington State Community College,0.0
+172,1,2406720.9331275118,Morgan Community College,0.0
+173,1,2465116.901301341,Texas State Technical College-West Texas,0.0
+174,1,2523382.0092524383,Glen Oaks Community College,0.0
+175,1,2549010.5187397343,Gogebic Community College,0.0
+176,1,2556820.314316426,Warren County Community College,0.0
+177,1,2583299.2388292467,Independence Community College,0.0
+178,1,2637206.8446798944,Eastern Wyoming College,0.0
+179,1,2796413.7772895815,Mitchell Technical Institute,0.0
+180,1,2852194.8956873133,York County Community College,0.0
+181,1,2865883.1342757917,Pine Technical College,0.0
+182,1,2969235.597369338,Garrett College,0.0
+183,1,3112401.5179431946,Dabney S Lancaster Community College,0.0
+184,1,3161186.0653288784,Williston State College,0.0
+185,1,3311400.8830257556,Eastern Idaho Technical College,0.0
+186,1,3340857.1152617964,Frank Phillips College,0.0
+187,1,3382179.4610824883,Washburn Institute of Technology,0.0
+188,1,3437527.9340296965,Lake Region State College,0.0
+189,1,3450427.167722544,Northwest Iowa Community College,0.0
+190,1,3451435.4627298936,University of South Carolina-Sumter,0.0
+191,1,3521420.8712097663,Flint Hills Technical College,0.0
+192,1,3523023.727361347,Lincoln Trail College,0.0
+193,1,3601623.6350808972,Colorado Northwestern Community College,0.0
+194,1,3621020.338791201,North Central Kansas Technical College,0.0
+195,1,3673979.137297599,Manhattan Area Technical College,0.0
+196,1,3966847.200306138,Dakota College at Bottineau,0.0
+197,1,4021035.2842855975,Miles Community College,0.0
+198,1,4111745.34179686,University of South Carolina-Union,0.0
+199,1,4183424.7063079993,Northwest Kansas Technical College,0.0
+200,1,4232967.416228324,Dawson Community College,0.0
+201,1,4259919.247421471,Washington County Community College,0.0
+202,1,4401493.029146313,Vermilion Community College,0.0
+203,1,4724239.7710071625,Ohio State University Agricultural Technical Institute,0.0
+204,1,5177301.191931918,Lancaster County Career and Technology Center,0.0
+205,1,5223601.860316867,Salina Area Technical College,0.0
+206,1,5350800.83383143,Rainy River Community College,0.0
+207,1,5628976.933352088,Delta Montrose Technical College,0.0
+208,1,5659863.533429665,Eastland-Fairfield Career and Technical Schools,0.0
+209,1,5861456.995531012,Southeastern Technical Institute,0.0
+210,1,5940988.117012798,Greater Altoona Career & Technology Center,0.0
+211,1,6044435.661591738,Wayne County Schools Career Center,0.0
+212,1,6269286.179601136,Eastern Suffolk BOCES-Practical Nursing Program,0.0
+213,1,6318253.630567721,Greater Johnstown Career and Technology Center,0.0
+214,1,6390462.480010385,Western Suffolk BOCES,0.0
+215,1,6663636.726203203,Lenape Technical School Practical Nursing Program,0.0
+216,1,6926034.808295072,York County School of Technology-Adult & Continuing Education,0.0
+217,1,7139890.65591126,Dutchess BOCES-Practical Nursing Program,0.0
+218,2,0.0,James H Faulkner State Community College,1.0
+219,2,22249.42518409556,Black Hawk College,0.0
+220,2,28071.288963039373,Manchester Community College,0.0
+221,2,28074.281134296078,Manchester Community College,0.0
+222,2,35662.07509322887,Albany Technical College,0.0
+223,2,35763.338449644085,Illinois Central College,0.0
+224,2,44073.265218076056,Eastern Iowa Community College District,0.0
+225,2,49160.3462880865,John A Logan College,0.0
+226,2,54652.77235278048,Southern Maine Community College,0.0
+227,2,58400.622501685975,Three Rivers Community College,0.0
+228,2,58409.924173102074,Three Rivers Community College,0.0
+229,2,70627.28792806255,Massasoit Community College,0.0
+230,2,81265.7066224773,Burlington County College,0.0
+231,2,84366.23219729817,Ocean County College,0.0
+232,2,93059.72192072679,SUNY Broome Community College,0.0
+233,2,100306.00531132576,College of Lake County,0.0
+234,2,102132.18937583255,Normandale Community College,0.0
+235,2,106747.65212108218,Clark State Community College,0.0
+236,2,112170.44537126049,Hocking College,0.0
+237,2,121464.74486234125,North Hennepin Community College,0.0
+238,2,138119.69317325298,Roane State Community College,0.0
+239,2,140055.48924175825,Northeast State Community College,0.0
+240,2,168085.45067052604,Temple College,0.0
+241,2,213706.4298890014,Southern Union State Community College,0.0
+242,3,0.0,George C Wallace State Community College-Hanceville,1.0
+243,3,31207.207323741666,Kishwaukee College,0.0
+244,3,33000.574624443914,Naugatuck Valley Community College,0.0
+245,3,41100.7649398346,Big Sandy Community and Technical College,0.0
+246,3,47105.240243388245,Holyoke Community College,0.0
+247,3,52868.30540420986,Kellogg Community College,0.0
+248,3,75338.03006090107,State Fair Community College,0.0
+249,3,84345.53537380624,Truckee Meadows Community College,0.0
+250,3,105169.92691981353,Lakeland Community College,0.0
+251,3,108032.80145029542,Asheville-Buncombe Technical Community College,0.0
+252,3,152060.83468508252,York Technical College,0.0
+253,3,154241.34191514304,Spartanburg Community College,0.0
+254,3,154347.72909093392,Volunteer State Community College,0.0
+255,3,177576.26485006214,Green River Community College,0.0
+256,3,674569.2268568422,NorthWest Arkansas Community College,0.0
+257,4,0.0,Jefferson State Community College,1.0
+258,4,12981.475153308536,Pueblo Community College,0.0
+259,4,27602.81863761579,North Idaho College,0.0
+260,4,33376.92804536159,West Kentucky Community and Technical College,0.0
+261,4,49162.066296183424,North Shore Community College,0.0
+262,4,52515.0840679067,Middlesex Community College,0.0
+263,4,52515.09670170001,Middlesex Community College,0.0
+264,4,64445.59503845602,Harper College,0.0
+265,4,65766.60271760725,Gwinnett Technical College,0.0
+266,4,69228.86039536691,Johnson County Community College,0.0
+267,4,73408.1424635884,Butler Community College,0.0
+268,4,81949.9618430971,Hudson Valley Community College,0.0
+269,4,82788.78578521234,Anne Arundel Community College,0.0
+270,4,89014.14190923162,Pearl River Community College,0.0
+271,4,100136.66904317097,Joliet Junior College,0.0
+272,4,104824.3661089957,Mohawk Valley Community College,0.0
+273,4,126312.43115257772,Central Oregon Community College,0.0
+274,4,130782.14305503246,Montgomery County Community College,0.0
+275,4,140925.99686534744,Trinity Valley Community College,0.0
+276,4,143647.54904810182,Southeast Community College Area,0.0
+277,4,144736.99762733758,North Central Texas College,0.0
+278,4,164107.65192597744,Spokane Falls Community College,0.0
+279,4,164414.7388807106,Elizabethtown Community and Technical College,0.0
+280,4,170057.0733901939,Darton State College,0.0
+281,4,170589.17349503064,Texas State Technical College-Harlingen,0.0
+282,4,183878.84776969295,Oklahoma City Community College,0.0
+283,4,205547.80418628818,Northeast Wisconsin Technical College,0.0
+284,4,212443.66594932642,Triton College,0.0
+285,4,224828.04715431915,Tacoma Community College,0.0
+286,4,229368.99864569417,Bristol Community College,0.0
+287,4,239766.09845829586,Gateway Technical College,0.0
+288,4,283777.8379099207,Lower Columbia College,0.0
+289,4,298491.6640705547,Gateway Community College,0.0
+290,4,399316.36336378264,Saint Paul College,0.0
+291,4,512062.1941647545,Atlantic Cape Community College,0.0
+292,4,543926.1233335293,Springfield Technical Community College,0.0
+293,4,546618.7428801111,East Mississippi Community College,0.0
+294,4,1259978.5811859155,Estrella Mountain Community College,0.0
+295,5,0.0,John C Calhoun State Community College,1.0
+296,5,14371.972250706272,Pasco-Hernando Community College,0.0
+297,5,58699.517499247915,Southwestern Illinois College,0.0
+298,5,89735.80882969775,Delta College,0.0
+299,5,102388.8072998701,Middlesex County College,0.0
+300,5,147537.18103721115,Prince George's Community College,0.0
+301,5,152583.20426677345,Somerset Community College,0.0
+302,5,159357.1336478554,Pellissippi State Community College,0.0
+303,5,160777.3292311697,Minneapolis Community and Technical College,0.0
+304,5,179221.01980809975,J Sargeant Reynolds Community College,0.0
+305,5,189404.80926451046,Schoolcraft College,0.0
+306,5,193729.17448259747,Spokane Community College,0.0
+307,5,200736.93916360193,Lorain County Community College,0.0
+308,5,201196.86087666565,Onondaga Community College,0.0
+309,5,213708.61278924532,Itawamba Community College,0.0
+310,5,214592.82382284175,Nashville State Community College,0.0
+311,5,221283.79073437917,Quinsigamond Community College,0.0
+312,5,230105.00604701723,Tyler Junior College,0.0
+313,5,233797.04097955304,Mt Hood Community College,0.0
+314,5,258947.95415236798,Northampton County Area Community College,0.0
+315,5,312228.32611593104,Kalamazoo Valley Community College,0.0
+316,5,314826.0460068148,University of Wisconsin Colleges,0.0
+317,5,329998.51084601955,Washtenaw Community College,0.0
+318,5,345816.8494949299,New Mexico State University-Dona Ana,0.0
+319,5,348703.6729485789,Florence-Darlington Technical College,0.0
+320,5,371168.5466516778,Cape Fear Community College,0.0
+321,5,399382.8296154851,Thomas Nelson Community College,0.0
+322,5,409977.7337399312,Horry-Georgetown Technical College,0.0
+323,5,414516.12562099803,Holmes Community College,0.0
+324,5,433737.7286903062,Jones County Junior College,0.0
+325,5,438180.78150015423,Century College,0.0
+326,5,438187.1165075655,Century College,0.0
+327,5,541570.8546325974,Brookdale Community College,0.0
+328,5,548287.3373197218,McLennan Community College,0.0
+329,5,585768.0494458685,Piedmont Technical College,0.0
+330,5,590790.1598508786,Cincinnati State Technical and Community College,0.0
+331,6,0.0,Northwest-Shoals Community College,1.0
+332,6,59278.648332839235,Southcentral Kentucky Community and Technical College,0.0
+333,6,60620.1854711173,Maysville Community and Technical College,0.0
+334,6,66742.69823844028,Southeast Kentucky Community and Technical College,0.0
+335,6,86165.26089984749,Jefferson College,0.0
+336,7,0.0,GateWay Community College,1.0
+337,7,7887.547043419791,Aims Community College,0.0
+338,7,29385.35291344563,Arapahoe Community College,0.0
+339,7,30210.383635162416,National Park Community College,0.0
+340,7,36194.50160835501,Leeward Community College,0.0
+341,7,39512.08615727368,Gateway Community and Technical College,0.0
+342,7,42385.24382097582,Hazard Community and Technical College,0.0
+343,7,45590.65671960781,Bainbridge State College,0.0
+344,7,46293.47938635654,Allegany College of Maryland,0.0
+345,7,49667.02262592482,Hopkinsville Community College,0.0
+346,7,53461.45920240844,Mineral Area College,0.0
+347,7,54021.982354115455,Western Iowa Tech Community College,0.0
+348,7,60622.23190821682,Gloucester County College,0.0
+349,7,70248.42665802364,Delaware Technical Community College-Stanton/Wilmington,0.0
+350,7,72668.0847522036,Anoka-Ramsey Community College,0.0
+351,7,88043.43629583587,Ashland Community and Technical College,0.0
+352,7,89301.4255074989,Davidson County Community College,0.0
+353,7,93750.33136409668,Dutchess Community College,0.0
+354,7,95654.90911230752,Moberly Area Community College,0.0
+355,7,101191.42624681443,Hennepin Technical College,0.0
+356,7,105014.0697737885,Lincoln Land Community College,0.0
+357,7,106313.96893019306,Three Rivers Community College,0.0
+358,7,106313.96935256495,Three Rivers Community College,0.0
+359,7,107072.1001297507,Bucks County Community College,0.0
+360,7,108425.71772958168,Northern Oklahoma College,0.0
+361,7,113850.92588478538,Rochester Community and Technical College,0.0
+362,7,118139.25687497636,Mount Wachusett Community College,0.0
+363,7,123068.98910231698,Kapiolani Community College,0.0
+364,7,130735.36526198506,Rose State College,0.0
+365,7,136171.99736157886,Central Ohio Technical College,0.0
+366,7,138162.30216754586,Columbia State Community College,0.0
+367,7,151995.0132525722,Hawkeye Community College,0.0
+368,7,155494.16458084702,Pierce College at Fort Steilacoom,0.0
+369,7,155568.95339293833,Everett Community College,0.0
+370,7,161009.33547166546,Rockland Community College,0.0
+371,7,164749.66958655603,Community College of Vermont,0.0
+372,7,165126.38788596616,Oakton Community College,0.0
+373,7,169870.44943529685,Southwest Texas Junior College,0.0
+374,7,178475.78041833107,Highland Community College,0.0
+375,7,178475.89046795884,Highland Community College,0.0
+376,7,191744.64198528725,Johnston Community College,0.0
+377,7,195072.7146462352,Chippewa Valley Technical College,0.0
+378,7,196001.26689820664,Mid Michigan Community College,0.0
+379,7,198079.91704016627,Owensboro Community and Technical College,0.0
+380,7,220121.2546220202,East Central Community College,0.0
+381,7,223509.28501915297,College of Southern Maryland,0.0
+382,7,227751.96612723314,Jamestown Community College,0.0
+383,7,227814.74946243028,Walla Walla Community College,0.0
+384,7,277697.66600934026,Wor-Wic Community College,0.0
+385,7,289836.9794596901,Muskegon Community College,0.0
+386,7,295659.5271536284,Delaware Technical Community College-Owens,0.0
+387,7,303767.6571793981,Indian Hills Community College,0.0
+388,7,310906.4385561291,St Cloud Technical and Community College,0.0
+389,7,333358.3369315642,Lake Land College,0.0
+390,7,344611.967149027,Northeast Texas Community College,0.0
+391,7,349136.85691921046,Texas State Technical College-Waco,0.0
+392,7,352215.18878148997,Northcentral Technical College,0.0
+393,7,361375.8713469521,Kankakee Community College,0.0
+394,7,368347.42913680675,Hill College,0.0
+395,7,378527.7015557503,Skagit Valley College,0.0
+396,7,388198.436773371,Catawba Valley Community College,0.0
+397,7,389018.10632978636,County College of Morris,0.0
+398,7,393318.54274494847,Madisonville Community College,0.0
+399,7,410463.5364104429,Carl Albert State College,0.0
+400,7,411770.2847062003,Danville Community College,0.0
+401,7,411780.5443053277,Cayuga County Community College,0.0
+402,7,443943.53078355856,Quincy College,0.0
+403,7,453563.5771566787,Jefferson Community College,0.0
+404,7,455994.30282379664,Lake Superior College,0.0
+405,7,469741.5232869945,Tompkins Cortland Community College,0.0
+406,7,493660.64042225847,Orange County Community College,0.0
+407,7,510715.7695947881,South Puget Sound Community College,0.0
+408,7,564212.4873486658,Caldwell Community College and Technical Institute,0.0
+409,7,578495.9913908169,Wenatchee Valley College,0.0
+410,8,0.0,Phoenix College,1.0
+411,8,30077.012215084396,Bluegrass Community and Technical College,0.0
+412,8,46036.14533386783,Pikes Peak Community College,0.0
+413,8,73715.15308617361,Erie Community College,0.0
+414,8,80004.03187834282,Grand Rapids Community College,0.0
+415,8,84300.67453434673,Moraine Valley Community College,0.0
+416,8,95381.02011303682,Owens Community College,0.0
+417,8,123554.03804663489,City Colleges of Chicago-Harold Washington College,0.0
+418,8,124090.16224078432,Mott Community College,0.0
+419,8,143673.1441252548,Pitt Community College,0.0
+420,8,152749.19416534778,Blinn College,0.0
+421,8,153059.0775572949,Clark College,0.0
+422,8,183728.290286794,Front Range Community College,0.0
+423,8,195615.80266291116,Camden County College,0.0
+424,8,198970.27265994286,Kirkwood Community College,0.0
+425,8,204424.40912422797,Metropolitan Community College Area,0.0
+426,8,207026.4997163937,Jefferson Community and Technical College,0.0
+427,8,212260.34853046076,Collin County Community College District,0.0
+428,8,264122.24037015485,Northwest Mississippi Community College,0.0
+429,8,267812.0327579895,Des Moines Area Community College,0.0
+430,8,292157.21976826305,SUNY Westchester Community College,0.0
+431,8,292173.1087759454,Bossier Parish Community College,0.0
+432,8,319899.8709739,Navarro College,0.0
+433,8,321494.0288563338,Midlands Technical College,0.0
+434,8,323887.61974624987,Lansing Community College,0.0
+435,8,391674.5972886163,Chattanooga State Community College,0.0
+436,8,500214.18658940395,Mississippi Gulf Coast Community College,0.0
+437,8,549656.3148156313,Chemeketa Community College,0.0
+438,8,673383.0621601073,Tallahassee Community College,0.0
+439,8,787574.0437797876,Tulsa Community College,0.0
+440,8,810226.1706604115,Bunker Hill Community College,0.0
+441,8,1255999.3622597228,Community College of Rhode Island,0.0
+442,8,1493304.2095478068,Community College of Allegheny County,0.0
+443,8,2016083.12350419,Pulaski Technical College,0.0
+444,8,2596131.0269772373,Nassau Community College,0.0
+445,8,2680587.294370297,Fox Valley Technical College,0.0
+446,8,2859657.547386631,Suffolk County Community College,0.0
+447,8,2895203.9313486754,Ozarks Technical Community College,0.0
+448,8,3047040.9085181286,Henry Ford Community College,0.0
+449,8,3208624.6971493796,Wake Technical Community College,0.0
+450,8,4138637.785594578,Monroe Community College,0.0
+451,8,4211732.338393846,Guilford Technical Community College,0.0
+452,8,4340233.227753764,Central New Mexico Community College,0.0
+453,8,4468633.383998316,Sinclair Community College,0.0
+454,8,4668584.296376776,Montgomery College,0.0
+455,8,5808379.394675571,College of DuPage,0.0
+456,8,5933002.655616604,Hinds Community College,0.0
+457,8,6636765.116524267,Milwaukee Area Technical College,0.0
+458,8,6694169.507539389,San Jacinto Community College,0.0
+459,8,7518005.2605248215,Trident Technical College,0.0
+460,8,9046454.373872187,Columbus State Community College,0.0
+461,8,9473450.83904401,CUNY Queensborough Community College,0.0
+462,8,10061373.862537943,Harrisburg Area Community College-Harrisburg,0.0
+463,8,10348090.922700176,Oakland Community College,0.0
+464,8,10490904.04788432,The Community College of Baltimore County,0.0
+465,8,13045450.10170754,Salt Lake Community College,0.0
+466,8,14199182.481868984,Delgado Community College,0.0
+467,8,18173510.138718795,San Antonio College,0.0
+468,8,23216188.951930076,CUNY Kingsborough Community College,0.0
+469,8,29810735.846982356,Austin Community College District,0.0
+470,8,30070833.16438118,Tidewater Community College,0.0
+471,8,33292818.31552382,Cuyahoga Community College District,0.0
+472,8,56464665.92417678,Northern Virginia Community College,0.0
+473,8,71013247.1063332,El Paso Community College,0.0
+474,8,75111701.12565665,Portland Community College,0.0
+475,8,109803205.16531487,CUNY Borough of Manhattan Community College,0.0
+476,8,120655444.20256785,Tarrant County College District,0.0
+477,8,173991574.25638413,Lone Star College System,0.0
+478,8,280325540.59899044,Houston Community College,0.0
+479,8,1206944100.1556637,Ivy Tech Community College,0.0
+480,9,0.0,Yavapai College,1.0
+481,9,8513.06844785052,Red Rocks Community College,0.0
+482,9,14933.383377895361,College of Southern Idaho,0.0
+483,9,17897.668704632764,Georgia Highlands College,0.0
+484,9,23907.917481793887,Iowa Central Community College,0.0
+485,9,24126.487789461135,Iowa Western Community College,0.0
+486,9,27351.908430687894,Lewis and Clark Community College,0.0
+487,9,28368.54192131906,Parkland College,0.0
+488,9,30192.372993987752,City Colleges of Chicago-Richard J Daley College,0.0
+489,9,43052.526467756325,Howard Community College,0.0
+490,9,52352.049561907006,Minnesota State Community and Technical College,0.0
+491,9,65450.21138537047,Crowder College,0.0
+492,9,77931.14504402624,Community College of Aurora,0.0
+493,9,86883.21480309752,Genesee Community College,0.0
+494,9,98646.21861057737,Finger Lakes Community College,0.0
+495,9,102554.38304564089,Niagara County Community College,0.0
+496,9,106386.613591056,Clackamas Community College,0.0
+497,9,112660.7423024046,Luzerne County Community College,0.0
+498,9,118878.8856498672,Tri-County Technical College,0.0
+499,9,132778.7031566802,Reading Area Community College,0.0
+500,9,135340.22774205852,Walters State Community College,0.0
+501,9,140449.07778445608,John Tyler Community College,0.0
+502,9,147549.97620738842,Lee College,0.0
+503,9,148630.61148274012,Edmonds Community College,0.0
+504,9,155425.02200870623,Virginia Western Community College,0.0
+505,9,158525.5621495371,Yakima Valley Community College,0.0
+506,9,171464.44990359715,Highline Community College,0.0
