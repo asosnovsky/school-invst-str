@@ -1,5 +1,5 @@
 ,Class,Distance,Name,ID
-0,0,0.00113128791962024,['Delaware Technical Community College-Owens'],130891
+0,0,0.0011312879196202401,['Delaware Technical Community College-Owens'],130891
 1,0,0.0011773230849982932,['Kapiolani Community College'],141796
 2,0,0.0016261388009558835,['Three Rivers Community College'],129808
 3,0,0.0016850461701860431,['Lincoln Land Community College'],146685
@@ -7,23 +7,23 @@
 5,0,0.0019507086682881921,['Burlington County College'],183877
 6,0,0.001967855007826107,['Southcentral Kentucky Community and Technical College'],156338
 7,0,0.002028460761619764,['Jefferson College'],177676
-8,0,0.002093867155651635,['Lakeland Community College'],203599
+8,0,0.0020938671556516354,['Lakeland Community College'],203599
 9,0,0.002160053066071963,['Tacoma Community College'],236753
 10,0,0.002215936312638527,['Northeast Wisconsin Technical College'],239488
 11,0,0.002241367075048793,['Ocean County College'],185873
 12,0,0.0022497803054625444,['SUNY Broome Community College'],189547
 13,0,0.0022605798072986784,['Bainbridge State College'],139010
-14,0,0.0024081189394498347,['Crowder College'],177135
+14,0,0.002408118939449835,['Crowder College'],177135
 15,0,0.002409211037294294,['Leeward Community College'],141811
-16,0,0.0024097426409970544,['North Central Texas College'],224110
+16,0,0.002409742640997055,['North Central Texas College'],224110
 17,0,0.0024411348391649226,['Trinity Valley Community College'],225308
-18,0,0.0024452617535310884,['Howard Community College'],162779
+18,0,0.002445261753531089,['Howard Community College'],162779
 19,0,0.0024775740780614364,['Maysville Community and Technical College'],157331
 20,0,0.002485384015093959,['Gateway Technical College'],238759
-21,0,0.0025060149525963087,['Three Rivers Community College'],179645
-22,0,0.002517023648292819,['Montgomery County Community College'],214111
-23,0,0.00253101162372159,['Southeast Kentucky Community and Technical College'],157739
-24,0,0.0025996925943372637,['Lower Columbia College'],235750
+21,0,0.002506014952596309,['Three Rivers Community College'],179645
+22,0,0.0025170236482928193,['Montgomery County Community College'],214111
+23,0,0.0025310116237215897,['Southeast Kentucky Community and Technical College'],157739
+24,0,0.002599692594337264,['Lower Columbia College'],235750
 25,0,0.002627626743566428,['Asheville-Buncombe Technical Community College'],197887
 26,0,0.0026316859147620065,['Spokane Falls Community College'],236708
 27,0,0.002704739831993377,['Texas State Technical College-Harlingen'],229319
@@ -33,49 +33,49 @@
 31,0,0.002869631834245197,['York Technical College'],218991
 32,0,0.0029185412096049985,['Spartanburg Community College'],218830
 33,1,0.0,['Enterprise State Community College'],101143
-34,1,0.0007634711994909198,['Black River Technical College'],106625
-35,1,0.001293305425813744,['Allegany College of Maryland'],161688
+34,1,0.0007634711994909197,['Black River Technical College'],106625
+35,1,0.0012933054258137439,['Allegany College of Maryland'],161688
 36,1,0.0015430394993612472,['Western Iowa Tech Community College'],154572
 37,1,0.0016255152086191724,['Minnesota State Community and Technical College'],173559
 38,1,0.0016287321135785328,['Hopkinsville Community College'],156860
 39,1,0.0017043832691123373,['Gateway Community and Technical College'],157438
 40,1,0.001869610616466563,['Hennepin Technical College'],173708
 41,1,0.0019172704882781024,['Anoka-Ramsey Community College'],172963
-42,1,0.0019396645995888092,['Ashland Community and Technical College'],156231
+42,1,0.0019396645995888085,['Ashland Community and Technical College'],156231
 43,1,0.0019593262770781056,['Hawkeye Community College'],153445
-44,1,0.002024182811125176,['North Hennepin Community College'],174376
+44,1,0.0020241828111251764,['North Hennepin Community College'],174376
 45,1,0.00205772918206834,['Moberly Area Community College'],178448
 46,1,0.0020585794204287145,['Highland Community College'],155186
 47,1,0.002080047418308936,['Hocking College'],203155
 48,1,0.002156377627299552,['Hazard Community and Technical College'],156790
-49,1,0.002196490147079209,['Finger Lakes Community College'],191199
-50,1,0.0022068411363238036,['Genesee Community College'],191339
+49,1,0.0021964901470792088,['Finger Lakes Community College'],191199
+50,1,0.002206841136323804,['Genesee Community College'],191339
 51,1,0.0022631300686455115,['Kankakee Community College'],146348
 52,1,0.002357788370543116,['Niagara County Community College'],193946
-53,1,0.0023663169129736917,['Clark State Community College'],201973
-54,1,0.002436411384423413,['Green River Community College'],235343
+53,1,0.002366316912973692,['Clark State Community College'],201973
+54,1,0.0024364113844234127,['Green River Community College'],235343
 55,1,0.0024600686811430345,['Normandale Community College'],174428
 56,1,0.002536280320637332,['Oakton Community College'],147800
-57,1,0.0025625827851533793,['Volunteer State Community College'],222053
-58,1,0.0025844651038411347,['Dutchess Community College'],190840
+57,1,0.0025625827851533797,['Volunteer State Community College'],222053
+58,1,0.002584465103841135,['Dutchess Community College'],190840
 59,1,0.002614184709612934,['Gloucester County College'],184791
 60,1,0.002676703148833101,['Mount Wachusett Community College'],166957
-61,1,0.0026999565944111044,['Tunxis Community College'],130606
+61,1,0.002699956594411105,['Tunxis Community College'],130606
 62,1,0.002758916607047332,['Temple College'],228608
 63,1,0.0027689532944823177,['Mineral Area College'],178217
 64,1,0.0029560377270758565,['Northeast State Community College'],221908
 65,1,0.0029746522600774504,['Clackamas Community College'],208406
 66,1,0.0030224683856921635,['Indian Hills Community College'],153472
-67,1,0.0030553281528634384,['Roane State Community College'],221397
-68,1,0.0031658402957532926,['College of Southern Maryland'],162122
+67,1,0.003055328152863439,['Roane State Community College'],221397
+68,1,0.003165840295753293,['College of Southern Maryland'],162122
 69,1,0.003325132343671131,['Lake Land College'],146506
 70,1,0.003392966691737893,['Luzerne County Community College'],213659
-71,1,0.0035403398125666724,['University of Arkansas Community College-Morrilton'],107585
+71,1,0.003540339812566673,['University of Arkansas Community College-Morrilton'],107585
 72,1,0.0035444769557042384,['Mid Michigan Community College'],171155
 73,1,0.003568968587341898,['Rochester Community and Technical College'],174738
 74,1,0.0036003075333065743,['Madisonville Community College'],157304
 75,1,0.003679041802625964,['Highline Community College'],235431
-76,1,0.0038283220997358185,['Reading Area Community College'],215585
+76,1,0.003828322099735819,['Reading Area Community College'],215585
 77,1,0.003912709517213897,['Davidson County Community College'],198376
 78,1,0.003926717477687766,['Tri-County Technical College'],218885
 79,1,0.003975927224517839,['Rose State College'],207670
@@ -83,21 +83,21 @@
 81,1,0.0040406365715820475,['Virginia Western Community College'],233949
 82,1,0.00413098771708605,['Cowley County Community College'],154952
 83,1,0.004191195741373403,['Edmonds Community College'],235103
-84,1,0.004267367702909692,['Walters State Community College'],222062
+84,1,0.0042673677029096925,['Walters State Community College'],222062
 85,1,0.004275283390435289,['John Tyler Community College'],232450
 86,1,0.00428709775509038,['Yakima Valley Community College'],237109
 87,1,0.00433096648435641,['East Central Community College'],175643
-88,1,0.004412457567556641,['McHenry County College'],147004
-89,1,0.004451399852250713,['Muskegon Community College'],171304
+88,1,0.00441245756755664,['McHenry County College'],147004
+89,1,0.0044513998522507136,['Muskegon Community College'],171304
 90,1,0.004747754348871421,['Lee College'],226204
 91,1,0.00483631349925021,['Southern Union State Community College'],251260
-92,1,0.004941008753785028,['Hagerstown Community College'],162690
+92,1,0.0049410087537850285,['Hagerstown Community College'],162690
 93,1,0.005031355412639383,['St Cloud Technical and Community College'],174756
 94,1,0.005471842398929393,['Central Ohio Technical College'],201672
 95,1,0.005584751927898869,['Northern Oklahoma College'],207281
 96,1,0.005585295329998239,['Bucks County Community College'],211307
 97,1,0.005696627903479863,['Rockland Community College'],195058
-98,1,0.005743602069535191,['Quincy College'],167525
+98,1,0.0057436020695351905,['Quincy College'],167525
 99,1,0.005763676969049116,['Hutchinson Community College'],155195
 100,1,0.005811209651568224,['Central Maine Community College'],161077
 101,1,0.005854899905506531,['Southwest Texas Junior College'],228316
@@ -107,50 +107,50 @@
 105,1,0.00671831607494942,['Lake Superior College'],173461
 106,1,0.006877974642259899,['Estrella Mountain Community College'],384333
 107,1,0.007040134378228051,['Columbia State Community College'],219888
-108,1,0.007103701428787846,['Central Community College'],180902
-109,1,0.00716585435827479,['Pierce College at Fort Steilacoom'],235237
+108,1,0.007103701428787845,['Central Community College'],180902
+109,1,0.007165854358274791,['Pierce College at Fort Steilacoom'],235237
 110,1,0.0072058149555134345,['Cayuga County Community College'],189839
-111,1,0.0074976027292928725,['Danville Area Community College'],144564
+111,1,0.007497602729292872,['Danville Area Community College'],144564
 112,1,0.00759764522549511,['East Central College'],177250
-113,1,0.0077353266445793715,['Jefferson Community College'],192022
+113,1,0.007735326644579371,['Jefferson Community College'],192022
 114,1,0.007804125869657225,['Inver Hills Community College'],173799
 115,1,0.007831337949749875,['Adirondack Community College'],188438
 116,1,0.008010684242309636,['Corning Community College'],190442
 117,1,0.008114459935054415,['Everett Community College'],235149
-118,1,0.00818628168629111,['Orange County Community College'],194240
+118,1,0.008186281686291109,['Orange County Community College'],194240
 119,1,0.008283822096580587,['Delaware Technical Community College-Terry'],130907
 120,1,0.008295981241134814,['Lake Michigan College'],170620
 121,1,0.008454999195234696,['Community College of Vermont'],230861
 122,1,0.008536139168886283,['Northeast Iowa Community College-Calmar'],154110
-123,1,0.008670651246632946,['Catawba Valley Community College'],198233
+123,1,0.008670651246632945,['Catawba Valley Community College'],198233
 124,1,0.008750398815550217,['Tompkins Cortland Community College'],196565
-125,1,0.008883847271360929,['Illinois Valley Community College'],145831
-126,1,0.009034255140926161,['Carl Albert State College'],206923
+125,1,0.00888384727136093,['Illinois Valley Community College'],145831
+126,1,0.00903425514092616,['Carl Albert State College'],206923
 127,1,0.009232226197466005,['Southeastern Community College'],154378
 128,1,0.009410695513637634,['Chippewa Valley Technical College'],240116
 129,1,0.00978746535025818,['Frederick Community College'],162557
 130,1,0.00985842587452132,['Walla Walla Community College'],236887
-131,1,0.009890077997741983,['Owensboro Community and Technical College'],247940
+131,1,0.009890077997741985,['Owensboro Community and Technical College'],247940
 132,1,0.009969718967461693,['Middlesex Community College'],129756
 133,1,0.010103085334835922,['Northeast Community College'],181491
 134,1,0.01040272062248853,['Honolulu Community College'],141680
-135,1,0.010491572260895903,['Elgin Community College'],144944
+135,1,0.010491572260895905,['Elgin Community College'],144944
 136,1,0.010618531200562106,['Northeast Texas Community College'],227225
 137,1,0.010627821028322834,['Raritan Valley Community College'],186645
-138,1,0.010788140189547319,['St Clair County Community College'],172291
+138,1,0.01078814018954732,['St Clair County Community College'],172291
 139,1,0.010792687994613515,['Texas State Technical College-Waco'],228680
 140,1,0.010822217020044695,['Caldwell Community College and Technical Institute'],198118
 141,1,0.010856379699768692,['Hill College'],225371
 142,1,0.011142299402124392,['Ridgewater College'],175236
 143,1,0.011614931705321256,['Cape Cod Community College'],165194
-144,1,0.01174050195330329,['Southwestern Michigan College'],172307
+144,1,0.011740501953303291,['Southwestern Michigan College'],172307
 145,1,0.011771514442112286,['Danville Community College'],231882
-146,1,0.011852814164041454,['Wichita Area Technical College'],156107
-147,1,0.012000540138974291,['Skagit Valley College'],236638
-148,1,0.012100005864447465,['Northcentral Technical College'],239460
+146,1,0.011852814164041455,['Wichita Area Technical College'],156107
+147,1,0.012000540138974293,['Skagit Valley College'],236638
+148,1,0.012100005864447464,['Northcentral Technical College'],239460
 149,1,0.012110988608061294,['NorthWest Arkansas Community College'],367459
 150,1,0.012345272847664436,['South Central College'],173911
-151,1,0.01255596048907829,['Bay de Noc Community College'],168883
+151,1,0.012555960489078291,['Bay de Noc Community College'],168883
 152,1,0.012600826568791098,['Wilkes Community College'],199926
 153,1,0.012712882394238406,['Herkimer County Community College'],191612
 154,1,0.012812541994223405,['Central Lakes College-Brainerd'],173203
@@ -160,11 +160,11 @@
 158,1,0.013547746691891472,['Zane State College'],204255
 159,1,0.013781395503588548,['Wenatchee Valley College'],236975
 160,1,0.013828075473751904,['Trinidad State Junior College'],128258
-161,1,0.014220294833665133,['Shoreline Community College'],236610
+161,1,0.014220294833665131,['Shoreline Community College'],236610
 162,1,0.01465199671531654,['Dyersburg State Community College'],220057
 163,1,0.015194620126529288,['Eastern Maine Community College'],161138
 164,1,0.01538531376719616,['Fulton-Montgomery Community College'],191302
-165,1,0.015439245128777458,"[""NHTI-Concord's Community College""]",183099
+165,1,0.01543924512877746,"[""NHTI-Concord's Community College""]",183099
 166,1,0.01549258399895292,['Western Technical College'],240170
 167,1,0.015583528700364778,['Iowa Lakes Community College'],153533
 168,1,0.01607748277356085,['Clover Park Technical College'],234951
@@ -172,35 +172,35 @@
 170,1,0.016362581292356553,['Vernon College'],229504
 171,1,0.016582837521856467,['Southern State Community College'],205966
 172,1,0.016636797604191303,['Barton County Community College'],154697
-173,1,0.01693649410482472,['James A Rhodes State College'],203678
-174,1,0.016969704379813523,['Olney Central College'],145707
+173,1,0.016936494104824718,['James A Rhodes State College'],203678
+174,1,0.016969704379813527,['Olney Central College'],145707
 175,1,0.0169964955732241,['Louisiana State University-Eunice'],159407
 176,1,0.017020052837378976,['Sauk Valley Community College'],148672
-177,1,0.017100013517411645,['Blue Ridge Community College'],231536
+177,1,0.017100013517411642,['Blue Ridge Community College'],231536
 178,1,0.017153038350516632,['Eastern Gateway Community College'],203331
 179,1,0.01722506725016051,['Sussex County Community College'],247603
-180,1,0.017249859229983205,['Kirtland Community College'],170587
+180,1,0.017249859229983202,['Kirtland Community College'],170587
 181,1,0.017498614066404915,['Northland Community and Technical College'],174473
-182,1,0.017708488884406605,['North Central Michigan College'],171395
+182,1,0.0177084888844066,['North Central Michigan College'],171395
 183,1,0.018045650473277504,['Otero Junior College'],127778
 184,1,0.01812564881800945,['Berkshire Community College'],164775
-185,1,0.018386555183051833,['Whatcom Community College'],237039
-186,1,0.018411434651522156,['Connors State College'],206996
+185,1,0.018386555183051836,['Whatcom Community College'],237039
+186,1,0.01841143465152216,['Connors State College'],206996
 187,1,0.018844041270176564,['Lehigh Carbon Community College'],213525
 188,1,0.019036170890958708,['Laramie County Community College'],240620
-189,1,0.01959048076364856,['New River Community College'],232867
-190,1,0.019671225029186865,['Rend Lake College'],148256
+189,1,0.019590480763648558,['New River Community College'],232867
+190,1,0.019671225029186862,['Rend Lake College'],148256
 191,1,0.019816714307583187,['Waukesha County Technical College'],240125
 192,1,0.020314239088592548,['North Central State College'],204422
-193,1,0.02068829579890427,['North Iowa Area Community College'],154059
-194,1,0.021144174952134956,['Northwest State Community College'],204440
+193,1,0.020688295798904268,['North Iowa Area Community College'],154059
+194,1,0.02114417495213496,['Northwest State Community College'],204440
 195,1,0.02114780505793899,['Minnesota West Community and Technical College'],173638
 196,1,0.021247783747315504,['Marshalltown Community College'],153922
 197,1,0.02158838928461966,['Allen County Community College'],154642
-198,1,0.022022702322031778,['Victoria College'],229540
-199,1,0.022185621819985707,['Motlow State Community College'],221096
+198,1,0.022022702322031774,['Victoria College'],229540
+199,1,0.02218562181998571,['Motlow State Community College'],221096
 200,1,0.022488487633674475,['St Charles Community College'],262031
-201,1,0.022845083450162666,['Northeastern Junior College'],127732
+201,1,0.022845083450162663,['Northeastern Junior College'],127732
 202,1,0.02291472615148198,['John Wood Community College'],146278
 203,1,0.02299974743807705,['Asnuntuck Community College'],128577
 204,1,0.023006238069820887,['Dodge City Community College'],154998
@@ -208,28 +208,28 @@
 206,1,0.023562358815519303,['Kennebec Valley Community College'],161192
 207,1,0.024038980812798188,['Garden City Community College'],155104
 208,1,0.024074891791040817,['Dakota County Technical College'],173416
-209,1,0.024586718816996294,['Linn-Benton Community College'],209074
+209,1,0.02458671881699629,['Linn-Benton Community College'],209074
 210,1,0.024735292161321875,['Piedmont Virginia Community College'],233116
 211,1,0.02513867523484626,['Cloud County Community College'],154907
 212,1,0.025217153092779342,['Wisconsin Indianhead Technical College'],240198
 213,1,0.02580601813730875,['Casper College'],240505
 214,1,0.02621007635380826,['Alpena Community College'],168607
 215,1,0.026344246581687027,['Blackhawk Technical College'],238397
-216,1,0.02678645034539953,['Wytheville Community College'],234377
+216,1,0.026786450345399532,['Wytheville Community College'],234377
 217,1,0.02681921062549289,['Greenfield Community College'],165981
 218,1,0.026899683670751986,['Flathead Valley Community College'],180197
 219,1,0.02697664224870409,['Highland Community College'],145521
-220,1,0.027003084821899333,['Henderson Community College'],156851
+220,1,0.02700308482189933,['Henderson Community College'],156851
 221,1,0.027063776966208524,['Terra State Community College'],206011
 222,1,0.02720166838180128,['Montcalm Community College'],171234
 223,1,0.027829868317249096,['Minnesota State College-Southeast Technical'],175263
-224,1,0.028360254848184302,['Thaddeus Stevens College of Technology'],216296
-225,1,0.028426625010467735,['Mid-State Technical College'],239220
-226,1,0.02860415112395896,['Blue Ridge Community College'],198039
+224,1,0.028360254848184305,['Thaddeus Stevens College of Technology'],216296
+225,1,0.02842662501046773,['Mid-State Technical College'],239220
+226,1,0.028604151123958962,['Blue Ridge Community College'],198039
 227,1,0.030345847289919507,['Moraine Park Technical College'],239372
-228,1,0.030453907564651304,['Belmont College'],201283
+228,1,0.030453907564651307,['Belmont College'],201283
 229,1,0.03047057810720097,['Cecil College'],162104
-230,1,0.03095726564559656,['Southeast Technical Institute'],219426
+230,1,0.030957265645596563,['Southeast Technical Institute'],219426
 231,1,0.031183688132251544,['Neosho County Community College'],155566
 232,1,0.03179600467552368,['Southwestern Oregon Community College'],210155
 233,1,0.03304202421292639,['Anoka Technical College'],172954
@@ -241,27 +241,27 @@
 239,1,0.0367388894094155,['Columbia-Greene Community College'],190169
 240,1,0.03707815745416329,['Richard Bland College of the College of William and Mary'],233338
 241,1,0.037236126336228526,['Blue Mountain Community College'],208275
-242,1,0.037554981333102415,['Lamar State College-Port Arthur'],226116
+242,1,0.03755498133310242,['Lamar State College-Port Arthur'],226116
 243,1,0.03778249285649008,['Renton Technical College'],236382
 244,1,0.037801324220109296,['Western Wyoming Community College'],240693
 245,1,0.037918945514439584,['Sullivan County Community College'],195988
 246,1,0.03819606801419378,['Eastern Oklahoma State College'],207050
 247,1,0.03830251313622038,['Southeastern Community College'],199722
-248,1,0.03888698375563569,['Lamar State College-Orange'],226107
+248,1,0.038886983755635686,['Lamar State College-Orange'],226107
 249,1,0.03966546880313741,['Mid-Plains Community College'],181312
-250,1,0.039666485990726585,['Western Oklahoma State College'],208035
+250,1,0.03966648599072658,['Western Oklahoma State College'],208035
 251,1,0.040006550824455436,['Pratt Community College'],155715
-252,1,0.040148013790778155,['Carteret Community College'],198206
+252,1,0.04014801379077816,['Carteret Community College'],198206
 253,1,0.040520702962858035,['New Mexico Junior College'],187903
 254,1,0.040846459798258856,['Morgan Community College'],127617
 255,1,0.0412770036939612,['Alexandria Technical & Community College'],172918
 256,1,0.04131587581878925,['Hibbing Community College'],173735
-257,1,0.04144424451658726,['Itasca Community College'],173805
+257,1,0.041444244516587264,['Itasca Community College'],173805
 258,1,0.04148958978254203,['Sheridan College'],240666
-259,1,0.042619482345534955,['Clinton Community College'],190053
+259,1,0.04261948234553496,['Clinton Community College'],190053
 260,1,0.04262810466417098,['West Shore Community College'],172671
 261,1,0.042898179941027605,['Helena College University of Montana'],180276
-262,1,0.044558931148761596,['Bates Technical College'],235671
+262,1,0.0445589311487616,['Bates Technical College'],235671
 263,1,0.048167993853811854,['Northern Maine Community College'],161484
 264,1,0.04881830039496565,['North Dakota State College of Science'],200305
 265,1,0.049772333838363735,['Linn State Technical College'],177977
@@ -269,89 +269,78 @@
 267,1,0.051449747795733546,['Independence Community College'],155201
 268,1,0.053596701883386326,['Central Wyoming College'],240514
 269,1,0.05392870098942247,['University of South Carolina-Lancaster'],218672
-270,1,0.054475978839303475,['University of South Carolina-Salkehatchie'],218681
+270,1,0.05447597883930348,['University of South Carolina-Salkehatchie'],218681
 271,1,0.05497152519968825,['Lakeshore Technical College'],239008
 272,1,0.0551360745690168,['Lake Area Technical Institute'],219143
-273,1,0.05679272359096459,['Glen Oaks Community College'],169974
-274,1,0.057260667062666755,['Nashua Community College'],183141
+273,1,0.056792723590964586,['Glen Oaks Community College'],169974
+274,1,0.05726066706266676,['Nashua Community College'],183141
 275,1,0.05840054818100485,['Gogebic Community College'],169992
 276,1,0.06024037735828661,['North Country Community College'],194028
-277,1,0.06093762130785222,['Heartland Community College'],384342
+277,1,0.06093762130785223,['Heartland Community College'],384342
 278,1,0.061716308884505376,['Northwest College'],240657
 279,1,0.0626467919727739,['Western Dakota Technical Institute'],219480
 280,1,0.0647621436234755,['Pierce College at Puyallup'],439145
-281,1,0.06651479010531523,['Garrett College'],162609
+281,1,0.06651479010531522,['Garrett College'],162609
 282,1,0.06677889957590064,['Washington State Community College'],206446
 283,1,0.0672704448588105,['Nicolet Area Technical College'],239442
 284,1,0.06870014245513267,['Eastern Idaho Technical College'],142179
 285,1,0.07041480427346893,['Pine Technical College'],174570
 286,1,0.07212448953660051,['Arkansas State University-Mountain Home'],420538
 287,1,0.07280813059078894,['Colorado Northwestern Community College'],126748
-288,1,0.07715712118641867,['Texas State Technical College-West Texas'],229328
-289,1,0.07937689282616842,['Coconino Community College'],404426
+288,1,0.07715712118641868,['Texas State Technical College-West Texas'],229328
+289,1,0.07937689282616843,['Coconino Community College'],404426
 290,1,0.0802962615026619,['Washburn Institute of Technology'],155423
 291,1,0.08125202757516499,['Northwest Iowa Community College'],154129
 292,1,0.08470832523933279,['Warren County Community College'],245625
 293,1,0.08486477829548737,['Mitchell Technical Institute'],219189
-294,1,0.08520972139184212,['Flint Hills Technical College'],155052
+294,1,0.08520972139184213,['Flint Hills Technical College'],155052
 295,1,0.08581655111541166,['Eastern Wyoming College'],240596
 296,1,0.08732543366031108,['Wabash Valley College'],403487
 297,1,0.08913269363807891,['North Central Kansas Technical College'],155593
-298,1,0.09042149112414741,['Williston State College'],200341
+298,1,0.0904214911241474,['Williston State College'],200341
 299,1,0.09198720205970236,['Manhattan Area Technical College'],155487
 300,1,0.09288630728549932,['Lamar Institute of Technology'],441760
-301,1,0.09460265714528779,['Pennsylvania Highlands Community College'],414911
+301,1,0.0946026571452878,['Pennsylvania Highlands Community College'],414911
 302,1,0.0991249502741319,['Dabney S Lancaster Community College'],231873
 303,1,0.1020953067819894,['Lake Region State College'],200192
 304,1,0.10796845317430424,['Frank Phillips College'],224891
 305,1,0.11110589036317894,['University of South Carolina-Sumter'],218690
 306,1,0.11966417475889628,['Northwest Kansas Technical College'],155618
-307,1,0.12259719495574303,['Miles Community College'],180373
+307,1,0.12259719495574305,['Miles Community College'],180373
 308,1,0.1253023596588333,['Washington County Community College'],161581
 309,1,0.12949695706336012,['York County Community College'],420440
 310,1,0.13237201186409348,['Dakota College at Bottineau'],200314
-311,1,0.13839262115921339,['Dawson Community College'],180151
-312,1,0.15079942481640163,['Vermilion Community College'],175157
+311,1,0.1383926211592134,['Dawson Community College'],180151
+312,1,0.15079942481640166,['Vermilion Community College'],175157
 313,1,0.15383448097109093,['University of South Carolina-Union'],218706
 314,1,0.16263095229069047,['Lincoln Trail College'],403478
-315,1,0.20233703146734452,['Ohio State University Agricultural Technical Institute'],204662
-316,1,0.24786813596581153,['Salina Area Technical College'],155830
+315,1,0.20233703146734447,['Ohio State University Agricultural Technical Institute'],204662
+316,1,0.24786813596581156,['Salina Area Technical College'],155830
 317,1,0.3081651761393084,['Rainy River Community College'],174604
 318,1,0.3315769634021522,['Delta Montrose Technical College'],126915
-319,1,0.33842812452716753,['Lancaster County Career and Technology Center'],418533
-320,1,0.4621546310192074,['Eastland-Fairfield Career and Technical Schools'],407461
-321,1,0.5276065349419042,['Western Suffolk BOCES'],420468
-322,1,0.5812888983946636,['Greater Altoona Career & Technology Center'],383367
-323,1,0.5869544253963658,['Wayne County Schools Career Center'],433138
-324,1,0.5915994306862606,['Southeastern Technical Institute'],167871
-325,1,0.6805302206916105,['Eastern Suffolk BOCES-Practical Nursing Program'],418065
-326,1,0.7433357216640755,['Greater Johnstown Career and Technology Center'],418454
-327,1,0.9924587154789802,['Lenape Technical School Practical Nursing Program'],418515
-328,1,1.062399372197387,['York County School of Technology-Adult & Continuing Education'],418409
-329,1,1.0950300228065173,['Dutchess BOCES-Practical Nursing Program'],431105
 330,2,0.0,['James H Faulkner State Community College'],101161
 331,2,0.0007003048805793657,['Darton State College'],138691
 332,2,0.0008874018206817371,['Minneapolis Community and Technical College'],174136
 333,2,0.0011323984596740804,['Quinsigamond Community College'],167534
-334,2,0.0013657347925305544,['Blinn College'],223427
+334,2,0.0013657347925305546,['Blinn College'],223427
 335,2,0.0014515994692533409,['Schoolcraft College'],172200
-336,2,0.0015835571206821663,['Clark College'],234933
+336,2,0.0015835571206821665,['Clark College'],234933
 337,2,0.0017177421266597968,['Lorain County Community College'],203748
 338,3,0.0,['George C Wallace State Community College-Hanceville'],101295
 339,3,0.0006319155902768607,['Gateway Community College'],130396
 340,3,0.0009050956340946742,"[""Prince George's Community College""]",163657
 341,3,0.0010254330372211776,['Camden County College'],183938
 342,3,0.001131579747065944,['Itawamba Community College'],175829
-343,3,0.0011540309669661817,['SUNY Westchester Community College'],197294
-344,3,0.0011646688699797317,['Owens Community College'],204945
+343,3,0.0011540309669661815,['SUNY Westchester Community College'],197294
+344,3,0.0011646688699797315,['Owens Community College'],204945
 345,3,0.0012137107352345928,['Bossier Parish Community College'],158431
-346,3,0.0012168608316039879,['Somerset Community College'],157711
+346,3,0.001216860831603988,['Somerset Community College'],157711
 347,3,0.0013110766937517876,['Metropolitan Community College Area'],181303
 348,3,0.0013214174573621762,['Delta College'],169521
 349,3,0.001331146488494849,['Pitt Community College'],199333
 350,3,0.001383089484527143,['Chemeketa Community College'],208390
-351,3,0.0013844075214400706,['Mott Community College'],169275
-352,3,0.0013899951804575567,['Erie Community College'],191083
+351,3,0.0013844075214400704,['Mott Community College'],169275
+352,3,0.0013899951804575569,['Erie Community College'],191083
 353,3,0.0013954069625403645,['Midlands Technical College'],218353
 354,3,0.001401927321550292,['Northwest Mississippi Community College'],176178
 355,3,0.0015577435940873252,['Fox Valley Technical College'],238722
@@ -359,43 +348,42 @@
 357,4,0.0,['Jefferson State Community College'],101505
 358,4,0.0010203744982647267,['Southwestern Illinois College'],143215
 359,4,0.0010992894542514507,['Kirkwood Community College'],153737
-360,4,0.00133912389936479,['Pasco-Hernando Community College'],136400
-361,4,0.0016278300238020483,['Tulsa Community College'],207935
+360,4,0.0013391238993647901,['Pasco-Hernando Community College'],136400
+361,4,0.0016278300238020485,['Tulsa Community College'],207935
 362,5,0.0,['John C Calhoun State Community College'],101514
-363,5,0.0003261587411831089,['Pikes Peak Community College'],127820
+363,5,0.00032615874118310887,['Pikes Peak Community College'],127820
 364,5,0.0004630365908864167,['Front Range Community College'],127200
 365,5,0.0005692129957505046,['Moraine Valley Community College'],147378
-366,5,0.0005948062637192868,['Harrisburg Area Community College-Harrisburg'],212878
+366,5,0.0005948062637192867,['Harrisburg Area Community College-Harrisburg'],212878
 367,5,0.0006438709338895576,['Bunker Hill Community College'],165112
-368,5,0.0006439309977709462,['Henry Ford Community College'],170240
+368,5,0.0006439309977709463,['Henry Ford Community College'],170240
 369,5,0.0006593854147586831,['Monroe Community College'],193326
 370,5,0.0006865186961028994,['Ozarks Technical Community College'],177472
 371,5,0.0007635223444282662,['Central New Mexico Community College'],187532
 372,5,0.0007706233652483548,['Columbus State Community College'],202222
-373,5,0.0008225905511458854,['Salt Lake Community College'],230746
+373,5,0.0008225905511458853,['Salt Lake Community College'],230746
 374,5,0.0008233102593537915,['Nassau Community College'],193478
 375,5,0.0008239941465312411,['Jefferson Community and Technical College'],156921
-376,5,0.0008403093548518381,['Des Moines Area Community College'],153214
+376,5,0.000840309354851838,['Des Moines Area Community College'],153214
 377,5,0.0009321167501057637,['San Antonio College'],227924
-378,5,0.0009356750060619734,['Trident Technical College'],218894
-379,5,0.0009596490913413184,['Wake Technical Community College'],199856
-380,5,0.0009626177632135801,['Guilford Technical Community College'],198622
+378,5,0.0009356750060619735,['Trident Technical College'],218894
+379,5,0.0009596490913413183,['Wake Technical Community College'],199856
+380,5,0.00096261776321358,['Guilford Technical Community College'],198622
 381,5,0.000999709896594626,['Sinclair Community College'],205470
-382,5,0.0010925135672224051,['San Jacinto Community College'],227979
+382,5,0.0010925135672224054,['San Jacinto Community College'],227979
 383,5,0.0011075773217967774,['City Colleges of Chicago-Harold Washington College'],144209
 384,5,0.001116045679519254,['Lansing Community College'],170657
 385,5,0.0012160749540180802,['Bluegrass Community and Technical College'],156392
-386,5,0.0012430553747255681,['Mississippi Gulf Coast Community College'],176071
-387,5,0.0013953946274833499,['Milwaukee Area Technical College'],239248
-388,5,0.001408783703843048,['Grand Rapids Community College'],170055
-389,5,0.001727895718857891,['Community College of Allegheny County'],210605
+386,5,0.001243055374725568,['Mississippi Gulf Coast Community College'],176071
+387,5,0.00139539462748335,['Milwaukee Area Technical College'],239248
+388,5,0.0014087837038430481,['Grand Rapids Community College'],170055
 390,6,0.0,['Northwest-Shoals Community College'],101736
 391,6,0.0007007521533405406,['Century College'],175315
 392,6,0.0007417262176098414,['North Idaho College'],142443
 393,6,0.0007643277945370459,['Naugatuck Valley Community College'],129729
 394,6,0.0008407069263688464,['Butler Community College'],154800
 395,6,0.0008669368139766327,['New Mexico State University-Dona Ana'],187620
-396,6,0.0008672807424318924,['Kishwaukee College'],146418
+396,6,0.0008672807424318923,['Kishwaukee College'],146418
 397,6,0.000937924045774657,['Elizabethtown Community and Technical College'],156648
 398,6,0.0009450905999956496,['Manchester Community College'],129695
 399,6,0.0011006381394426733,['Springfield Technical Community College'],167905
@@ -403,7 +391,7 @@
 401,6,0.0012271981299162814,['Bristol Community College'],165033
 402,6,0.0012538253591874748,['Brookdale Community College'],183859
 403,6,0.0012825876942949134,['Middlesex County College'],185536
-404,6,0.001335831996776103,['Kalamazoo Valley Community College'],170541
+404,6,0.0013358319967761028,['Kalamazoo Valley Community College'],170541
 405,6,0.0013503559080811506,['Holmes Community College'],175810
 406,6,0.001375949096778961,['East Mississippi Community College'],175652
 407,6,0.001418534038939313,['Nashville State Community College'],221184
@@ -414,8 +402,8 @@
 412,6,0.0014924037614977507,['Tyler Junior College'],229355
 413,6,0.0015883106760682588,['University of Wisconsin Colleges'],240055
 414,6,0.0015952306078592113,['Johnson County Community College'],155210
-415,6,0.001629844948117513,['Chattanooga State Community College'],219824
-416,6,0.001698120628416996,['Cape Fear Community College'],198154
+415,6,0.0016298449481175132,['Chattanooga State Community College'],219824
+416,6,0.0016981206284169962,['Cape Fear Community College'],198154
 417,6,0.0017177970894720735,['Northampton County Area Community College'],214379
 418,6,0.0017398066465896132,['Pellissippi State Community College'],221643
 419,6,0.0017417977238401135,['J Sargeant Reynolds Community College'],232414
@@ -428,53 +416,53 @@
 426,6,0.0024296025515984235,['Pearl River Community College'],176239
 427,7,0.0,['GateWay Community College'],105145
 428,7,0.0006416676180133719,['Red Rocks Community College'],127909
-429,7,0.0007682745915311748,['Anne Arundel Community College'],161767
+429,7,0.0007682745915311747,['Anne Arundel Community College'],161767
 430,7,0.0011488598425891837,['Harper College'],149842
-431,7,0.0011983766122867466,['Saint Paul College'],175041
+431,7,0.0011983766122867464,['Saint Paul College'],175041
 432,7,0.0012526311513786676,['Illinois Central College'],145682
 433,7,0.0014004063464168382,['Black Hawk College'],143279
 434,7,0.0014931430477538536,['Atlantic Cape Community College'],183655
 435,7,0.0015953648258006348,['National Park Community College'],106980
 436,7,0.001600716615325458,['Southeast Community College Area'],181640
-437,7,0.0016361100089429094,['Georgia Highlands College'],139700
+437,7,0.0016361100089429096,['Georgia Highlands College'],139700
 438,7,0.0016447349085660738,['City Colleges of Chicago-Richard J Daley College'],144193
 439,7,0.0016511835363463706,['North Shore Community College'],167312
-440,7,0.0016882312655184272,['Eastern Iowa Community College District'],153311
-441,7,0.0017741908571877886,['Middlesex Community College'],166887
-442,7,0.0018050599388101769,['Holyoke Community College'],166133
+440,7,0.0016882312655184274,['Eastern Iowa Community College District'],153311
+441,7,0.0017741908571877888,['Middlesex Community College'],166887
+442,7,0.0018050599388101767,['Holyoke Community College'],166133
 443,7,0.0018592717881849978,['College of Southern Idaho'],142559
-444,7,0.0018619245517817685,['College of Lake County'],146472
+444,7,0.0018619245517817683,['College of Lake County'],146472
 445,7,0.0018739870801151683,['Community College of Aurora'],126863
-446,7,0.0018819509355122678,['Arapahoe Community College'],126289
-447,7,0.0020292192154209563,['Big Sandy Community and Technical College'],157553
+446,7,0.001881950935512268,['Arapahoe Community College'],126289
+447,7,0.0020292192154209568,['Big Sandy Community and Technical College'],157553
 448,7,0.00206850192582844,['John A Logan College'],146205
-449,7,0.0020694217716685534,['Aims Community College'],126207
-450,7,0.0021229907402199218,['Parkland College'],147916
+449,7,0.002069421771668553,['Aims Community College'],126207
+450,7,0.0021229907402199213,['Parkland College'],147916
 451,7,0.0022213355130651035,['Kellogg Community College'],170550
-452,7,0.0023648691161100082,['Mohawk Valley Community College'],193283
+452,7,0.002364869116110008,['Mohawk Valley Community College'],193283
 453,7,0.0023819999444193714,['Massasoit Community College'],166823
 454,7,0.002388257045776329,['Horry-Georgetown Technical College'],218140
-455,7,0.0024508169339524724,['Iowa Central Community College'],153524
+455,7,0.002450816933952473,['Iowa Central Community College'],153524
 456,7,0.0024720288469681504,['Lewis and Clark Community College'],146603
 457,7,0.002618875344673899,['Truckee Meadows Community College'],182500
-458,7,0.0026275120454005356,['McLennan Community College'],226578
+458,7,0.002627512045400536,['McLennan Community College'],226578
 459,7,0.0026410019194516,['Thomas Nelson Community College'],233754
-460,7,0.0026697800815843015,['Piedmont Technical College'],218520
-461,7,0.0026838512402462423,['Iowa Western Community College'],153630
+460,7,0.002669780081584301,['Piedmont Technical College'],218520
+461,7,0.0026838512402462427,['Iowa Western Community College'],153630
 462,7,0.0027109323361815163,['Southern Maine Community College'],161545
-463,7,0.002859160048382186,['Oklahoma City Community College'],207449
+463,7,0.0028591600483821858,['Oklahoma City Community College'],207449
 464,8,0.0,['Phoenix College'],105428
-465,8,0.0005254816031425641,['Montgomery College'],163426
+465,8,0.0005254816031425642,['Montgomery College'],163426
 466,8,0.000614454104623806,['Tallahassee Community College'],137759
-467,8,0.0008008885838223173,['College of DuPage'],144865
-468,8,0.0008042479496542897,['CUNY Queensborough Community College'],190673
+467,8,0.0008008885838223172,['College of DuPage'],144865
+468,8,0.0008042479496542898,['CUNY Queensborough Community College'],190673
 469,8,0.000886430317788398,['Oakland Community College'],171535
-470,8,0.0009301041345053556,['Pulaski Technical College'],107664
+470,8,0.0009301041345053557,['Pulaski Technical College'],107664
 471,8,0.0009492385316053516,['Austin Community College District'],222992
 472,8,0.000962746582908522,['Tidewater Community College'],233772
 473,8,0.000981960989338093,['Hinds Community College'],175786
 474,8,0.0009838978653644297,['CUNY Kingsborough Community College'],190619
-475,8,0.0010699353167754808,['Delgado Community College'],158662
+475,8,0.0010699353167754806,['Delgado Community College'],158662
 476,8,0.0011506118202428575,['Northern Virginia Community College'],232946
 477,8,0.0011874807620730545,['Cuyahoga Community College District'],202356
 478,8,0.0016127278666294733,['El Paso Community College'],224642
@@ -483,10 +471,9 @@
 481,8,0.002218358795687066,['CUNY Borough of Manhattan Community College'],190521
 482,8,0.002262178550337704,['Lone Star College System'],227182
 483,8,0.002598360433960276,['Houston Community College'],225423
-484,8,0.003882477270118074,['Ivy Tech Community College'],150987
 485,9,0.0006260405601849335,['Pueblo Community College'],127884
-486,9,0.0009746323838221788,['Gwinnett Technical College'],140012
+486,9,0.0009746323838221787,['Gwinnett Technical College'],140012
 487,9,0.0012873524616081992,['Triton College'],149532
-488,9,0.001355757179998637,['Onondaga Community College'],194222
-489,9,0.0014080727188893638,['Washtenaw Community College'],172617
+488,9,0.0013557571799986368,['Onondaga Community College'],194222
+489,9,0.0014080727188893636,['Washtenaw Community College'],172617
 490,9,0.0014784836213618338,['Joliet Junior College'],146296

@@ -28,7 +28,7 @@ def euclid(targets, index_1, anch_list):
     score_euc = np.where(dist == mini_euc)[1][0]
 
     list_scores = [score_euc, mini_euc, index_1]
-
+    
     return list_scores
 
 '''
@@ -69,6 +69,7 @@ def compute_scores(df_tocompute):
 
     scores = []
     norm = []
+    rad = []
 
     anchor = pd.read_csv('Analyzed-Data/benchmarks/4-cleaned-data-top10.csv').iloc[:, 2:]
     anch_list = []
@@ -88,6 +89,8 @@ def compute_scores(df_tocompute):
 
     df_norm = pd.DataFrame(norm,columns = df_tocompute.columns.values.tolist())
     df_norm.to_csv('Analyzed-Data/normed_filtered_data/normed-tot-cleaned-data.csv')
+    
+    
 
     # sorted(scores)
 
@@ -101,23 +104,46 @@ def remove_donations(donations, file_to_clean):
             ~file_to_clean['INSTNM'].str.contains(row[0])]
 
     return file_to_clean
+    
+def radius(df_k):
+    
+    scale = 3
+    knn_rad = []
+    
+    df_knn = df_k.drop('Unnamed: 0',1)
+    
+    for i in range(0,10):
+        df_knn_part = df_knn[df_knn['Class'] == i]
+        mu = df_knn_part['Distance'].mean()
+        std = df_knn_part['Distance'].std()
+        df_knn_part = df_knn_part[(df_knn_part['Distance'] - mu) / (std) < scale]
+        knn_rad.append(df_knn_part)
+    
+    df_knn_rad = pd.concat(knn_rad)
+    #df_knn_rad = pd.DataFrame(knn_rad,columns = df_knn.columns.values.tolist())
+    
+    return df_knn_rad
 
 
 def main():
-    school_test = pd.read_csv('Analyzed-Data/filtered/tot-cleaned-data.csv')
+    #school_test = pd.read_csv('Analyzed-Data/filtered/tot-cleaned-data.csv')
     #donations = pd.read_csv('External-data/microsoft_donations.csv')
     #normed_school_test = pd.read_csv('Analyzed-Data/normed_filtered_data/normed-1-cleaned-data.csv')
-    scores = sorted(compute_scores(school_test))
+    #scores = sorted(compute_scores(school_test))
 
-    df = pd.DataFrame(scores, columns=['Class', 'Distance', 'Name', 'ID'])
+    #df = pd.DataFrame(scores, columns=['Class', 'Distance', 'Name', 'ID'])
     #df = pd.DataFrame(scores,columns=['Class','Distance','P-Value','Name'])
-    df.to_csv('Analyzed-Data/knn_chosen/tot-cleaned-data-chosen.csv')
+    #df.to_csv('Analyzed-Data/knn_chosen/tot-cleaned-data-chosen.csv')
+
+    
+    rad = radius(pd.read_csv('Analyzed-Data/knn_chosen/tot-cleaned-data-chosen.csv'))
+    rad.to_csv('Analyzed-Data/sensitivity_analysis/three_std/tot-cleaned-data-chosen.csv')
+    
+    print(rad)
 
     #df_1 = pd.read_csv('tot-cleaned-data.csv')
 
     #df = remove_donations(donations,df_1)
-
-    print(df)
 
 if __name__ == "__main__":
     main()
