@@ -30,13 +30,15 @@
 	\subsection{The Problem}
 		The Goodgrant Foundation is a charitable organization with a mission to improve educational performance of students attending colleges and universities in the United States. The foundation intends to donate a total of 100,000,000 USD to a group of schools each year, for five years. They also wish to avoid investing in universities that have already received grants from major charitable organizations such as the Gates and Lumina Foundation.\\
 		
-		We present a mathematical model to outline an investment strategy to provide the maximal return on investment(ROI) appropriate for an education charity.  The model is split into two sections and is applicable in choosing $1\cdots N$ institutions. 
+		We present a mathematical model to outline an ranking and investment strategy to provide the maximal return on investment(ROI) appropriate for an education charity.  The model is split into two sections and is applicable in choosing $1\cdots N$ institutions. \\
+
+The first section outlines determining bench mark points and comparing the rest of the institutions to them via a k-Nearest Neighbours(k-NN) Algorithm. In the second section, we derive a ROI measuring the effect the grant would have on improving student performance. In particular, our ROI reflects changes in terms of incoming poverty and outgoing poverty. In the Model Testing section, we input a subset of the U.S. National Center on Education Statistics data set and College Scorecard data set and output a list of $1,\cdots{N}$ schools, the investment amount, and number of students affected. In Sensitivity Analysis, we restrict the distance in the kNN algorithm to obtain a subset of our prioritized schools and assess the model's stability. Lastly, we summarize the findings of the paper and suggest future additions. 
 	
 	\subsection{Assumptions and Rationale/Justification}
 	\begin{itemize}
-		\item \textbf{The Gates Foundation and Lumina Foundation will continue to donate to the same school for at least two years:} If first year donation shows promise results then they will continue to donate for a second time or more. If first year donation shows inadequate result, then they will increase fund for a second donation in hope for better result (i.e. give another chance). This allow us to avoid duplicate investment by reading their donation data from 2015 to see a list of schools the two foundations donated to. 
+		\item \textbf{The Gates Foundation and Lumina Foundation will continue to donate to the same school for at least two years:} Typically large charities often donate sums over the course of number years to allow highest impact. \cite{Conkey} We are able to remove those particular schools from our candidate list to avoid duplicating the two foundation efforts. 
 				
-		\item \textbf{Students who received grant will stay in the program and successfully graduate:} There are many factors that could cause students to not be able to graduate, but we will focus on financial support because it is the root of other factors. However, we will provide a note on how to improve the model with the assumption that receiving a grant simply reduces the likelihood of not completing  a degree.
+		\item \textbf{Students who receive a grant will stay in the program and successfully graduate:} There are many factors that could cause students to not be able to graduate, but we will focus on financial support because it is the root of other factors..\cite{Trom}
 
 		\item \textbf{} 
 	\end{itemize}
@@ -197,6 +199,8 @@ That is, if $u$ belongs to the $k$-th class then
 	\bibitem{Trom} Trombitas, Kate.  \emph{Financial Stress: An Everyday Reality for College Students}. Inceptia, July 2012. PDF. 
 
 	\bibitem{Carnevale} Carnevale, Anthony, Ban Cheah, and Martin Van Der Werf. \emph{Ranking Your College}. Georgetown University Center on Education and the Workforce, Dec. 2015. PDF.
+	
+	\bibitem{Conkey} Conkey,Christopher 2006. ``Big donations to charity often include spending advice” \emph{The Wall Street Journal Asia} 05:
 	
 	\bibitem{Bill} ``Bill \& Melinda Gates Foundation." \emph{Bill \& Melinda Gates Foundation}. Web. 29 Jan. 2016. 
 	
