@@ -14,7 +14,7 @@ partData <- mutate(partData, Name = partName[ID,2] )%>%
 
 prezPD <- partData[,c("Name","n","A","r")]
 colnames(prezPD) <- c("Name","Number of Students","Total Amount Invested","Increase in Poverty Allevation (ROI)")
-
+write.csv(prezPD,"Final-Data/Top-20-Schools.csv")
 
 
 fullData <- read.csv("Maximized-Data/full.csv");
