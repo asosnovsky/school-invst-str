@@ -9,9 +9,52 @@
 \DeclarePairedDelimiter\floor{\lfloor}{\rfloor}
 \newcommand{\argmax}{\mathop{\mathrm{argmax}}} 
 \newcommand{\argmin}{\mathop{\mathrm{argmin}}} 
-\begin{document}
 
-\section{Notations and Definitions}
+\newcounter{teamnumb}
+\setcounter{teamnumb}{54301}
+
+\ttfamily{
+\lhead{Team\ \# \theteamnumb}\rhead{Page \thepage\ of \pageref{LastPage}}}
+\cfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\pagestyle{fancy}
+
+\title{SOMETHING}
+\begin{document}
+\maketitle
+
+\setcounter{page}{1}
+\section*{Summary}
+\thispagestyle{empty}
+Insert summary stuff here. \\
+
+...
+
+
+
+\section{Introduction}
+	\subsection{The Problem}
+		The Goodgrant Foundation is a charitable organization with a mission 	to improve educational performance of undergraduates attending colleges 		and universities in the United States. The foundation intends to donate 		a total of \$100,000,000 US to appropriate group of schools each year, 			for five years. \\
+
+		We are focusing on developing a model to optimize the investment 			strategy. 
+
+	\subsection{Some criteria for the model}
+	\begin{itemize}
+		\item Avoid duplicate investements of other large grant organization such as the Lumina Foundation and Gates Foundation. 
+		\item 
+	\end{itemize}
+	
+\section{Assumptions and Rationale/Justification}
+	\begin{itemize}
+		\item \textbf{The Gates Foundation and Lumina Foundation will continue to donate to the same school for at least two years:} If first year donation shows promise results then they will continue to donate for a second time or more. If first year donation shows inadequate result, then they will increase fund for a second donation in hope for better result (i.e. give another chance). This allow us to avoid duplicate investment by reading their donation data from 2015 to see a list of schools the two foundations donated to. 
+		
+		\item \textbf{Each school will use the donated funds in the most appropriate and optimal ways.}
+		
+		\item \textbf{Students who received grant will stay in the program and successfully graduate:} There are many factors that could cause students to not be able to graduate, but we will focus on financial support because it is the root of other factors. For example, financial stress causes students to performance poorly. 
+	\end{itemize}
+\clearpage
+\section{Model Design and Approach}
+	\subsection{Notations and Definitions}
 	\begin{enumerate}
 		\item $U_j^{[i]} = $ university $j$ of class $i$
 		\item $U_o^{[i]} = $ benchmark university for class $i$
@@ -25,38 +68,51 @@
 		\item \underline{Group}, refers to the Carnegie Classification of the university
 		\item \underline{Class}, refers to which benchmark within the group, the university is closest to.
 	\end{enumerate}
-
-\section{Benchmark Setting}
-	First we omitted any below medium size universities or communal universities such as racial or religious schools.\\
-	Then we partition all universities by number of years required for graduation.\\ 
-	Lastly, we rank the universities by the amount of their poverty elevation standards: $R_j^{[i]}=\frac{IP_j^{[i]}-OP_j^{[i]}}{IP_j^{[i]}}$.\\
+	
+	\subsection{Summary of our Approach}
+		\begin{itemize}
+		\item Create a benchmark setting: top (...) schools that we consider to have good performance. Each school represent a class.  
+		\item Identify universities that have similar characteristics to the benchmark list. 
+		\item Prioritize universities to be invested in by the amount of grants they received from other sources.
+		\item Determine the amount of investment and allocation to maximize the return on investment. 
+		\end{itemize}
+				 
+\section{Flattening Out the Approach}
+	\subsection{Benchmark Setting}
+	
+	First we omitted any below medium size universities or communal universities such as racial or religious schools. Then we partition all universities by number of years required for graduation. Lastly, we rank the universities by the amount of their poverty elevation standards: \\ \\ 
+	$$
+		R_j^{[i]}=\frac{IP_j^{[i]}-OP_j^{[i]}}{IP_j^{[i]}}
+	$$  
 	Next we choose the top, highest ranking universities per `years of graduation'-group. We set these chosen universities as our benchmarks for each class in each group.\\
-	I.e.
+	
+	i.e.
 	$$
 		o^{[i]} = \argmax_{j} R_j^{[i]}
 	$$
 	Where $o$, is to represent the benchmark index of the class $i$.
 
-\section{Identifying matches}
+	\subsection{Identifying Matches and Schools to be Invested}
+	
 	For each group, we identify which universities are closest to which benchmark within the group. We apply the kNN algorithm on all the variables listed below.\\ \\
 	\[LIST OF VARIABLES\]
 	\\ \\
-	(We only omitted informative variables from the original dataset).\\
-	For this purpose and obtain the following classification criteria:\\
-	Assuming $j\in [1,n]$, let $y_j^{[i]}$ be the $j$-th variable for the $i$-th class benchmark.\\
-	Let $x_j$ be the $j$-th variable of a particular university.\\
-	A university $u$, is considered member of the $k$-th class if the variables $x_i$ of that university are `close' to a particular variable of a given class in euclidean-space.\\
+(We only omitted informative variables from the original dataset).\\ \\
+For this purpose and obtain the following classification criteria:\\ \\
+Assuming $j\in [1,n]$, let $y_j^{[i]}$ be the $j$-th variable for the $i$-th class benchmark.\\
+Let $x_j$ be the $j$-th variable of a particular university.\\
+	
+A university $u$, is considered member of the $k$-th class if the variables $x_i$ of that university are `close' to a particular variable of a given class in euclidean-space.\\
+	
 	That is, if $u$ belongs to the $k$-th class then
 	$$
 		k = \argmin_{i} \sqrt{ \sum_{j=1}^n (x_j-y_j^{[i]})^2 }
 	$$
+	
+	\subsection{Determine Investment}
 
-\section{Determine Investment}
-	\subsection{Introduction}
-
-	\subsection{Number of student-Helped}
-		Let $A_j^{[i]}$ be the amount we invest in university $j$ of the class $i$, and $T_j^{[i]}$ be the tuition of low-income students.\\ 
-		Then we can compute the number of students who we help as
+	\subsubsection{Number of student-Helped}
+		Let $A_j^{[i]}$ be the amount we invest in university $j$ of the class $i$, and $T_j^{[i]}$ be the tuition of low-income students. Then we can compute the number of students who we help as:
 
 		\begin{align*}
 			n_j^{[i]} &= \floor{\frac{A_j^{[i]}}{T_j^{[i]}}}\\
@@ -65,7 +121,7 @@
 		\end{align*}
 		Please note that the number of universities is \underline{finite}, we use infinity here in order to avoid the introduction of more variables.\\
 
-	\subsection{Adjusted Poverty}
+	\subsubsection{Adjusted Poverty}
 		Next we computed the adjusted poverty rate. We make a crucial assumption here about the correlation between grant-money and retention rates. We assume that every student who receive the grant will stay in the program and university (this assumption can be adjusted by a future study on the subject matter).\\
 		\\
 		Let $\phi_j^{[i]}$ be the total number of students in university $j$ for class $i$.\\
@@ -79,7 +135,7 @@
 		$$
 		We use this to compute the increase to the social well-being of students going to this university. 
 
-	\subsection{Return on Investment}
+	\subsubsection{Return on Investment}
 		The return on investment for our model will be the change in the level of alleviation of poverty provided by our investment.\\
 		We do this as follows:
 		$$
@@ -97,7 +153,7 @@
 			\bar{r} = \frac{ \sum_{j=1}^\infty\sum_{i=1}^\infty r_j^{[i]}  }{ \Phi }
 		$$
 
-	\subsection{Maximization of return}
+	\subsubsection{Maximization of return}
 		Now that we have a measure of return on investment, we wish to maximize this measure based on the physical restriction that are given to us.\\
 		Since we only have a limit of \$$100$M, and would not want to overshoot our investment by giving any particular university more than what the top-tier schools are given. We put the following restriction forth.\\
 		\\
@@ -105,13 +161,17 @@
 		We do this, in order to make sure that our investment has a reasonable bound that does not exceed the higher-tiered school.\\
 		\\
 		So now our problem can be formulated as follows:
-		\begin{align*}
-			\text{max} &\bar{r}\\
-			\text{subj} &\sum \sum A_j^{[i]} = 100,000,000\\
-						&\forall i,j 0\le A_j^{[i]} \le g_j^{[i]}\phi_j^{[i]}
-		\end{align*}
+		\begin{equation*}
+				\begin{aligned}
+					& \underset{A}{\text{maximize}}
+					& &\bar{r}\\
+					& \text{subject to}
+					& & \sum \sum A_j^{[i]} = 100,000,000 \\
+					&&& \forall i,j \ \ \ 0\le A_j^{[i]} \le g_j^{[i]}\phi_j^{[i]}
+				\end{aligned}
+		\end{equation*}
 
-	\subsection{Simplifying the complexity}
+	\subsubsection{Simplifying the complexity}
 		In order to simplify the complexity of the previous problem we outlined before. We reformulated the problem as follows:\\
 		First recall, results:\\
 		(1) $r_j^{[i]} = \frac{ OP_j^{[i]} - OP_j^{[i]*}  }{ IP_j^{[i]} - 
@@ -132,9 +192,40 @@
 			\bar{r} &= \sum_{j=1}^\infty\sum_{i=1}^\infty \frac{ 1  }{ \Phi } r_j^{[i]} = \frac{ 1  }{ \Phi }\sum_{j=1}^\infty\sum_{i=1}^\infty \Delta_j^{[i]}A_j^{[i]}
 		\end{align*}
 		So our new maximization problem can be formulated as follows:
-		\begin{align*}
-			\text{max} & \frac{ 1  }{ \Phi }\sum_{j=1}^\infty\sum_{i=1}^\infty \Delta_j^{[i]}A_j^{[i]}\\
-			\text{subj} &\sum \sum A_j^{[i]} = 100,000,000\\
-						&\forall i,j 0\le A_j^{[i]} \le g_j^{[i]}\phi_j^{[i]}
-		\end{align*}
+		\begin{equation*}
+				\begin{aligned}
+					& \underset{A}{\text{maximize}}
+					& &\frac{ 1  }{ \Phi }\sum_{j=1}^\infty\sum_{i=1}^\infty \Delta_j^{[i]}A_j^{[i]}\\
+					& \text{subject to}
+					& & \sum \sum A_j^{[i]} = 100,000,000\\
+					&&& \forall i,j \ \ \ 0\le A_j^{[i]} \le g_j^{[i]}\phi_j^{[i]}
+				\end{aligned}	
+		\end{equation*}
+		
+\section{Model Testing on Big Data} 
+
+\section{Sensitivity Analysis} 
+
+\section{Conclusions}
+\clearpage
+
+\begin{thebibliography}{10}
+	\bibitem{Paolo} Brandimarte, Paolo. ``Stock Portfolio Optimization."  \emph{Numerical Methods in Finance and Economics: A MATLAB-based Introduction}. 2nd ed. Hoboken, N.J.: Wiley Interscience, 2006. 65 - 81, 571. Print.
+
+	\bibitem{C} Corliss, George. ``Which Root Does the Bisection Algorithm Find?" \emph{SIAM Rev. SIAM Review} 19.2 (1977): 325-27. Print.
+	
+	\bibitem{L} Lummer, Scott. ``Taming Your Optimizer: A Guide Through the Pitfalls of Mean-Variance Optimization." \emph{Global Asset Allocation: Techniques for Optimizing Portfolio Management}. Ed. Jess Lederman. Illustrated ed. Vol. 29. New York: Wiley, 1994. Print.
+	
+	\bibitem{Robert} Michaud, Richard O., and Robert Michaud. ``Estimation Error and Portfolio Optimization: A Resampling Solution." \emph{Journal Of Investment Management} 6.1 (2008): 8-28. Print.
+	
+	\bibitem{Pat2} Pat. ``Alpha Alignment." \emph{Portfolio Probe}. 9 July 2012. Web. 13 Oct. 2015.
+	
+	\bibitem{Pat} Pat. ``The Top 7 Portfolio Optimization Problems."  \emph{Portfolio Probe}. 5 Jan. 2012. Web. 4 Dec. 2015.
+
+	\bibitem{Jay} Walters, Jay. ``What Is the Black-Litterman Model." \emph{BlackLitterman.org}. 2013. Web. 20 Nov. 2015.
+
+	\bibitem{Wayne} Wayne, Thorp. ``Mean Variance Optimization."  \emph{Computerized Investing}. Web. 10 Oct. 2015.
+	
+	\bibitem{Winston} Winston, Wayne L. ``Nonlinear Programming."  \emph{Operations Research: Applications and Algorithms}. 4th ed. Belmont, Calif.: Duxbury, 2003. Print.
+\end{thebibliography}
 \end{document}
