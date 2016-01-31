@@ -28,7 +28,7 @@ for(data in dir("Analyzed-Data/")[grepl('cleaned-data.csv',dir("Analyzed-Data/")
   rm(name)
 }
 
-chosen <- list()
+chosen <- c()
 for(data in dir("Analyzed-Data/")[grepl("-cleaned-data-chosen.csv",dir("Analyzed-Data/"))]){
   name <- gsub('-cleaned-data-chosen.csv','',data);
   tmp0 <- read.csv(paste0("Analyzed-Data/",data),stringsAsFactors = FALSE);
@@ -43,12 +43,44 @@ for(data in dir("Analyzed-Data/")[grepl("-cleaned-data-chosen.csv",dir("Analyzed
     
     Uo <- top10[[name]][school$Class+1,]
     go <- Uo$GR/Uo$phi
-    tmp1 <- mutate(tmp1, delta=1/(phi*Tui*(IP-OP)),g=go-GR/phi)
-    cls=rbind(cls,cbind(tmp0[scID,][,c('Name','Class')],tmp1[,c('g','delta')]))
+    suppressWarnings(
+      tmp1 <- mutate(tmp1, delta=1/(phi*Tui*(IP-OP)),g=go-GR/phi)
+    )
+    tmp1[is.na(tmp1)] = Inf
+    
+    cls=rbind(cls,
+     cbind(
+      tmp0[scID,]$Name,tmp1[,c('g','delta','phi')])
+    )
+    
   }
-  chosen[[name]] = cls;
-  write.csv(cls,paste0('Matlab-Ready-Data/',name,'.csv'))
-  rm(list=c("Uo","go","tmp1","cls","school","name","tmp0","data","scID"))
+  colnames(cls)[1] <- c("Name")
+  if(name != "4") {
+    chosen = rbind(chosen, cls)
+  } else {
+    chosen <- mutate(chosen, ID = 1:length(Name))
+    cls <- mutate(cls, ID = 1:length(Name))
+    
+    write.csv(apply(chosen[,2:5],2,as.numeric),
+              "Matlab-Ready-Data/parted.data.csv",
+              row.names = FALSE)
+    write.csv(chosen[,c("ID","Name")],
+              "Matlab-Ready-Data/parted.name.csv",
+              row.names = FALSE)
+    write.csv(apply(cls[,2:5],2,as.numeric),
+              "Matlab-Ready-Data/full.data.csv",
+              row.names = FALSE)
+    write.csv(cls[,c("ID","Name")],
+              "Matlab-Ready-Data/full.name.csv",
+              row.names = FALSE)
+  }
+  #write.csv(apply(cls[,2:5],2,as.numeric),
+  #          paste0('Matlab-Ready-Data/',name,'.data.csv'),
+  #          row.names = FALSE)
+  #write.csv(cls[,c("ID","Name")],
+  #          paste0('Matlab-Ready-Data/',name,'.names.csv'),
+  #          row.names = FALSE)
+  #rm(list=c("Uo","go","tmp1","cls","school","name","tmp0","data","scID"))
 }
 
 
