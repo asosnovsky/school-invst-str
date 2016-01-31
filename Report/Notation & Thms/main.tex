@@ -38,6 +38,15 @@
 
 		\item \textbf{} 
 	\end{itemize}
+	
+	\subsection{Summary of our Approach}
+		\begin{itemize}
+		\item Create a benchmark setting: top (...) schools that we consider to have good performance. Each school represent a class.  
+		\item Identify universities that have similar characteristics to the benchmark list. 
+		\item Prioritize universities to be invested in by the amount of grants they received from other sources.
+		\item Determine the amount of investment and allocation to maximize the return on investment. 
+		\end{itemize}
+				 
 \clearpage
 \section{Model Design and Approach}
 	\subsection{Notations and Definitions}
@@ -55,15 +64,6 @@
 		\item \underline{Class}, refers to which benchmark within the group, the university is closest to.
 	\end{enumerate}
 	
-	\subsection{Summary of our Approach}
-		\begin{itemize}
-		\item Create a benchmark setting: top (...) schools that we consider to have good performance. Each school represent a class.  
-		\item Identify universities that have similar characteristics to the benchmark list. 
-		\item Prioritize universities to be invested in by the amount of grants they received from other sources.
-		\item Determine the amount of investment and allocation to maximize the return on investment. 
-		\end{itemize}
-				 
-\section{Flattening Out the Approach}
 	\subsection{Benchmark Setting}
 	
 	First we omitted any below medium size universities or communal universities such as racial or religious schools. Then we partition all universities by number of years required for graduation. Lastly, we rank the universities by the amount of their poverty elevation standards: \\ \\ 
@@ -143,7 +143,7 @@ A university $u$, is considered member of the $k$-th class if the variables $x_i
 		Now that we have a measure of return on investment, we wish to maximize this measure based on the physical restriction that are given to us.\\
 		Since we only have a limit of \$$100$M, and would not want to overshoot our investment by giving any particular university more than what the top-tier schools are given. We put the following restriction forth.\\
 		\\
-		Let $g_j^{[i]} = \frac{  G_o^{[i]}  }{  \phi_o^{[i]} } - \frac{  G_j^{[i]}  }{  \phi_j^{[i]} } $, be the restriction on the per-student investment.\\ 
+		Let $g_j^{[i]} = max( \frac{  G_o^{[i]}  }{  \phi_o^{[i]} } - \frac{  G_j^{[i]}  }{  \phi_j^{[i]} } \ ,\ 0 )$, be the restriction on the per-student investment.\\ 
 		We do this, in order to make sure that our investment has a reasonable bound that does not exceed the higher-tiered school.\\
 		\\
 		So now our problem can be formulated as follows:
