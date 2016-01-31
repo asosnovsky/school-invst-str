@@ -28,7 +28,9 @@
 
 \section{Introduction}
 	\subsection{The Problem}
-		The Goodgrant Foundation is a charitable organization with a mission to improve educational performance of undergraduate students attending colleges and universities in the United States. The foundation intends to donate a total of 100,000,000 USD to appropriate group of schools each year, for five years. They also wish to avoid investing in universities that already recieve grants from major chartiable organizations such as the Gates and Lumina Foundation.
+		The Goodgrant Foundation is a charitable organization with a mission to improve educational performance of students attending colleges and universities in the United States. The foundation intends to donate a total of 100,000,000 USD to a group of schools each year, for five years. They also wish to avoid investing in universities that have already received grants from major charitable organizations such as the Gates and Lumina Foundation.\\
+		
+		We present a mathematical model to outline an investment strategy to provide the maximal return on investment(ROI) appropriate for an education charity.  The model is split into two sections and is applicable in choosing $1\cdots N$ institutions. 
 	
 	\subsection{Assumptions and Rationale/Justification}
 	\begin{itemize}
@@ -81,20 +83,16 @@
 
 	\subsection{Identifying Matches and Schools to be Invested}
 	
-	For each group, we identify which universities are closest to which benchmark within the group. We apply the kNN algorithm on all the variables listed below.\\ \\
-	\[LIST OF VARIABLES\]
-	\\ \\
-(We only omitted informative variables from the original dataset).\\ \\
-For this purpose and obtain the following classification criteria:\\ \\
-Assuming $j\in [1,n]$, let $y_j^{[i]}$ be the $j$-th variable for the $i$-th class benchmark.\\
-Let $x_j$ be the $j$-th variable of a particular university.\\
+	We aim to classify each university into some class $i$. This is done via the kNN algorithm: a non-parametric method used in classification supervised learning problems. The output is determined by a majority vote, where the object is assigned to the class most common with it's neighbours. \cite{Hastie}\\
+
+We set up the following model:
+Assuming $j\in [1,n]$,where $n$ = amount of variables. For a detailed selection list please see Appendix 1. Let $y_j^{[i]}$ be the $j$-th variable for the $i$-th class benchmark. Let $x_j$ be the $j$-th variable of a particular university. A university $u$, is considered a member of the $k$-th class if the variables $x_i$ of that university is `close' to a particular variable of a given class in euclidean-space.\\
 	
-A university $u$, is considered member of the $k$-th class if the variables $x_i$ of that university are `close' to a particular variable of a given class in euclidean-space.\\
-	
-	That is, if $u$ belongs to the $k$-th class then
+That is, if $u$ belongs to the $k$-th class then
 	$$
 		k = \argmin_{i} \sqrt{ \sum_{j=1}^n (x_j-y_j^{[i]})^2 }
 	$$
+
 	
 	\subsection{Determine Investment}
 

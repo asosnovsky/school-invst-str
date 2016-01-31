@@ -1,0 +1,193 @@
+,Class,Distance,Name,ID
+0,0,0.0006340662510067753,['University of South Carolina-Aiken'],218645
+1,0,0.0010998321845537044,['Shepherd University'],237792
+2,0,0.001461095379858568,['Louisiana State University-Shreveport'],159416
+3,0,0.0015978589673985215,['Indiana University-Kokomo'],151333
+4,0,0.002085626479413548,['Concord University'],237330
+5,0,0.0024778699819245505,['West Liberty University'],237932
+6,0,0.00372594769085429,['Black Hills State University'],219046
+7,0,0.004827321189399622,['University of Minnesota-Crookston'],174075
+8,0,0.008419817602539209,['University of Illinois at Springfield'],148654
+9,0,0.009970521960521823,['Minot State University'],200253
+10,0,0.01738268521716653,['Glenville State College'],237385
+11,0,0.01760095603989958,['South Dakota School of Mines and Technology'],219347
+12,0,0.01783661431028686,['Lyndon State College'],230931
+13,0,0.017851575912449097,['University of South Florida-St Petersburg'],448840
+14,0,0.021545171833310037,['Montana State University-Northern'],180522
+19,1,0.0001435078745126529,['University of Akron Main Campus'],200800
+20,1,0.00015469803171290483,['East Carolina University'],198464
+21,1,0.00025369516228356925,['George Mason University'],232186
+22,1,0.0002664188935963167,['Missouri State University-Springfield'],179566
+23,1,0.00029620918143604465,['University of Oregon'],209551
+24,1,0.00030086177820609595,['University of Nevada-Las Vegas'],182281
+25,1,0.00030966779897897365,['University of North Carolina at Charlotte'],199139
+26,1,0.00032056457016372614,['Boise State University'],142115
+27,1,0.00033996837697815644,['University of Memphis'],220862
+28,1,0.0003487741412271342,['Eastern Kentucky University'],156620
+29,1,0.0003503544821870268,['University of Southern Mississippi'],176372
+30,1,0.00037801981063707683,['Southern Illinois University-Carbondale'],149222
+31,1,0.00039072099863129327,['Murray State University'],157401
+32,1,0.00039943609881507486,['Towson University'],164076
+33,1,0.00043297687571638283,['Metropolitan State University of Denver'],127565
+34,1,0.00045114823809202256,['Georgia Southern University'],139931
+35,1,0.0004655232609736706,['Arkansas Tech University'],106467
+36,1,0.0004993029447577871,['University of Arkansas at Little Rock'],106245
+37,1,0.0005043695170274189,['Middle Tennessee State University'],220978
+38,1,0.000570828315775482,['University of Idaho'],142285
+39,1,0.0005893269413090448,['University of Illinois at Chicago'],145600
+40,1,0.0006738417708843671,['Humboldt State University'],115755
+41,1,0.0008793996525109286,['Indiana State University'],151324
+42,1,0.0008919403266097861,['University of Massachusetts-Lowell'],166513
+43,1,0.0010116590113695345,['Northern Kentucky University'],157447
+44,1,0.0010277352765117023,['Jacksonville State University'],101480
+45,1,0.0011761274198015669,['Montana State University'],180461
+46,1,0.0012358467614298672,['Morehead State University'],157386
+47,1,0.0012532763013957265,['The University of West Florida'],138354
+48,1,0.0012944086145519605,['The University of Montana'],180489
+49,1,0.0013009775854634596,['University of Colorado Denver'],126562
+50,1,0.0015777003393732233,['Michigan Technological University'],171128
+51,1,0.0016173442753634672,['University of Northern Colorado'],127741
+62,3,0.00020762292903544658,['Texas A & M University-Commerce'],224554
+63,3,0.00037715487662647685,['Central Washington University'],234827
+64,3,0.0003959620855239015,['Austin Peay State University'],219602
+65,3,0.000508467319104127,['Northwest Missouri State University'],178624
+66,3,0.0005500795761624309,"[""Texas Woman's University""]",229179
+67,3,0.0006085073761079476,['Western Washington University'],237011
+68,3,0.0006130641148200482,['Truman State University'],178615
+69,3,0.00076661042412682,['College of Charleston'],217819
+70,3,0.0008600386437112363,['University of New Orleans'],159939
+71,3,0.0008723761755859577,['Saint Cloud State University'],174783
+72,3,0.0008781664324621938,['University of Minnesota-Duluth'],174233
+73,3,0.0008813153847137323,['University of North Carolina Wilmington'],199218
+74,3,0.0009242520612571984,['University of Wyoming'],240727
+75,3,0.0009561892565662953,['College of William and Mary'],231624
+76,3,0.0009965849505230544,['Southeast Missouri State University'],179557
+77,3,0.001014369406581973,['Eastern Washington University'],235097
+78,3,0.0010420811163231968,['Tennessee Technological University'],221847
+79,3,0.0010856333640359927,['Indiana University-Purdue University-Fort Wayne'],151102
+80,3,0.0011205707486242472,['Cleveland State University'],202134
+81,3,0.0012053492707389288,['Colorado State University-Pueblo'],128106
+82,3,0.0012076619988714225,['University of Michigan-Flint'],171146
+83,3,0.0012370686695629984,['McNeese State University'],159717
+84,3,0.0012806118203043727,['Valdosta State University'],141264
+85,3,0.0013204222244103461,['North Dakota State University-Main Campus'],200332
+86,3,0.0013770422749556732,['Marshall University'],237525
+87,3,0.0013875125675595714,['Northwestern State University of Louisiana'],160038
+88,3,0.001455259329325259,['California State University-San Marcos'],366711
+89,3,0.0014691384284482305,['University of Southern Indiana'],151306
+90,3,0.0014791191460877776,['University of Southern Maine'],161554
+91,3,0.0015168985329142804,['University of Colorado Colorado Springs'],126580
+92,3,0.001559242405214394,['University of North Alabama'],101879
+93,3,0.0015967504124594738,['New Jersey Institute of Technology'],185828
+94,3,0.0016785642523622199,['The Richard Stockton College of New Jersey'],186876
+95,3,0.001696308607574025,['Clayton State University'],139311
+96,3,0.0017957745523414245,['Tarleton State University'],228529
+97,3,0.0018097672982028009,['Columbus State University'],139366
+98,3,0.0018438753655815679,['Stephen F Austin State University'],228431
+99,3,0.001858956311710712,['Appalachian State University'],197869
+100,3,0.0018681768618129414,['University of West Georgia'],141334
+101,3,0.0019562994517427065,['East Tennessee State University'],220075
+102,3,0.001956806616404145,['Louisiana Tech University'],159647
+103,3,0.002046917685608266,['Missouri University of Science and Technology'],178411
+104,3,0.00208688496349498,['Southern Arkansas University Main Campus'],107983
+105,3,0.002311051927011721,['Sonoma State University'],123572
+106,3,0.002445947865154425,['University of Alabama in Huntsville'],100706
+107,3,0.002734143527110417,['Armstrong Atlantic State University'],138789
+108,3,0.00286389196323192,['University of Nebraska at Kearney'],181215
+109,3,0.0030785197546973485,['University of Wisconsin-Whitewater'],240189
+110,3,0.0032983480714621235,['University of Montevallo'],101709
+124,4,0.0008254984575962343,['Delta State University'],175616
+125,4,0.0013165801425465255,['Indiana University-East'],151388
+126,4,0.0015033968967985232,['Lander University'],218229
+127,4,0.0018081237127017345,['Eastern New Mexico University-Main Campus'],187648
+128,4,0.0021080612239097922,['Western State Colorado University'],128391
+131,5,0.0008743078713904782,['East Stroudsburg University of Pennsylvania'],212115
+132,5,0.0012935213549306204,['Lewis-Clark State College'],142328
+133,5,0.0013939528355942535,['Minnesota State University-Moorhead'],174358
+134,5,0.001746515360634308,"[""The University of Virginia's College at Wise""]",233897
+135,5,0.0019915456377957107,['Rhode Island College'],217420
+136,5,0.0020043787672213514,['Kutztown University of Pennsylvania'],213349
+137,5,0.0020629445118103555,['Mississippi University for Women'],176035
+138,5,0.0026015870953188733,['Emporia State University'],155025
+139,5,0.0029934497758974717,['Edinboro University of Pennsylvania'],212160
+140,5,0.003042241881867923,['California State University-Monterey Bay'],409698
+141,5,0.00342584877678859,['Indiana University-Southeast'],151379
+142,5,0.003504869298239908,['University of South Carolina-Upstate'],218742
+143,5,0.0035584719758383772,['Southern Utah University'],230603
+144,5,0.0037088879853354735,['Indiana University-Northwest'],151360
+145,5,0.0039961424534889975,['Slippery Rock University of Pennsylvania'],216038
+146,5,0.004267140326658918,['The University of Texas at Tyler'],228802
+150,6,6.486929413529375e-05,['Grand Valley State University'],170082
+151,6,0.00014928965955122368,['Oregon State University'],209542
+152,6,0.00017288803270100312,['Ball State University'],150136
+153,6,0.00018447648563679888,['University of Oklahoma-Norman Campus'],207500
+154,6,0.0002606094405457972,['Bowling Green State University-Main Campus'],201441
+155,6,0.0002737632773769329,['Miami University-Oxford'],204024
+156,6,0.0002755630782114978,['Texas Tech University'],229115
+157,6,0.00030425317537418364,['Virginia Commonwealth University'],234030
+158,6,0.0003113890720011373,['University of North Florida'],136172
+159,6,0.0003365903711011312,['The University of Texas at Dallas'],228787
+160,6,0.00034287282784734746,['Stony Brook University'],196097
+161,6,0.00036782121036634544,['Kennesaw State University'],140164
+162,6,0.0003838694949745902,['Arkansas State University-Main Campus'],106458
+163,6,0.0003859636211105738,['Utah State University'],230728
+164,6,0.00043701771336547254,['University of South Alabama'],102094
+165,6,0.0004435267630190246,['West Virginia University'],238032
+166,6,0.00048182861907842596,['University of Toledo'],206084
+167,6,0.0004885265102365917,['Eastern Michigan University'],169798
+168,6,0.0005129544169677585,['Kent State University at Kent'],203517
+169,6,0.0005148142815901277,['Mississippi State University'],176080
+170,6,0.0005574185964855222,['University of Vermont'],231174
+171,6,0.0006637872095876451,['University of Utah'],230764
+172,6,0.0006768177232248353,['The University of Texas at Arlington'],228769
+173,6,0.0007606643773012681,['University of Louisville'],157289
+174,6,0.0007625698131302537,['California State University-Chico'],110538
+175,6,0.0007847423839802651,['Washington State University'],236939
+176,6,0.0007943062288001139,['California Polytechnic State University-San Luis Obispo'],110422
+177,6,0.0008133562307291756,['Georgia State University'],139940
+178,6,0.0008411835079338825,['University of Cincinnati-Main Campus'],201885
+179,6,0.0008505576012114621,['University of Nebraska-Lincoln'],181464
+180,6,0.0008532763876551125,['Indiana University-Purdue University-Indianapolis'],151111
+181,6,0.0008561951901242386,['University of North Texas'],227216
+182,6,0.0009241532507123481,['The University of Tennessee-Knoxville'],221759
+183,6,0.0009389961628347081,['University of Arkansas'],106397
+184,6,0.0009662366360061707,['University of Wisconsin-Madison'],240444
+185,6,0.0009842000459621774,['Oklahoma State University-Main Campus'],207388
+186,6,0.0009904713948481845,['Louisiana State University and Agricultural & Mechanical College'],159391
+187,6,0.0010170465531631958,['University of Virginia-Main Campus'],234076
+188,6,0.0010264532955736288,['Florida Atlantic University'],133669
+189,6,0.001047433139903551,['University of Mississippi'],176017
+190,6,0.0010921606520405923,['Purdue University-Main Campus'],243780
+191,6,0.0010950457540106523,['North Carolina State University at Raleigh'],199193
+192,6,0.0011113135091993882,['University of Houston'],225511
+193,6,0.0011285490529661581,['Texas A & M University-College Station'],228723
+194,6,0.0011325301522014314,['University of North Carolina at Chapel Hill'],199120
+195,6,0.0011656678510017756,['University of Alabama at Birmingham'],100663
+196,6,0.001177380431523369,['California State Polytechnic University-Pomona'],110529
+197,6,0.001215350531649076,['University of Colorado Boulder'],126614
+198,6,0.0012443515960153804,['University of South Carolina-Columbia'],218663
+199,6,0.0012784747129525188,['Colorado State University-Fort Collins'],126818
+200,6,0.0013056085655791464,['University of Kentucky'],157085
+201,6,0.0013280660726344526,['University of Missouri-Columbia'],178396
+202,6,0.0013479289274359125,['San Francisco State University'],122597
+203,6,0.0013494642311638505,['California State University-San Bernardino'],110510
+204,6,0.0014775992598664467,['University of Iowa'],153658
+205,6,0.0015029164039931679,['Iowa State University'],153603
+206,6,0.0015827001411128636,['University of California-Santa Cruz'],110714
+207,6,0.0015977556822384332,['Northern Arizona University'],105330
+208,6,0.0016175499021460135,['University of South Florida-Main Campus'],137351
+209,6,0.0016413648719113766,['California State University-Los Angeles'],110592
+210,6,0.0016573308685962126,['Michigan State University'],171100
+211,6,0.0016599483864872212,['San Diego State University'],122409
+212,6,0.0016657488925240097,['University of Washington-Seattle Campus'],236948
+213,6,0.0016791985657487714,['University of Florida'],134130
+214,6,0.0017249100206372665,['California State University-Fullerton'],110565
+215,6,0.0017287121867223284,['University of Georgia'],139959
+216,6,0.0017413401904049714,['Auburn University'],100858
+232,7,0.007693646096979124,['University of Mary Washington'],232681
+233,7,0.020425455602394383,['Dickinson State University'],200059
+235,9,0.0011733161674194802,['Shippensburg University of Pennsylvania'],216010
+236,9,0.0012132816214094268,['Oregon Institute of Technology'],209506
+237,9,0.0012367432914495056,['Montana Tech of the University of Montana'],180416
+238,9,0.0013612239835343915,['Georgia Southwestern State University'],139764
+239,9,0.0016016906133222515,['Purdue University-North Central Campus'],152266
