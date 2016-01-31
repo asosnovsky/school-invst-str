@@ -59,6 +59,7 @@
 		\item $IP_j^{[i]} = $ poverty rate of students entering university $j$ for class $i$
 		\item $OP_j^{[i]} = $ poverty rate of students exiting university $j$ for class $i$
 		\item $\phi_j^{[i]} = $ number of students in university $j$ for class $i$
+		\item $\Phi = $ Total number of universities
 		\item $g_j^{[i]} = $ maximum amout of grants to be given to university $j$ for class $i$
 		\item \underline{Group}, refers to the Carnegie Classification of the university
 		\item \underline{Class}, refers to which benchmark within the group, the university is closest to.
@@ -143,7 +144,7 @@ A university $u$, is considered member of the $k$-th class if the variables $x_i
 		Now that we have a measure of return on investment, we wish to maximize this measure based on the physical restriction that are given to us.\\
 		Since we only have a limit of \$$100$M, and would not want to overshoot our investment by giving any particular university more than what the top-tier schools are given. We put the following restriction forth.\\
 		\\
-		Let $g_j^{[i]} = max( \frac{  G_o^{[i]}  }{  \phi_o^{[i]} } - \frac{  G_j^{[i]}  }{  \phi_j^{[i]} } \ ,\ 0 )$, be the restriction on the per-student investment.\\ 
+		Let $g_j^{[i]} = \max( \frac{  G_o^{[i]}  }{  \phi_o^{[i]} } - \frac{  G_j^{[i]}  }{  \phi_j^{[i]} } \ ,\ 0 )$, be the restriction on the per-student investment.\\ 
 		We do this, in order to make sure that our investment has a reasonable bound that does not exceed the higher-tiered school.\\
 		\\
 		So now our problem can be formulated as follows:
@@ -165,26 +166,25 @@ A university $u$, is considered member of the $k$-th class if the variables $x_i
 		(2) $OP_j^{[i]*} = \frac{  OP_j^{[i]}\phi_j^{[i]}-n_j^{[i]}  }{ \phi_j^{[i]}  }$\\
 		, this can be further simplified:
 		\begin{align*}
-			r_j^{[i]} &= \frac{1 }{ \phi_j^{[i]} (IP_j^{[i]} - OP_j^{[i]} ) } n_j^{[i]} = \frac{1 }{ \phi_j^{[i]} (IP_j^{[i]} - OP_j^{[i]} ) }\floor{\frac{A_j^{[i]}}{T_j^{[i]}}} \\
-				&\approx \frac{1}{ 
-					\phi_j^{[i]} 
-						(IP_j^{[i]} - OP_j^{[i]}) T_j^{[i]} 
-					} A_j^{[i]} 
-				= \Delta_j^{[i]}A_j^{[i]}
+			r_j^{[i]} &= \frac{1 }{ \phi_j^{[i]} (IP_j^{[i]} - OP_j^{[i]} ) } n_j^{[i]} = \Delta_j^{[i]} n_j^{[i]}
 		\end{align*}	
-		We note that $\Delta_j^{[i]}$ is the information given by our data, whereas $A_j^{[i]}$ is our investment, which is a variable that can be controlled by us.
+		We note that $\Delta_j^{[i]}$ is the information given by our data. It must be positive as $$\Delta_j^{[i]}\implies IP_j^{[i]} < OP_j^{[i]}$$
+		Which means that the considered university is getting more in funding than the benchmark one. If this happens, we omit that university from our dataset.\\ 
+		\\
+		Whereas $n_j^{[i]}$ is the number of students we invest in, which is a variable that will be controlled by us.\\
+		\\
 		Hence the mean return can be written as:
 		\begin{align*}
-			\bar{r} &= \sum_{j=1}^\infty\sum_{i=1}^\infty \frac{ 1  }{ \Phi } r_j^{[i]} = \frac{ 1  }{ \Phi }\sum_{j=1}^\infty\sum_{i=1}^\infty \Delta_j^{[i]}A_j^{[i]}
+			\bar{r} &= \sum_{j=1}^\infty\sum_{i=1}^\infty \frac{ 1  }{ \Phi } r_j^{[i]} = \frac{ 1  }{ \Phi }\sum_{j=1}^\infty\sum_{i=1}^\infty \Delta_j^{[i]}n_j^{[i]}
 		\end{align*}
 		So our new maximization problem can be formulated as follows:
 		\begin{equation*}
 				\begin{aligned}
-					& \underset{A}{\text{maximize}}
-					& &\frac{ 1  }{ \Phi }\sum_{j=1}^\infty\sum_{i=1}^\infty \Delta_j^{[i]}A_j^{[i]}\\
+					& \underset{\forall n_j^{[i]}}{\text{maximize}}
+					& &\frac{ 1  }{ \Phi }\sum_{j=1}^\infty\sum_{i=1}^\infty \Delta_j^{[i]}n_j^{[i]}\\
 					& \text{subject to}
-					& & \sum \sum A_j^{[i]} = 100,000,000\\
-					&&& \forall i,j \ \ \ 0\le A_j^{[i]} \le g_j^{[i]}\phi_j^{[i]}
+					& & \sum \sum n_j^{[i]}T_j^{[i]} = 100,000,000\\
+					&&& \forall i,j \ \ \ 0\le n_j^{[i]} \le \frac{g_j^{[i]}\phi_j^{[i]}}{T_j^{[i]}}
 				\end{aligned}	
 		\end{equation*}
 		
