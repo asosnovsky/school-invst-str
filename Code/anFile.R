@@ -59,11 +59,12 @@ spD <- split(sData,sData$PREDDEG)
 omitMe <- function(DD,BY=2) apply(DD,BY,function(x) sum(is.na(x))/length(x) ) 
 
 for(name in names(spD)) {  
-  spD[[name]] = spD[[name]][,!grepl("PREDDEG",colnames(spD[[name]]))]
   spD[[name]] = spD[[name]][,as.logical(omitMe(spD[[name]]) < 0.5)]
   spD[[name]] = spD[[name]][as.logical(omitMe(spD[[name]],1) == 0),]
-  write.csv(arrange(spD[[name]],desc(GG_NO_re)),paste0('Analyzed-Data/',name,'-cleaned-data.csv'),row.names=FALSE)
+  write.csv(arrange(spD[[name]][,!grepl("PREDDEG",colnames(spD[[name]]))],desc(GG_NO_re)),paste0('Analyzed-Data/',name,'-cleaned-data.csv'),row.names=FALSE)
 }
 
-write.csv(sData,'Analyzed-Data/pre-cleaned-data.csv',row.names=FALSE)
+sData = sData[,as.logical(omitMe(sData) < 0.5)]
+sData = sData[as.logical(omitMe(sData,1) == 0),]
+write.csv(sData,'Analyzed-Data/Tot-cleaned-data.csv',row.names=FALSE)
 
