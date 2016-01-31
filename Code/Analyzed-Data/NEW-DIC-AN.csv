@@ -1,0 +1,128 @@
+V1,V2,
+UNITID,Unit ID for institution,1
+OPEID,8-digit OPE ID for institution,0
+opeid6,6-digit OPE ID for institution,0
+INSTNM,Institution name,1
+CITY,City,1
+STABBR,State postcode,0
+INSTURL,URL for institution's homepage,0
+NPCURL,URL for institution's net price calculator,0
+HCM2,Schools that are on Heightened Cash Monitoring 2 by the Department of Education,2
+PREDDEG,"Predominant degree awarded
+0        Not classified
+1        Predominantly certificate-degree granting
+2        Predominantly associate's-degree granting
+3        Predominantly bachelor's-degree granting
+4        Entirely graduate-degree granting",1
+CONTROL,Control of institution,1
+LOCALE,Locale of institution,1
+HBCU,Flag for Historically Black College and University,1
+PBI,Flag for predominantly black institution,1
+ANNHI,Flag for Alaska Native Native Hawaiian serving institution,1
+TRIBAL,Flag for tribal college and university,1
+AANAPII,Flag for Asian American Native American Pacific Islander-serving institution,1
+HSI,Flag for Hispanic-serving institution,1
+NANTI,Flag for Native American non-tribal institution,1
+MENONLY,WOMENONLY,1
+WOMENONLY,Flag for women-only college,1
+RELAFFIL,Religous affiliation of the institution,1
+SATVR25,25th percentile of SAT scores at the institution (critical reading),2
+SATVR75,75th percentile of SAT scores at the institution (critical reading),2
+SATMT25,25th percentile of SAT scores at the institution (math),2
+SATMT75,75th percentile of SAT scores at the institution (math),2
+SATWR25,25th percentile of SAT scores at the institution (writing),2
+SATWR75,75th percentile of SAT scores at the institution (writing),2
+SATVRMID,Midpoint of SAT scores at the institution (critical reading),2
+SATMTMID,Midpoint of SAT scores at the institution (math),2
+SATWRMID,Midpoint of SAT scores at the institution (writing),2
+ACTCM25,25th percentile of the ACT cumulative score,2
+ACTCM75,75th percentile of the ACT cumulative score,2
+ACTEN25,25th percentile of the ACT English score,2
+ACTEN75,75th percentile of the ACT English score,2
+ACTMT25,25th percentile of the ACT math score,2
+ACTMT75,75th percentile of the ACT math score,2
+ACTWR25,25th percentile of the ACT writing score,2
+ACTWR75,75th percentile of the ACT writing score,2
+ACTCMMID,Midpoint of the ACT cumulative score,2
+ACTENMID,Midpoint of the ACT English score,2
+ACTMTMID,Midpoint of the ACT math score,2
+ACTWRMID,Midpoint of the ACT writing score,2
+SAT_AVG,SAT_AVG_ALL,2
+SAT_AVG_ALL,Average SAT equivalent score of students admitted for all campuses rolled up to the 6-digit OPE ID,2
+PCIP01,"Percentage of degrees awarded in Agriculture, Agriculture Operations, And Related Sciences.",3
+PCIP03,Percentage of degrees awarded in Natural Resources And Conservation.,3
+PCIP04,Percentage of degrees awarded in Architecture And Related Services.,3
+PCIP05,"Percentage of degrees awarded in Area, Ethnic, Cultural, Gender, And Group Studies.",3
+PCIP09,"Percentage of degrees awarded in Communication, Journalism, And Related Programs.",3
+PCIP10,Percentage of degrees awarded in Communications Technologies/Technicians And Support Services.,3
+PCIP11,Percentage of degrees awarded in Computer And Information Sciences And Support Services.,3
+PCIP12,Percentage of degrees awarded in Personal And Culinary Services.,3
+PCIP13,Percentage of degrees awarded in Education.,3
+PCIP14,Percentage of degrees awarded in Engineering.,3
+PCIP15,Percentage of degrees awarded in Engineering Technologies And Engineering-Related Fields.,3
+PCIP16,"Percentage of degrees awarded in Foreign Languages, Literatures, And Linguistics.",3
+PCIP19,Percentage of degrees awarded in Family And Consumer Sciences/Human Sciences.,3
+PCIP22,Percentage of degrees awarded in Legal Professions And Studies.,3
+PCIP23,Percentage of degrees awarded in English Language And Literature/Letters.,3
+PCIP24,"Percentage of degrees awarded in Liberal Arts And Sciences, General Studies And Humanities.",3
+PCIP25,Percentage of degrees awarded in Library Science.,3
+PCIP26,Percentage of degrees awarded in Biological And Biomedical Sciences.,3
+PCIP27,Percentage of degrees awarded in Mathematics And Statistics.,3
+PCIP29,Percentage of degrees awarded in Military Technologies And Applied Sciences.,3
+PCIP30,Percentage of degrees awarded in Multi/Interdisciplinary Studies.,3
+PCIP31,"Percentage of degrees awarded in Parks, Recreation, Leisure, And Fitness Studies.",3
+PCIP38,Percentage of degrees awarded in Philosophy And Religious Studies.,3
+PCIP39,Percentage of degrees awarded in Theology And Religious Vocations.,3
+PCIP40,Percentage of degrees awarded in Physical Sciences.,3
+PCIP41,Percentage of degrees awarded in Science Technologies/Technicians.,3
+PCIP42,Percentage of degrees awarded in Psychology.,3
+PCIP43,"Percentage of degrees awarded in Homeland Security, Law Enforcement, Firefighting And Related Protective Services.",3
+PCIP44,Percentage of degrees awarded in Public Administration And Social Service Professions.,3
+PCIP45,Percentage of degrees awarded in Social Sciences.,3
+PCIP46,Percentage of degrees awarded in Construction Trades.,3
+PCIP47,Percentage of degrees awarded in Mechanic And Repair Technologies/Technicians.,3
+PCIP48,Percentage of degrees awarded in Precision Production.,3
+PCIP49,Percentage of degrees awarded in Transportation And Materials Moving.,3
+PCIP50,Percentage of degrees awarded in Visual And Performing Arts.,3
+PCIP51,Percentage of degrees awarded in Health Professions And Related Programs.,3
+PCIP52,"Percentage of degrees awarded in Business, Management, Marketing, And Related Support Services.",3
+PCIP54,Percentage of degrees awarded in History.,3
+DISTANCEONLY,Flag for distance-education-only education,1
+UGDS,UGDS_WHITE,0
+UGDS_WHITE,UGDS_WHITENH,0
+UGDS_BLACK,UGDS_BLACKNH,0
+UGDS_HISP,UGDS_HISPOld,0
+UGDS_ASIAN,Total share of enrollment of undergraduate degree-seeking students who are Asian,0
+UGDS_AIAN,UGDS_AIANOld,0
+UGDS_NHPI,Total share of enrollment of undergraduate degree-seeking students who are Native Hawaiian/Pacific Islander,0
+UGDS_2MOR,Total share of enrollment of undergraduate degree-seeking students who are two or more races,0
+UGDS_NRA,Total share of enrollment of undergraduate degree-seeking students who are non-resident aliens,0
+UGDS_UNKN,Total share of enrollment of undergraduate degree-seeking students whose race is unknown,0
+PPTUG_EF,PPTUG_EF2,0
+CURROPER,"Flag for currently operating institution, 0=closed, 1=operating",1
+NPT4_PUB,Average net price for Title IV institutions (public institutions),2
+NPT4_PRIV,Average net price for Title IV institutions (private for-profit and nonprofit institutions),2
+NPT41_PUB,"Average net price for $0-$30,000 family income (public institutions)",2
+NPT42_PUB,"Average net price for $30,001-$48,000 family income (public institutions)",2
+NPT43_PUB,"Average net price for $48,001-$75,000 family income (public institutions)",2
+NPT44_PUB,"Average net price for $75,001-$110,000 family income (public institutions)",2
+NPT45_PUB,"Average net price for $110,000+ family income (public institutions)",2
+NPT41_PRIV,"Average net price for $0-$30,000 family income (private for-profit and nonprofit institutions)",2
+NPT42_PRIV,"Average net price for $30,001-$48,000 family income (private for-profit and nonprofit institutions)",2
+NPT43_PRIV,"Average net price for $48,001-$75,000 family income (private for-profit and nonprofit institutions)",2
+NPT44_PRIV,"Average net price for $75,001-$110,000 family income (private for-profit and nonprofit institutions)",2
+NPT45_PRIV,"Average net price for $110,000+ family income (private for-profit and nonprofit institutions)",2
+PCTPELL,Percentage of undergraduates who receive a Pell Grant,3
+RET_FT4,"First-time, full-time student retention rate at four-year institutions",2
+RET_FTL4,"First-time, full-time student retention rate at less-than-four-year institutions",2
+RET_PT4,"First-time, part-time student retention rate at four-year institutions",2
+RET_PTL4,"First-time, part-time student retention rate at less-than-four-year institutions",2
+PCTFLOAN,Percent of all federal undergraduate students receiving a federal student loan,3
+UG25abv,Percentage of undergraduates aged 25 and above,3
+GRAD_DEBT_MDN_SUPP,"Median debt of completers, suppressed for n=30",2
+GRAD_DEBT_MDN10YR_SUPP,"Median debt of completers expressed in 10-year monthly payments, suppressed for n=30",2
+RPY_3YR_RT_SUPP,LO_INC_RPY_3YR_RT_SUPP,2
+C150_4_POOLED_SUPP,"150% completion rate for four-year institutions, pooled in two-year rolling averages and suppressed for small n size.  For four year school, students are considered to have graduated ""on time"" if they graduate within 6 years.",2
+C200_L4_POOLED_SUPP,"200% completion rate for less-than-four-year institutions, pooled in two-year rolling averages and suppressed for small n size.  For two year schools, students are considered to have graduated ""on time"" if they graduate within 4 years.",2
+md_earn_wne_p10,Median earnings of students working and not enrolled 10 years after entry,2
+gt_25k_p6,"Share of students earning over $25,000/year (threshold earnings) 6 years after entry",2
