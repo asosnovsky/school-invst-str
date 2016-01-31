@@ -1,5 +1,6 @@
 rm(list=ls())
 require('dplyr')
+require('plyr')
 
 setwd("C:/Github/school-invst-str/Code")
 
@@ -34,11 +35,12 @@ sData <- cbind(Info[,!grepl("CONTROL|LOCALE|DISTANCEONLY|CITY",names(Info))],VAR
       suppressWarnings( ipeds.msc <- apply(ipeds.msc,2, as.numeric) )
       ipeds.msc <- cbind(ipeds.msc[,1],apply(ipeds.msc[,2:length(names(ipeds.msc))],1,sum))
       colnames(ipeds.msc) <- c("UNITID","Avg_Income_Low")
+      ipeds.msc <- as.data.frame(ipeds.msc);
       sData <- merge(sData,ipeds.msc);
                      
     ipeds.tot <- read.csv("Contest-Data/ipeds/total_students.csv",stringsAsFactors=FALSE)
       names(ipeds.tot) <- c("UNITID","Tot_Students")
-      sData <- merge(sData,ipeds.tot)
+      sData <- merge(sData,ddply(ipeds.tot,"UNITID",numcolwise(max)))
 
 #Compute Rank
   sData <- mutate(sData, GG_NO_re=(1-gt_25k_p6)-POOR_Prop)
