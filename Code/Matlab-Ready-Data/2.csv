@@ -1,0 +1,427 @@
+"","Name","Class","g","delta"
+"1","Ohio State University Agricultural Technical Institute",0,-131.085720477495,-1.08033151626058e-07
+"2","Rainy River Community College",0,-44.7158635052319,-1.19997984853941e-07
+"3","Warren County Community College",1,158.024994304364,-2.19363809130696e-08
+"4","Gogebic Community College",1,-741.884473590925,-3.14622324377473e-08
+"5","Washington State Community College",1,24.8432450009155,-2.10199580787407e-08
+"6","Mitchell Technical Institute",1,-539.692943170127,-1.01578318540157e-07
+"7","North Country Community College",1,-55.1179261779952,-3.61629860597916e-08
+"8","Texas State Technical College-West Texas",1,-663.043811275934,1.88142049122832e-08
+"9","Lincoln Trail College",1,-303.533792101872,-4.84883361885015e-08
+"10","Northern Maine Community College",1,-931.36657350386,-2.22227013710906e-07
+"11","Nashua Community College",1,195.116995316048,4.95956233165752e-09
+"12","Garrett College",1,-1261.28661877539,-2.30312368457485e-07
+"13","Dabney S Lancaster Community College",1,-79.5372208436723,-2.34547036655457e-08
+"14","Linn State Technical College",1,-967.93343785821,-5.21258850012548e-07
+"15","Williston State College",1,-553.130537028549,1.37591017191884e-07
+"16","Western Dakota Technical Institute",1,-1111.19547056497,3.58584930259807e-08
+"17","York County Community College",1,-248.508565161319,-1.38572636759942e-08
+"18","Clackamas Community College",3,213.325999925481,NA
+"19","Minnesota State Community and Technical College",3,-376.091669566806,-1.36919859590941e-08
+"20","Georgia Highlands College",3,-574.2316583374,2.22712441611199e-08
+"21","Luzerne County Community College",3,-263.297933726214,9.74470715028535e-09
+"22","Tri-County Technical College",3,-328.146488328032,-6.93872900507194e-08
+"23","Reading Area Community College",3,-741.47932192875,3.51895273535421e-08
+"24","College of Southern Idaho",3,40.7697633054354,-8.65318492637024e-09
+"25","John Tyler Community College",3,172.970948279946,NA
+"26","Genesee Community College",3,-277.745915152015,-5.99080302043479e-09
+"27","Iowa Western Community College",3,-213.294771339182,-1.67933622271556e-08
+"28","Finger Lakes Community College",3,-154.886235677494,-5.85664551858732e-09
+"29","Niagara County Community College",3,-379.290030094292,-9.9829560585321e-09
+"30","Iowa Central Community College",3,-529.306699239535,-1.28483797410496e-08
+"31","Parkland College",3,454.179807753379,NA
+"32","Yakima Valley Community College",3,-1007.70185104723,6.01409090167016e-09
+"33","Community College of Aurora",3,101.706018764905,2.4951062809339e-09
+"34","Howard Community College",3,161.757546204597,NA
+"35","Jefferson College",3,-563.981891356782,-4.43384314367642e-08
+"36","Virginia Western Community College",3,69.9541405391921,NA
+"37","Crowder College",3,-621.023472514082,-1.43886689056664e-08
+"38","Moberly Area Community College",3,-266.177661808264,-3.58121678149007e-08
+"39","Rose State College",3,-26.470984586058,NA
+"40","Southwest Texas Junior College",3,-501.398491435667,5.23841619533524e-09
+"41","Highline Community College",3,-193.590709331044,NA
+"42","John A Logan College",3,289.737438121471,NA
+"43","Dutchess Community College",3,193.708355428791,NA
+"44","Burlington County College",3,265.934245341602,NA
+"45","Roane State Community College",3,-494.604486520944,6.90945177851682e-09
+"46","Hocking College",3,-919.654747465729,-1.29901696282262e-08
+"47","Black Hawk College",3,-71.0137592956362,-1.87133766368004e-08
+"48","North Hennepin Community College",3,-134.143872249296,6.5622490860794e-09
+"49","Southern Maine Community College",3,-326.395934196081,5.18548697635754e-09
+"50","Southern Union State Community College",3,-762.195391674236,4.90239665025579e-09
+"51","James H Faulkner State Community College",3,-866.927834565178,1.53233925276951e-07
+"52","Three Rivers Community College",3,-1122.6029870876,9.16344619735341e-09
+"53","Three Rivers Community College",3,-436.936259836961,5.17092569584728e-09
+"54","Three Rivers Community College",3,-1122.6029870876,2.89563218875267e-09
+"55","Three Rivers Community College",3,-436.936259836961,2.6486616227017e-09
+"56","Three Rivers Community College",3,-1122.6029870876,9.16344619735341e-09
+"57","Three Rivers Community College",3,-436.936259836961,5.17092569584728e-09
+"58","Three Rivers Community College",3,-1122.6029870876,2.89563218875267e-09
+"59","Three Rivers Community College",3,-436.936259836961,2.6486616227017e-09
+"541","Northwest-Shoals Community College",3,-858.295019466185,2.32828932396573e-08
+"551","Clark State Community College",3,-519.125602684831,8.68644994552118e-09
+"561","Ocean County College",3,175.372920247744,NA
+"571","Anoka-Ramsey Community College",3,177.452683802166,NA
+"581","Pierce College at Fort Steilacoom",3,75.0850960551223,NA
+"591","Gloucester County College",3,-20.4385186867546,1.96448554846459e-09
+"60","Illinois Central College",3,221.421589966658,NA
+"61","Normandale Community College",3,114.113012819765,NA
+"62","Northeast State Community College",3,-645.153044194974,1.71338348592067e-08
+"63","Eastern Iowa Community College District",3,73.5864564704308,NA
+"70","Manchester Community College",3,-202.721351140572,5.07227570831867e-08
+"71","Manchester Community College",3,-202.721351140572,4.06570705641148e-09
+"72","Manchester Community College",3,-202.721351140572,5.07227570831867e-08
+"73","Manchester Community College",3,-202.721351140572,4.06570705641148e-09
+"66","Temple College",3,-625.499024194756,3.31285037269398e-09
+"67","Leeward Community College",3,109.329260863384,1.25765800386682e-08
+"68","Mineral Area College",3,-795.849217550407,-5.84862576057218e-08
+"69","Bucks County Community College",3,371.389884502429,NA
+"701","SUNY Broome Community College",3,-481.700925598916,-1.06311845053712e-08
+"711","National Park Community College",3,-1345.08480853801,2.54664964622014e-08
+"721","Massasoit Community College",3,-77.3894409192089,8.12641284590772e-09
+"731","Allegany College of Maryland",3,-1497.35838904296,-7.09851454935181e-08
+"74","York Technical College",3,-798.223020428186,6.96475863888374e-09
+"75","Naugatuck Valley Community College",3,-317.229881897104,6.61916765083608e-09
+"76","Spartanburg Community College",3,-614.03555017565,6.78753863786372e-09
+"77","Everett Community College",3,286.121779729771,NA
+"78","State Fair Community College",3,-833.335220070959,1.1856469170746e-07
+"79","NorthWest Arkansas Community College",3,-119.462436596886,NA
+"80","Northern Oklahoma College",3,-400.424662451022,-2.57940181847924e-08
+"81","Community College of Vermont",3,113.807562405899,NA
+"82","Central Ohio Technical College",3,-554.437420250418,4.78439836821723e-09
+"83","Columbia State Community College",3,-349.621029752928,5.0064498902072e-08
+"84","Volunteer State Community College",3,-146.75232601715,NA
+"85","Rochester Community and Technical College",3,-138.052505757671,-1.20721075320462e-08
+"86","Lakeland Community College",3,-105.883266078856,NA
+"87","George C Wallace State Community College-Hanceville",3,-852.63940258128,3.75456265343884e-09
+"88","Delaware Technical Community College-Stanton/Wilmington",3,48.1488132896347,9.01772868254502e-09
+"89","Asheville-Buncombe Technical Community College",3,-154.198954887991,NA
+"90","Mount Wachusett Community College",3,-456.617107973354,1.52861998331234e-07
+"99","Three Rivers Community College",3,-1122.6029870876,9.16344619735341e-09
+"100","Three Rivers Community College",3,-436.936259836961,5.17092569584728e-09
+"101","Three Rivers Community College",3,-1122.6029870876,2.89563218875267e-09
+"102","Three Rivers Community College",3,-436.936259836961,2.6486616227017e-09
+"103","Three Rivers Community College",3,-1122.6029870876,9.16344619735341e-09
+"104","Three Rivers Community College",3,-436.936259836961,5.17092569584728e-09
+"105","Three Rivers Community College",3,-1122.6029870876,2.89563218875267e-09
+"106","Three Rivers Community College",3,-436.936259836961,2.6486616227017e-09
+"93","Rockland Community College",3,123.855326517928,-5.23884001959311e-08
+"94","Holyoke Community College",3,-531.119131080368,3.59279018508444e-08
+"95","Kellogg Community College",3,-750.642041990484,6.20740085995066e-09
+"96","Kapiolani Community College",3,235.222019650387,3.18809642873278e-09
+"97","Johnston Community College",3,-625.328262549189,5.28179544155144e-08
+"98","Kishwaukee College",3,-1011.383938614,1.1421466209878e-08
+"991","Truckee Meadows Community College",3,141.374966730299,NA
+"1001","Hawkeye Community College",3,29.3752745766051,-1.14982304615797e-08
+"1011","North Shore Community College",3,-281.494311288518,8.66675509575012e-09
+"1021","Hudson Valley Community College",3,226.62815169369,NA
+"1031","North Idaho College",3,-724.171514012527,-3.90285281561895e-08
+"1041","Pearl River Community College",3,-1320.9679792544,6.64667639308132e-09
+"1051","Trinity Valley Community College",3,-333.974148602578,NA
+"120","Middlesex Community College",3,-120.065216048246,-1.6548578292942e-07
+"121","Middlesex Community College",3,-98.3966277996933,NA
+"122","Middlesex Community College",3,-120.065216048246,2.71447718448014e-08
+"123","Middlesex Community College",3,-98.3966277996933,NA
+"124","Middlesex Community College",3,-120.065216048246,-1.6548578292942e-07
+"125","Middlesex Community College",3,-98.3966277996933,NA
+"126","Middlesex Community College",3,-120.065216048246,2.71447718448014e-08
+"127","Middlesex Community College",3,-98.3966277996933,NA
+"108","Jefferson State Community College",3,-57.7404447396889,5.4864873643972e-09
+"109","Spokane Falls Community College",3,-3.13688871140107,NA
+"110","North Central Texas College",3,38.8133945765178,NA
+"111","Central Oregon Community College",3,-398.974227743946,NA
+"112","Montgomery County Community College",3,272.796605674107,NA
+"113","Texas State Technical College-Harlingen",3,-854.154166896471,2.38276620533549e-09
+"114","Johnson County Community College",3,501.943799626742,NA
+"115","Anne Arundel Community College",3,362.060508698901,NA
+"116","Mohawk Valley Community College",3,-511.631204172401,-2.18584155967278e-08
+"117","Butler Community College",3,-115.530941563213,NA
+"118","Tacoma Community College",3,-339.010860200083,NA
+"119","Joliet Junior College",3,413.980588534963,NA
+"1201","Oklahoma City Community College",3,249.625040371138,NA
+"1211","Southeast Community College Area",3,3.42265316484406,NA
+"1221","Darton State College",3,-847.050226654346,7.46074475393693e-09
+"1231","Triton College",3,203.486558290991,NA
+"1241","Bristol Community College",3,-279.789097110133,-9.91531224804511e-09
+"1251","Gateway Community College",3,-392.216158543526,4.04767240636082e-09
+"1261","Lorain County Community College",4,-161.796887133285,NA
+"1271","Prince George's Community College",4,62.2630103790109,NA
+"128","Itawamba Community College",4,-1707.66577202453,1.04234752659022e-08
+"129","Tyler Junior College",4,-273.176740289045,NA
+"130","Chattanooga State Community College",4,-556.785947433792,NA
+"131","Bossier Parish Community College",4,-757.853420978248,2.6903942110326e-09
+"132","J Sargeant Reynolds Community College",4,73.8060842398072,NA
+"133","Minneapolis Community and Technical College",4,-334.786026347612,NA
+"134","SUNY Westchester Community College",4,158.141441652488,NA
+"135","Northwest Mississippi Community College",4,-936.398563950952,7.35873223769623e-09
+"136","Pasco-Hernando Community College",4,-243.638849547355,9.96479810615841e-09
+"137","Navarro College",4,-434.585208548495,NA
+"138","John C Calhoun State Community College",4,-13.7040441981389,1.16620346531402e-08
+"139","Kirkwood Community College",4,126.145012234316,NA
+"140","Metropolitan Community College Area",4,350.156069125543,NA
+"141","Pellissippi State Community College",4,-121.133706407158,NA
+"142","Camden County College",4,10.4809309741786,NA
+"143","Spokane Community College",4,-780.823890693721,NA
+"144","Mott Community College",4,-566.95332151336,NA
+"145","Middlesex County College",4,139.656953201793,NA
+"146","Pitt Community College",4,-646.0861286476,NA
+"147","Delta College",4,-156.68176005919,NA
+"148","Onondaga Community College",4,449.225100485779,NA
+"149","Mt Hood Community College",4,19.6316857598624,NA
+"150","Blinn College",4,240.076384104761,NA
+"151","Northampton County Area Community College",4,-71.2299750368336,NA
+"152","Schoolcraft College",4,261.515838980102,NA
+"153","Collin County Community College District",4,593.704807502961,NA
+"154","Clark College",4,-319.508131708783,NA
+"155","Quinsigamond Community College",4,-353.434321593266,5.89102218636631e-09
+"156","Owens Community College",4,-69.4518212037558,NA
+"157","Florence-Darlington Technical College",4,-1003.3578344758,3.24182819245087e-09
+"158","Thomas Nelson Community College",4,73.5395312398082,NA
+"159","Cape Fear Community College",4,-133.36559578194,NA
+"160","New Mexico State University-Dona Ana",4,-374.174593066401,NA
+"161","Kalamazoo Valley Community College",4,-49.8740357558625,NA
+"162","Horry-Georgetown Technical College",4,-598.036675710827,NA
+"163","Erie Community College",4,-81.8111712045004,NA
+"164","Holmes Community College",4,-792.241680457865,3.3354042881922e-09
+"185","Century College",4,-80.0036809956625,NA
+"186","Century College",4,-80.0036809956625,NA
+"187","Century College",4,-80.0036809956625,NA
+"188","Century College",4,-80.0036809956625,NA
+"167","Jones County Junior College",4,-1719.55587584426,1.04010274670736e-08
+"168","McLennan Community College",4,-168.70403396987,NA
+"169","Piedmont Technical College",4,-876.193705059091,4.2599358095262e-09
+"170","Brookdale Community College",4,371.110193613434,NA
+"171","Grand Rapids Community College",4,123.183415341895,NA
+"172","Cincinnati State Technical and Community College",4,137.336853125215,NA
+"173","Pikes Peak Community College",4,-70.9247270815285,NA
+"174","Estrella Mountain Community College",4,-118.373186728585,NA
+"175","Springfield Technical Community College",4,-635.540738622983,5.33703088570683e-09
+"176","East Mississippi Community College",4,-1063.25780177677,1.39155063504201e-08
+"177","Moraine Valley Community College",4,239.638717926995,NA
+"178","Atlantic Cape Community College",4,-496.441647780739,-1.59485503968642e-07
+"179","Midlands Technical College",4,-535.921124574686,NA
+"180","Des Moines Area Community College",4,442.306477028614,NA
+"181","Lansing Community College",4,49.6075725972278,NA
+"182","Chemeketa Community College",4,-176.009676391775,NA
+"183","Mississippi Gulf Coast Community College",4,-921.890527543282,NA
+"184","Tallahassee Community College",4,-388.841092544389,NA
+"1851","Tulsa Community College",4,111.959370300075,NA
+"1861","Bunker Hill Community College",4,-178.94472629747,NA
+"1871","Community College of Rhode Island",4,-122.932219701037,NA
+"1881","Community College of Allegheny County",4,85.7057354005055,NA
+"189","Pulaski Technical College",4,-1078.1968043328,2.58399994023389e-09
+"190","Suffolk County Community College",4,220.132788203211,NA
+"191","Nassau Community College",4,153.354377906574,NA
+"192","Ozarks Technical Community College",4,-527.663761892346,NA
+"193","Henry Ford Community College",4,-444.383181764087,NA
+"194","Wake Technical Community College",4,63.9741688363592,NA
+"195","Monroe Community College",4,-7.57557008620824,NA
+"196","Guilford Technical Community College",4,-749.23082962175,NA
+"197","Sinclair Community College",4,217.168095894409,NA
+"198","Montgomery College",4,194.352270141981,NA
+"199","College of DuPage",4,402.952707960496,NA
+"200","Hinds Community College",4,-1151.7978519924,NA
+"201","Milwaukee Area Technical College",4,-336.983455692045,NA
+"202","San Jacinto Community College",4,260.215024354483,NA
+"203","CUNY Queensborough Community College",4,-676.440071008262,NA
+"204","The Community College of Baltimore County",4,-46.4910173843407,NA
+"205","Harrisburg Area Community College-Harrisburg",4,-230.542490645758,NA
+"206","Oakland Community College",4,189.220713277447,NA
+"207","Salt Lake Community College",4,268.103715227195,NA
+"208","San Antonio College",4,-170.144218384387,NA
+"209","CUNY Kingsborough Community College",4,-812.262485431997,NA
+"210","Austin Community College District",4,411.629975447511,NA
+"211","Tidewater Community College",4,-54.4770938810677,NA
+"212","Cuyahoga Community College District",4,-100.904268154191,NA
+"213","Northern Virginia Community College",4,381.425649506555,NA
+"214","El Paso Community College",4,-539.526313728322,NA
+"215","Portland Community College",4,-172.338597675968,NA
+"216","CUNY Borough of Manhattan Community College",4,-1300.52415057412,NA
+"217","Tarrant County College District",4,147.345352136438,NA
+"218","Lone Star College System",4,277.13088533459,NA
+"219","Houston Community College",4,-60.8574049981285,NA
+"220","Ivy Tech Community College",4,79.0826318516386,NA
+"221","University of South Carolina-Union",5,-528.387127942242,8.42052226764872e-08
+"222","Miles Community College",5,-642.727493906292,-1.45234586909434e-07
+"223","Manhattan Area Technical College",5,21.1926471595384,5.71302367242222e-08
+"224","Colorado Northwestern Community College",5,501.125829541913,-5.32925296925887e-08
+"225","Northwest Iowa Community College",5,735.490268277218,-7.35636979494833e-08
+"226","Lake Region State College",5,833.831072640576,-4.09598652723728e-08
+"227","University of South Carolina-Sumter",5,-128.975900654184,-3.65003826879411e-08
+"228","Highland Community College",6,0,-1.68638910874234e-08
+"229","New Mexico Junior College",6,116.066871916574,8.1880468453747e-09
+"230","Central Wyoming College",6,-257.615935234038,1.32569058973482e-07
+"231","Mid-Plains Community College",6,408.177557986571,-6.32923413542564e-09
+"232","Clinton Community College",6,-576.262038342764,-4.1236359945108e-08
+"233","Northeastern Junior College",6,-489.619169378756,-2.60719125737493e-08
+"234","Cecil College",6,-328.12170658723,-1.62642362945918e-07
+"235","Alexandria Technical & Community College",6,25.8918010604827,-1.23926747574045e-08
+"236","University of South Carolina-Salkehatchie",6,-1798.09145549351,-3.53296861677214e-07
+"237","Columbia-Greene Community College",6,-504.335614371008,2.92103012282861e-08
+"238","Helena College University of Montana",6,-882.854927266576,1.74330265772902e-08
+"239","University of South Carolina-Lancaster",6,-561.664481959317,7.65084460377128e-08
+"240","North Dakota State College of Science",6,-46.8689118024225,1.60360363770613e-07
+"241","Lake Area Technical Institute",6,-892.134487586653,-5.04293022750144e-06
+"242","Itasca Community College",6,-1248.84655228994,-7.9439081291256e-08
+"243","Sullivan County Community College",6,-889.872813831773,1.30096431456939e-07
+"244","Hibbing Community College",6,-892.494982466234,1.29357166392308e-07
+"245","North Central Missouri College",6,-743.687527751695,-4.04135047396967e-07
+"246","Northwest College",6,-402.892566468315,-2.36883340824831e-08
+"247","Pennsylvania Highlands Community College",6,-198.019834421678,-1.73289487545079e-08
+"248","West Shore Community College",6,-743.090790792014,-2.38742492879096e-08
+"249","South Central College",7,580.36248742666,5.62021166869645e-08
+"250","NHTI-Concord's Community College",7,668.036182350806,3.35136878493871e-09
+"251","James A Rhodes State College",7,415.962979246229,6.3341354689013e-09
+"252","Southern State Community College",7,-258.012691885965,-6.70964396796165e-08
+"253","Frederick Community College",7,1006.9964167476,-1.01581883514698e-07
+"254","Enterprise State Community College",7,-203.981468206792,1.98356287262764e-08
+"255","Chattahoochee Valley Community College",7,-723.726559903939,4.88227439427562e-08
+"256","St Clair County Community College",7,607.578845031819,1.08887936661395e-07
+"279","Southeastern Community College",7,-71.5504334788322,-2.30327071529165e-07
+"280","Southeastern Community College",7,-71.5504334788322,3.84136677129375e-08
+"281","Southeastern Community College",7,197.871729524926,1.87858745167156e-08
+"282","Southeastern Community College",7,197.871729524926,1.01148094137348e-08
+"283","Southeastern Community College",7,-71.5504334788322,-2.30327071529165e-07
+"284","Southeastern Community College",7,-71.5504334788322,3.84136677129375e-08
+"285","Southeastern Community College",7,197.871729524926,1.87858745167156e-08
+"286","Southeastern Community College",7,197.871729524926,1.01148094137348e-08
+"259","Central Lakes College-Brainerd",7,706.865953947368,-1.85478745248324e-08
+"260","Northeast Iowa Community College-Calmar",7,830.769933629553,-9.39737283948339e-08
+"261","New River Community College",7,813.26081044069,3.88530908766892e-09
+"262","Cape Cod Community College",7,684.257970294574,1.14780349095767e-07
+"263","Fulton-Montgomery Community College",7,-192.268576613438,2.87925959763361e-08
+"264","Lehigh Carbon Community College",7,1150.23987248533,NA
+"265","Ridgewater College",7,506.89919970955,-2.77351183744527e-08
+"266","Connors State College",7,-224.708381956659,9.90439264826254e-09
+"267","Victoria College",7,682.380242967385,4.03479104470559e-09
+"268","Eastern Gateway Community College",7,334.780200143772,1.10303082732271e-08
+"269","Massachusetts Bay Community College",7,1001.59763647156,7.41028844142012e-09
+"270","Bay de Noc Community College",7,-748.026251691106,-2.19820701647208e-08
+"271","Herkimer County Community College",7,418.225978837655,-2.23531608092078e-08
+"272","St Charles Community College",7,1105.28852500557,NA
+"273","Motlow State Community College",7,834.73995664139,-9.16888993783928e-09
+"274","Whatcom Community College",7,593.601884683299,6.22654000961504e-09
+"275","Piedmont Virginia Community College",7,1003.48236420378,9.15635758150066e-08
+"276","Laramie County Community College",7,778.264506695286,-4.48262185498278e-09
+"277","Casper College",7,714.396256977671,2.13247295520929e-08
+"278","Wilkes Community College",7,-85.950178447732,-1.71355600209249e-08
+"2791","Northeast Community College",7,728.760656509244,-9.31159048618718e-09
+"2801","Northwest State Community College",7,936.70640370541,-1.60788631329446e-07
+"2811","Raritan Valley Community College",7,1153.55288689869,NA
+"2821","University of Arkansas Community College-Morrilton",7,-215.195249372134,4.82801408418658e-08
+"2831","Zane State College",7,247.729571058762,1.41730701455509e-08
+"2841","North Central State College",7,245.085126580622,-5.33409878281066e-08
+"313","Blue Ridge Community College",7,267.256249306018,-1.98778341311688e-08
+"314","Blue Ridge Community College",7,620.594832595602,2.95513070072665e-08
+"315","Blue Ridge Community College",7,267.256249306018,4.16838301528603e-08
+"316","Blue Ridge Community College",7,620.594832595602,4.76133925812139e-09
+"317","Blue Ridge Community College",7,267.256249306018,-1.98778341311688e-08
+"318","Blue Ridge Community College",7,620.594832595602,2.95513070072665e-08
+"319","Blue Ridge Community College",7,267.256249306018,4.16838301528603e-08
+"320","Blue Ridge Community College",7,620.594832595602,4.76133925812139e-09
+"287","Lake Michigan College",7,504.116740935826,-1.47391800861492e-08
+"288","Tunxis Community College",7,654.59891685395,1.67337079821773e-08
+"289","Harford Community College",7,1163.44602549619,8.08176090443458e-09
+"290","Hutchinson Community College",7,1001.52048093018,-7.56605673527999e-09
+"291","Pierce College at Puyallup",7,728.619710207802,NA
+"292","Dyersburg State Community College",7,-23.9490351909371,8.25559134478531e-09
+"293","McHenry County College",7,1059.41082454294,-4.16599385915206e-09
+"294","Central Maine Community College",7,-106.394792797903,1.15183296393484e-08
+"295","Sussex County Community College",7,69.7132315038093,-6.00293365979545e-09
+"296","East Central College",7,264.031057503445,-1.52732907532515e-07
+"297","Inver Hills Community College",7,858.012730594145,-5.02542638319928e-08
+"298","Hagerstown Community College",7,587.903421265212,4.37148226969562e-08
+"299","Adirondack Community College",7,272.210795590517,-1.51277989359962e-08
+"300","Shoreline Community College",7,875.099169754626,NA
+"301","Corning Community College",7,415.697945224,-4.44304883516976e-08
+"302","Cowley County Community College",7,335.681802690849,1.14257997837641e-05
+"303","Orange County Community College",7,887.436520635582,-1.2408739313579e-08
+"304","Wenatchee Valley College",7,96.2662364916453,6.93160461080318e-09
+"305","Caldwell Community College and Technical Institute",7,263.148951296484,-7.60124556525965e-08
+"306","Tompkins Cortland Community College",7,862.902954386543,3.14832166591777e-08
+"307","Quincy College",7,563.07972259496,3.18327558069584e-09
+"308","Jefferson Community College",7,288.911392068416,-1.17830585824461e-08
+"309","Lake Superior College",7,794.511327703807,9.52971352696928e-09
+"310","South Puget Sound Community College",7,618.785046452682,4.03417174959585e-09
+"311","Cayuga County Community College",7,604.14253531128,-1.52716407597076e-08
+"312","Kankakee Community College",7,866.847299908051,2.04986859033533e-08
+"3131","County College of Morris",7,1048.82619040225,NA
+"3141","Carl Albert State College",7,-845.873590176429,3.00605205395844e-08
+"3151","Catawba Valley Community College",7,472.391594973009,4.33286594908297e-08
+"3161","Delaware Technical Community College-Owens",7,267.895348369209,2.18881046714466e-08
+"3171","Indian Hills Community College",7,453.645583576998,-7.20657817217672e-07
+"3181","St Cloud Technical and Community College",7,431.930793345567,2.96043845726079e-07
+"3191","Muskegon Community College",7,563.060604383449,-7.46852055104932e-09
+"3201","Wor-Wic Community College",7,-134.172126502203,2.48165141746524e-08
+"321","Skagit Valley College",7,616.076932783347,1.01274891582367e-08
+"322","Northeast Texas Community College",7,-129.614592500719,1.83726043392863e-08
+"323","Texas State Technical College-Waco",7,-15.5685674236545,9.78266211754266e-09
+"324","College of Southern Maryland",7,1022.39860518297,1.13676541318385e-08
+"325","East Central Community College",7,-1000.54581384054,2.52270302748568e-08
+"326","Jamestown Community College",7,357.918851005415,-9.08047501205304e-09
+"327","Mid Michigan Community College",7,319.421123762751,2.05468503438453e-08
+"328","Greenfield Community College",8,235.994348815166,-3.26055862354581e-07
+"329","Blue Mountain Community College",8,743.707541530525,1.19396101748502e-08
+"330","Dodge City Community College",8,52.3761801526719,-3.60040107552888e-08
+"331","Alpena Community College",8,-189.000385494107,-4.68819267735264e-08
+"332","Garden City Community College",8,296.033296398519,-1.89088792233321e-08
+"333","Eastern Oklahoma State College",8,-24.6295774600505,5.92803962484258e-09
+"334","Anoka Technical College",8,286.427710920917,1.0278245080663e-08
+"335","Marion Technical College",8,464.87858569857,1.59302377141746e-08
+"336","John Wood Community College",8,346.092163195809,-1.79174067265229e-08
+"337","Rend Lake College",8,1331.80755260793,NA
+"338","Kennebec Valley Community College",8,391.228709959701,2.07224607997774e-08
+"339","Western Oklahoma State College",8,-59.2268520123839,1.73002274777061e-08
+"374","Southeastern Community College",8,-197.311454092867,-2.30327071529165e-07
+"375","Southeastern Community College",8,-197.311454092867,3.84136677129375e-08
+"376","Southeastern Community College",8,72.1107089108912,1.87858745167156e-08
+"377","Southeastern Community College",8,72.1107089108912,1.01148094137348e-08
+"378","Southeastern Community College",8,-197.311454092867,-2.30327071529165e-07
+"379","Southeastern Community College",8,-197.311454092867,3.84136677129375e-08
+"380","Southeastern Community College",8,72.1107089108912,1.87858745167156e-08
+"381","Southeastern Community College",8,72.1107089108912,1.01148094137348e-08
+"342","Western Nebraska Community College",8,1157.80039774039,4.87672416874182e-08
+"343","Lamar Institute of Technology",8,542.16760209041,2.8569303075391e-09
+"344","Richard Bland College of the College of William and Mary",9,-561.026831553169,1.33972095605916e-08
+"345","Western Wyoming Community College",9,1107.69071921737,-2.67515204543883e-05
+"386","Blue Ridge Community College",9,426.319067881172,-1.98778341311688e-08
+"387","Blue Ridge Community College",9,779.657651170756,2.95513070072665e-08
+"388","Blue Ridge Community College",9,426.319067881172,4.16838301528603e-08
+"389","Blue Ridge Community College",9,779.657651170756,4.76133925812139e-09
+"390","Blue Ridge Community College",9,426.319067881172,-1.98778341311688e-08
+"391","Blue Ridge Community College",9,779.657651170756,2.95513070072665e-08
+"392","Blue Ridge Community College",9,426.319067881172,4.16838301528603e-08
+"393","Blue Ridge Community College",9,779.657651170756,4.76133925812139e-09
+"348","Carl Sandburg College",9,684.388896621437,1.98072540394642e-08
+"349","West Virginia Northern Community College",9,428.758897642831,2.56144669774074e-08
+"350","Belmont College",9,-496.30301980916,1.31728953303587e-07
+"351","Lamar State College-Port Arthur",9,647.970330839001,1.50102144996871e-08
+"352","Olney Central College",9,-29.7539850800756,-2.06942806753859e-08
+"353","North Iowa Area Community College",9,821.427526882263,-1.82333451587963e-08
+"354","Marshalltown Community College",9,408.644303607634,-2.32403230546206e-07
+"355","Flathead Valley Community College",9,728.003691089298,3.5157526650766e-08
+"356","Sheridan College",9,1292.89007312668,7.67290810614636e-09
+"357","Community College of Beaver County",9,578.644015921862,2.31775142790376e-08
+"358","Coconino Community College",9,1190.08148338258,NA
+"359","Terra State Community College",9,558.346749534017,9.07370959149671e-09
+"360","Thaddeus Stevens College of Technology",9,-2777.77333475717,8.37073794996436e-08
+"361","Southeast Technical Institute",9,293.80275626236,6.3973558698503e-09
+"362","Louisiana State University-Eunice",9,445.535191108858,-1.5882245387029e-08
+"363","Barton County Community College",9,1602.32045914866,NA
+"364","Berkshire Community College",9,259.456687136644,-1.5868147114808e-08
+"365","North Central Michigan College",9,597.142301985336,-9.54760304494914e-09
+"366","Heartland Community College",9,1376.63202198738,NA
+"413","Middlesex Community College",9,779.700333516219,-1.6548578292942e-07
+"414","Middlesex Community College",9,801.368921764772,NA
+"415","Middlesex Community College",9,779.700333516219,2.71447718448014e-08
+"416","Middlesex Community College",9,801.368921764772,NA
+"417","Middlesex Community College",9,779.700333516219,-1.6548578292942e-07
+"418","Middlesex Community College",9,801.368921764772,NA
+"419","Middlesex Community College",9,779.700333516219,2.71447718448014e-08
+"420","Middlesex Community College",9,801.368921764772,NA
+"369","Iowa Lakes Community College",9,572.770426052037,-1.30365406626533e-08
+"370","Linn-Benton Community College",9,1429.7444815415,NA
+"371","Eastern Maine Community College",9,646.525429728451,-4.23359553650819e-08
+"372","Butler County Community College",9,880.145295373273,-1.38364810059582e-08
+"373","Honolulu Community College",9,999.985336650947,2.68050843119692e-08
+"3741","Delaware Technical Community College-Terry",9,578.780293605632,-1.96180888057391e-08
