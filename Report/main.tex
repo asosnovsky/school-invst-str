@@ -4,6 +4,9 @@
 \usepackage[headheight=15pt,paperwidth=8.5in, paperheight=11in,margin=0.75in]{geometry}
 \usepackage{lastpage}
 \usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{subfig}
+\usepackage{float}
 
 \usepackage{mathtools}
 \DeclarePairedDelimiter\floor{\lfloor}{\rfloor}
@@ -200,24 +203,12 @@ The first section outlines determining bench mark points and comparing the rest 
 	\subsection{Partitioning and Benchmark}
 	As discussed in the previous section, the first goal in the analysis is to find a list of benchmark schools. However, before doing so, we partitioned the schools by the type of degrees that they predominantly provide. This was due to the fact that otherwise, many pieces of data become unusable, and the kNN algorithm becomes biased towards schools that have less-years-to-graduation.\\ 
 	\\
-	Once the partitioning was done, we applied the PES rank.\\
-	\begin{figure}[h]
-		\centering
-		\includegraphics[width=0.5\textwidth]{2yr-col.png}
-		\caption{2 year program}
-		\label{fig:prog2}
-	\end{figure}
-	\begin{figure}[h]
-		\centering
-		\includegraphics[width=0.5\textwidth]{4yr-col.png}
-		\caption{Bachelor program}
-		\label{fig:prog4}
-	\end{figure}
-	\begin{figure}[h]
-		\centering
-		\includegraphics[width=0.5\textwidth]{6yr-col.png}
-		\caption{Grad program}
-		\label{fig:prog2}
+	\begin{figure}[H]
+	\centering
+		\subfloat[][2 Year Program]{\includegraphics[width=0.33\textwidth]{2yr-col.png}\label{fig:subfig1}}
+	\centering
+		\subfloat[][Bachelor Program]{\includegraphics[width=0.33\textwidth]{4yr-col.png}\label{fig:subfig2}}
+		\subfloat[][6 Year Program]{\includegraphics[width=0.33\textwidth]{6yr-col.png}\label{fig:subfig3}}
 	\end{figure}
 	Once we acquired this data, we chose the top 10 schools from each school type as our benchmark schools. 
 	\subsection{Variable Selection}
@@ -247,12 +238,18 @@ The first section outlines determining bench mark points and comparing the rest 
 	Prior to the application of the kNN algorithm we normalized the data by transforming each variable to a scale in $[0,1]$, in order to avoid bias for larger scaled-values.\\
 	\\
 	This identification provided us with the following schools (please note that this is not the entire dataset, the full dataset will be provided separately). As can be seen in fig.\ref{fig:kNN}.
-	\begin{figure}[h]
+	\begin{figure}[H]
 		\centering
 		\includegraphics[width=0.6\textwidth]{6yr-col.png}
 		\caption{Sample of kNN results}
 		\label{fig:kNN}
 	\end{figure}
+	
+	As this point, we used the kNN algorithm as the method of selection for the nearest best schools. As we wish to avoid investing in the top tier schools, and would rather invest in schools with the potential to become the top-tier.\\ 
+	Prior to the application of the kNN algorithm we had to normalize the data by transforming each variable to a scale in $[0,1]$, as otherwise variables measure in larger values would be favored to smaller variables.\\
+	\\
+	This identification provided us with the following schools (please note that this is not the entire dataset, the full dataset will be provided separately) \ref{fig:kNN}.
+	
 
 \section{Discussion} 
 \subsection{Sensitivity Analysis}
