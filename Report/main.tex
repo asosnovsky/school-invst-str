@@ -210,16 +210,18 @@ The first section outlines determining bench mark points and comparing the rest 
 		\centering
 			\subfloat[2 Year Program]{\includegraphics[width=0.45\textwidth]{2yr-col.png}}
 		\qquad
-			\subfloat[Bachelor Program]{\includegraphics[width=0.45\textwidth]{4yr-col.png}}
+			\subfloat[Bachelor Program]{\includegraphics[width=0.465\textwidth]{4yr-col.png}}
 		\end{figure}
 		
 		\begin{wrapfigure}{l}{0.50\textwidth}
 		\centering
 		\includegraphics*[width=0.90\linewidth]{6yr-col.png}\caption*{(c) 6 Year Program}
 		\end{wrapfigure} 	
-		Once we acquired this data, we chose the top 10 schools from each school type as our benchmark schools. 
-		\clearpage
-	
+		Once we acquired this data, we chose the top 10 schools from each school type as our benchmark schools. It is also important to note the schools here do not \underline{only} provide the designated degree, but rather have a predominate focus on such degrees.\\
+		\\
+		We used the schools noted in Figures (a),(b) and (c) as our benchmark schools for the kNN method. These school already preform well based on our ranking, and we wanted to find the next best schools that would benefit from an investment by our charity.
+		\\
+		\\
 	\subsection{Variable Selection}
 		\subsubsection{Filtering by Grant}
 			Since we did not want to overlap with grants given by other institutions, we filtered the next list using the data given by the Gates\cite{Bill} and Lumina \cite{Grant} Foundations.\\
@@ -268,9 +270,16 @@ The first section outlines determining bench mark points and comparing the rest 
 					&&& \forall i,j \ \ \ 1\le n_j\cdot T_j \le g_j\phi_j
 				\end{aligned}	
 		\end{equation*}
-
-	
-	
+		We used the linear-optimization method described in Winston \cite{Winston}, in order to solve this problem. Once done, the results for the top 20 school as an output of our method is seen in Figure 2.
+		\\
+		\\
+		The overall return on investment that we received for this model was $1.01$\%. It is also important to note that we applied the same process to the unpartitioned version of this model. When doing that we saw that many variables were dropped in the process (due to being overwhelmingly null) and the return on investment dropped to $0.75$\%.
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=0.7\textwidth]{final.png}
+			\caption{Top 20 Schools}
+			\label{fig:top20}
+		\end{figure}	
 
 \section{Discussion} 
 \subsection{Sensitivity Analysis}
