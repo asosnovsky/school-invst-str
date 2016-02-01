@@ -181,7 +181,7 @@ The first section outlines determining bench mark points and comparing the rest 
 			\bar{r} &= \sum_{j=1}^\infty\sum_{i=1}^\infty \frac{ 1  }{ \Phi } r_j^{[i]} = \frac{ 1  }{ \Phi }\sum_{j=1}^\infty\sum_{i=1}^\infty \Delta_j^{[i]}n_j^{[i]}
 		\end{align}
 		So our new maximization problem can be reformulated as follows:
-		\begin{equation*}
+		\begin{equation}
 				\begin{aligned}
 					& \underset{\forall n_j^{[i]}}{\text{maximize}}
 					& &\frac{ 1  }{ \Phi }\sum_{j=1}^\infty\sum_{i=1}^\infty \Delta_j^{[i]}n_j^{[i]}\\
@@ -189,7 +189,7 @@ The first section outlines determining bench mark points and comparing the rest 
 					& & \sum \sum n_j^{[i]}T_j^{[i]} = 100,000,000\\
 					&&& \forall i,j \ \ \ 0\le n_j^{[i]} \le \frac{g_j^{[i]}\phi_j^{[i]}}{T_j^{[i]}}
 				\end{aligned}	
-		\end{equation*}
+		\end{equation}
 	\subsection{Limiting Schools}
 		The model outlined in the previous section, is given the ability to reject schools. This can be seen in the condition:
 		\begin{align*}
@@ -202,26 +202,26 @@ The first section outlines determining bench mark points and comparing the rest 
 		As a side note, this would mean that $g_j^{[i]}\phi_j^{[i]}\ge1$. Meaning, that some schools may be omitted before the optimization process starts.
 \section{Model Application} 
 	\subsection{Partitioning and Benchmark}
-	As discussed in the previous section, the first goal in the analysis is to find a list of benchmark schools. However, before doing so, we partitioned the schools by the type of degrees that they predominantly provide. This was due to the fact that otherwise, many pieces of data become unusable, and the kNN algorithm becomes biased towards schools that have less-years-to-graduation.\\ 
-	\\
-	\begin{figure}[H]
-	\centering
-		\subfloat[2 Year Program]{\includegraphics[width=0.45\textwidth]{2yr-col.png}}
-	\qquad
-		\subfloat[Bachelor Program]{\includegraphics[width=0.45\textwidth]{4yr-col.png}}
-	\end{figure}
-	
-	\begin{wrapfigure}{l}{0.50\textwidth}
-	\centering
-	\includegraphics*[width=0.90\linewidth]{6yr-col.png}\caption*{6 Year Program}
-	\end{wrapfigure} 	
-	Once we acquired this data, we chose the top 10 schools from each school type as our benchmark schools. 
-	\clearpage
-
+		As discussed in the previous section, the first goal in the analysis is to find a list of benchmark schools. However, before doing so, we partitioned the schools by the type of degrees that they predominantly provide. This was due to the fact that otherwise, many pieces of data become unusable, and the kNN algorithm becomes biased towards schools that have less-years-to-graduation.\\ 
+		\\
+		\begin{figure}[H]
+		\centering
+			\subfloat[2 Year Program]{\includegraphics[width=0.45\textwidth]{2yr-col.png}}
+		\qquad
+			\subfloat[Bachelor Program]{\includegraphics[width=0.45\textwidth]{4yr-col.png}}
+		\end{figure}
+		
+		\begin{wrapfigure}{l}{0.50\textwidth}
+		\centering
+		\includegraphics*[width=0.90\linewidth]{6yr-col.png}\caption*{(c) 6 Year Program}
+		\end{wrapfigure} 	
+		Once we acquired this data, we chose the top 10 schools from each school type as our benchmark schools. 
+		\clearpage
 	
 	\subsection{Variable Selection}
 		\subsubsection{Filtering by Grant}
 			Since we did not want to overlap with grants given by other institutions, we filtered the next list using the data given by the Gates\cite{Bill} and Lumina \cite{Grant} Foundations.\\
+		
 		\subsubsection{Scorecard Variables}
 			First we created a dictionary for all the variables that were given to us by Scorecard. We had to categorize these variables as follows:
 			\begin{itemize}
@@ -241,22 +241,33 @@ The first section outlines determining bench mark points and comparing the rest 
 			\end{itemize}
 	
 	\subsection{kNN Selection}
-	After this point, we used the kNN algorithm as the method of selection for the nearest best schools. As we wish to avoid investing in the top tier schools, and would rather invest in schools with the potential to become the top-tier. 
-	\\ \\
-	Prior to the application of the kNN algorithm we normalized the data by transforming each variable to a scale in $[0,1]$, in order to avoid bias for larger scaled-values.\\
-	\\
-	This identification provided us with the following schools (please note that this is not the entire dataset, the full dataset will be provided separately). As can be seen in fig.\ref{fig:kNN}.
-	\begin{figure}[H]
-		\centering
-		\includegraphics[width=0.6\textwidth]{6yr-col.png}
-		\caption{Sample of kNN results}
-		\label{fig:kNN}
-	\end{figure}
+		After this point, we used the kNN algorithm as the method of selection for the nearest best schools. As we wish to avoid investing in the top tier schools, and would rather invest in schools with the potential to become the top-tier. 
+		\\ \\
+		Prior to the application of the kNN algorithm we normalized the data by transforming each variable to a scale in $[0,1]$, in order to avoid bias for larger scaled-values.\\
+		\\
+		This identification provided us with the following schools as can be seen in fig.\ref{fig:kNN}.
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=0.6\textwidth]{nearest-schools.png}
+			\caption{Sample of kNN results}
+			\label{fig:kNN}
+		\end{figure}
+		(please note that this is not the entire dataset, the full dataset will be provided separately).
 	
-	As this point, we used the kNN algorithm as the method of selection for the nearest best schools. As we wish to avoid investing in the top tier schools, and would rather invest in schools with the potential to become the top-tier.\\ 
-	Prior to the application of the kNN algorithm we had to normalize the data by transforming each variable to a scale in $[0,1]$, as otherwise variables measure in larger values would be favored to smaller variables.\\
-	\\
-	This identification provided us with the following schools (please note that this is not the entire dataset, the full dataset will be provided separately) \ref{fig:kNN}.
+	\subsection{Maximizing the Return}
+		Since our ultimate goal is to invest in schools that would offset poverty the most. We focused on the change in PES. The amount invested in each school should therefore maximize the increase in PES. This increase is our measurement for ROI.\\
+		The set up for this problem is outlined in sections 2.4-2.5, using equations (10) and (11) and the aggregation of all the school's variables into a single list we can get the following:
+		\begin{equation*}
+				\begin{aligned}
+					& \underset{\forall n_j}{\text{maximize}}
+					& &\frac{ 1  }{ \Phi }\sum_{j=1}^\Phi \Delta_j n_j\\
+					& \text{subject to}
+					& & \sum_{j=1}^\Phi n_j\cdot T_j = 100,000,000\\
+					&&& \forall i,j \ \ \ 1\le n_j\cdot T_j \le g_j\phi_j
+				\end{aligned}	
+		\end{equation*}
+
+	
 	
 
 \section{Discussion} 
