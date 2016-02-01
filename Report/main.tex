@@ -49,12 +49,11 @@ The first section outlines determining bench mark points and comparing the rest 
 				
 		\item \textbf{Students who receive a grant will stay in the program and successfully graduate:} There are many factors that could cause students to not be able to graduate, but we will focus on financial support because it is the root of other factors..\cite{Trom}
 
-		\item \textbf{} 
 	\end{itemize}
 	
 	\subsection{Summary of our Approach}
 		\begin{itemize}
-		\item Create a benchmark setting: top 20 schools that we consider to have good performance. Each school represent a class.  
+		\item Create a benchmark setting: top 10 schools for each degree type school, that we consider to have good performance. Each school represent a class.  
 		\item Identify universities that have similar characteristics to the benchmark list. 
 		\item Prioritize universities to be invested in by the amount of grants they received from other sources.
 		\item Determine the amount of investment and allocation to maximize the return on investment. 
@@ -79,46 +78,38 @@ The first section outlines determining bench mark points and comparing the rest 
 	\end{enumerate}
 	
 	\subsection{Benchmark Selection}
-	
-	First we omitted any below medium size universities or communal universities such as racial or religious schools. Then we partition all universities by number of years required for graduation. Lastly, we rank the universities by the amount of their poverty elevation standards: \\ \\ 
-	$$
-		R_j^{[i]}=\frac{IP_j^{[i]}-OP_j^{[i]}}{IP_j^{[i]}}
-	$$  
-	Next we choose the top, highest ranking universities per `years of graduation'-group. We set these chosen universities as our benchmarks for each class in each group.\\
-	
-	i.e.
-	$$
-		o^{[i]} = \argmax_{j} R_j^{[i]}
-	$$
-	Where $o$, is to represent the benchmark index of the class $i$.
+		First we omitted any below medium size universities or communal universities such as racial or religious schools. Then we partition all universities by number of years required for graduation. Lastly, we rank the universities by the amount of their poverty elevation standards, this is done based on the result and recommendation of Trombitas \cite{Trom} and College-Score Card \cite{US}.\\ 
+		\begin{align}
+			R_j^{[i]}=\frac{IP_j^{[i]}-OP_j^{[i]}}{IP_j^{[i]}}
+		\end{align}
+		Next we choose the top, highest ranking universities per `years of graduation'-group. We set these chosen universities as our benchmarks for each class in each group.\\
+		i.e.
+		$$
+			o^{[i]} = \argmax_{j} R_j^{[i]}
+		$$
+		Where $o$, is to represent the benchmark index of the class $i$.
 
 	\subsection{Categorizing Institutions into Classes}
+		We aim to classify each university into some class $i$. This is done via the kNN algorithm: a non-parametric method used in classification supervised learning problems. The output is determined by a majority vote, where the object is assigned to the class most common with it's neighbors. \cite{Hastie}\\
+		We set up the following model:
+		Assuming $j\in [1,n]$,where $n$ = amount of variables. For a detailed selection list please see Appendix 1. Let $y_j^{[i]}$ be the $j$-th variable for the $i$-th class benchmark. Let $x_j$ be the $j$-th variable of a particular university. A university $u$, is considered a member of the $k$-th class if the variables $x_i$ of that university is `close' to a particular variable of a given class in euclidean-space.\\
 	
-	We aim to classify each university into some class $i$. This is done via the kNN algorithm: a non-parametric method used in classification supervised learning problems. The output is determined by a majority vote, where the object is assigned to the class most common with it's neighbours. \cite{Hastie}\\
-
-We set up the following model:
-Assuming $j\in [1,n]$,where $n$ = amount of variables. For a detailed selection list please see Appendix 1. Let $y_j^{[i]}$ be the $j$-th variable for the $i$-th class benchmark. Let $x_j$ be the $j$-th variable of a particular university. A university $u$, is considered a member of the $k$-th class if the variables $x_i$ of that university is `close' to a particular variable of a given class in euclidean-space.\\
-	
-That is, if $u$ belongs to the $k$-th class then
-	$$
-		k = \argmin_{i} \sqrt{ \sum_{j=1}^n (x_j-y_j^{[i]})^2 }
-	$$
+		That is, if $u$ belongs to the $k$-th class then
+		$$
+			k = \argmin_{i} \sqrt{ \sum_{j=1}^n (x_j-y_j^{[i]})^2 }
+		$$
 
 	
 	\subsection{Investment Strategy}
 
-	\subsubsection{Number of student-Helped}
+	\subsubsection{Number of students-Helped}
 		Let $A_j^{[i]}$ be the amount we invest in university $j$ of the class $i$, and $T_j^{[i]}$ be the tuition of low-income students. Then we can compute the number of students who we help as:
-
-		\begin{align*}
-			n_j^{[i]} &= \floor{\frac{A_j^{[i]}}{T_j^{[i]}}}\\
-			n^{[i]} &= \sum_{j=1}^\infty n_j^{[i]}\\
-			n &= \sum_{i=1}^\infty n^{[i]}
-		\end{align*}
-		Please note that the number of universities is \underline{finite}, we use infinity here in order to avoid the introduction of more variables.\\
+		\begin{align}
+			n_j^{[i]} &= \floor{\frac{A_j^{[i]}}{T_j^{[i]}}}
+		\end{align}
 
 	\subsubsection{Adjusted Poverty}
-		Next we computed the adjusted poverty rate. We make a crucial assumption here about the correlation between grant-money and retention rates. We assume that every student who receive the grant will stay in the program and university (this assumption can be adjusted by a future study on the subject matter).\\
+		Next we computed the adjusted poverty rate. We make a crucial assumption here about the correlation between grant-money and retention rates. We assume that every student who receive the grant will stay in the program and university (this assumption can be adjusted by a future study on the probabilities between grant and retention rates).\\
 		\\
 		Let $\phi_j^{[i]}$ be the total number of students in university $j$ for class $i$.\\
 		The adjusted rate of existing poor students based on our assumptions is:
@@ -126,7 +117,7 @@ That is, if $u$ belongs to the $k$-th class then
 			OP_j^{[i]*} = \frac{  OP_j^{[i]}\phi_j^{[i]}-n_j^{[i]}  }{ \phi_j^{[i]}  }
 		\end{equation}
 		
-		We can then provide a rank to this university, in the similar fashion we computed the rank for the benchmark universities:
+		We can then provide a rank to this university, in the similar fashion we computed the rank for the benchmark universities (recall eq. (1)):
 		$$
 			R_j^{[i]*}=\frac{IP_j^{[i]}-OP_j^{[i]*}}{IP_j^{[i]}}
 		$$
@@ -138,33 +129,26 @@ That is, if $u$ belongs to the $k$-th class then
 		\begin{equation}
 			R_j^{[i]}(1+r_j^{[i]}) = R_j^{[i]*}
 		\end{equation}
-			
 		where $r_j^{[i]}$ is the return on investment for a particular school.\\
-		We also note that (2) can be rewritten as:
-		
+		We also note that (4) can be rewritten using (1) and (3):
 		\begin{equation}
-		r_j^{[i]} = \frac{ OP_j^{[i]} - OP_j^{[i]*}  }{ IP_j^{[i]} - OP_j^{[i]}  }
+			r_j^{[i]} = \frac{ OP_j^{[i]} - OP_j^{[i]*}  }{ IP_j^{[i]} - OP_j^{[i]}  }
 		\end{equation}	
 	 	This will later be used for simplification purpose of the maximization problem.\\
 		\\
 		We then average these rates, to get the approximated return:
-		$$
-			\bar{r} = \frac{ \sum_{j=1}^\infty\sum_{i=1}^\infty r_j^{[i]}  }{ \# (\{ \forall i, j :  U_j^{[i]} \}) }
-		$$
-		For simplification, the total number universities, or $\# (\{ \forall i, j :  U_j^{[i]} \})$ will be written as $\Phi$, so
-		$$
+		\begin{equation}
 			\bar{r} = \frac{ \sum_{j=1}^\infty\sum_{i=1}^\infty r_j^{[i]}  }{ \Phi }
-		$$
+		\end{equation}
+		Where $\Phi$ is the total number universities.
+		
 
 	\subsubsection{Maximization of return}
 		Now that we have a measure of return on investment, we wish to maximize this measure based on the physical restriction that are given to us.\\
 		Since we only have a limit of \$$100$M, and would not want to overshoot our investment by giving any particular university more than what the top-tier schools are given. We put the following restriction forth.\\
 		\\
-		Let $g_j^{[i]} = \max( \frac{  G_o^{[i]}  }{  \phi_o^{[i]} } - \frac{  G_j^{[i]}  }{  \phi_j^{[i]} } \ ,\ 0 )$, be the restriction on the per-student investment.\\ 
-		We do this, in order to make sure that our investment has a reasonable bound that does not exceed the higher-tiered school.\\
-		\\
-		So now our problem can be formulated as follows:
-		\begin{equation*}
+		Where $g_j^{[i]} = \max( \frac{  G_o^{[i]}  }{  \phi_o^{[i]} } - \frac{  G_j^{[i]}  }{  \phi_j^{[i]} } \ ,\ 0 )$, is the difference between per student investment with the benchmark school. We formulate the problem as follows:
+		\begin{equation}
 				\begin{aligned}
 					& \underset{A}{\text{maximize}}
 					& &\bar{r}\\
@@ -172,15 +156,15 @@ That is, if $u$ belongs to the $k$-th class then
 					& & \sum \sum A_j^{[i]} = 100,000,000 \\
 					&&& \forall i,j \ \ \ 0\le A_j^{[i]} \le g_j^{[i]}\phi_j^{[i]}
 				\end{aligned}
-		\end{equation*}
+		\end{equation}
 
 	\subsubsection{Simplifying the complexity}
 		In order to simplify the complexity of the previous problem we outlined before. We reformulated the problem as follows:\\
-		First, recall (1) and (3) which can be further simplified into:
-		
+		First, we rewrote (5) using (2) as,
 		\begin{equation}
 			\begin{aligned}
-			r_j^{[i]} &= \frac{1 }{ \phi_j^{[i]} (IP_j^{[i]} - OP_j^{[i]} ) } n_j^{[i]} = \Delta_j^{[i]} n_j^{[i]}
+			r_j^{[i]} &= \frac{1 }{ \phi_j^{[i]} (IP_j^{[i]} - OP_j^{[i]} ) } n_j^{[i]}\\ 
+			r_j^{[i]} &= \Delta_j^{[i]} n_j^{[i]}
 			\end{aligned}
 		\end{equation}	
 		We note that $\Delta_j^{[i]}$ from (4) is the information given by our data. It must be positive as $$\Delta_j^{[i]}\implies IP_j^{[i]} < OP_j^{[i]}$$
@@ -188,11 +172,11 @@ That is, if $u$ belongs to the $k$-th class then
 		\\
 		Whereas $n_j^{[i]}$ is the number of students we invest in, which is a variable that will be controlled by us.\\
 		\\
-		Hence the mean return can be written as:
-		\begin{align*}
+		Hence the problem as outlined in (6) return can be written as:
+		\begin{align}
 			\bar{r} &= \sum_{j=1}^\infty\sum_{i=1}^\infty \frac{ 1  }{ \Phi } r_j^{[i]} = \frac{ 1  }{ \Phi }\sum_{j=1}^\infty\sum_{i=1}^\infty \Delta_j^{[i]}n_j^{[i]}
-		\end{align*}
-		So our new maximization problem can be formulated as follows:
+		\end{align}
+		So our new maximization problem can be reformulated as follows:
 		\begin{equation*}
 				\begin{aligned}
 					& \underset{\forall n_j^{[i]}}{\text{maximize}}
@@ -202,7 +186,16 @@ That is, if $u$ belongs to the $k$-th class then
 					&&& \forall i,j \ \ \ 0\le n_j^{[i]} \le \frac{g_j^{[i]}\phi_j^{[i]}}{T_j^{[i]}}
 				\end{aligned}	
 		\end{equation*}
-		
+	\subsection{Limiting Schools}
+		The model outlined in the previous section, is given the ability to reject schools. This can be seen in the condition:
+		\begin{align*}
+			\forall i,j \ \ 0\le n_j^{[i]} \le \frac{g_j^{[i]}\phi_j^{[i]}}{T_j^{[i]}}
+		\end{align*}
+		However, we wanted to eliminate this ability, in order to provide the capacity to maximize over any number of schools. So we reworte te condition as 
+		\begin{align}
+			\forall i,j \ \ 1\le n_j^{[i]}T_j^{[i]} \le g_j^{[i]}\phi_j^{[i]}
+		\end{align}	
+		As a side note, this would mean that $g_j^{[i]}\phi_j^{[i]}\ge1$. Meaning, that some schools may be omitted before the optimization process starts.
 \section{Model Application} 
 	As discussed in the previous section, the first goal in the analysis is to find a list of benchmark schools. However, before doing so, we partitioned the schools by the type of degrees that they predominantly provide. This was due to the fact that otherwise, many pieces of data become `null', and the kNN algorithm becomes biased towards schools that have less-years-to-graduation.\\ 
 	\\
