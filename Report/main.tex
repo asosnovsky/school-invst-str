@@ -1,7 +1,7 @@
 \documentclass[12pt]{scrartcl}
 
 \include{amsfonts,amssymb,amsmath,amsthm,txfonts,pxfonts,mathrsfs,enumitem}
-\usepackage[headheight=15pt,paperwidth=8.5in, paperheight=11in,margin=0.75in]{geometry}
+\usepackage[headheight=15pt,paperwidth=8.5in, paperheight=11in,margin=0.80in]{geometry}
 \usepackage{lastpage}
 \usepackage{fancyhdr}
 \usepackage{graphicx}
@@ -31,13 +31,14 @@
 \thispagestyle{fancy}
 
 \section*{Summary}
+	
 	\ \ These are the strategies of the consulting firm Team \#54301. It's five-year mission: to explore new ranking systems; to seek out new return on investments and new student performance metrics; to boldly go where no charity has gone before.\\
 	
 	\ \ Our strategy lies in finding the schools that are most beneficial to individual students. We recognize that the goal of students, when choosing a university is to find the best institution that would reduce their chances at poverty. We start by developing a metric for the level of alleviation of poverty caused by each university, we call it PES. We use this as the benchmark for the initial ranking of schools.\\ 
 
 	\ \ Once that is achieved, we use the kNN algorithm to create a list of institutions that are closest in structure to our selected benchmarks. This generated list of institutions would derive the largest benefit with an increase in funding. The main goal is to improve the well-being of future generations thus our proposed conceptual return of investment is the institutions' effect on reducing poverty.  A linear maximization algorithm is applied to determine donation amount, number of students positively affected and their respective institution. \\
 	
-At the end of the report, we provide a list of schools selected from a subset of the U.S. National Center on Education Statistics and College Scorecard given data set. Our methods allows for the selection of fixed number of schools as well as a unique way of allowing the model to choose the number of schools that should be invested. \\
+	\ \ At the end of the report, we provide a list of schools selected from a subset of the U.S. National Center on Education Statistics and College Scorecard given data set. Our methods allows for the selection of fixed number of schools as well as a unique way of allowing the model to choose the number of schools that should be invested. \\
 \newpage
 \tableofcontents
 \newpage
@@ -45,11 +46,13 @@ At the end of the report, we provide a list of schools selected from a subset of
 
 \section{Introduction}
 	\subsection{The Problem}
-		The Goodgrant Foundation is a charitable organization with a mission to improve educational performance of students attending colleges and universities in the United States. The foundation intends to donate a total of 100,000,000 USD to a group of schools each year, for five years. They also wish to avoid investing in universities that have already received grants from major charitable organizations such as the Gates and Lumina Foundation.\\
+		\ \ The Goodgrant Foundation is a charitable organization with a mission to improve educational performance of students attending colleges and universities in the United States. The foundation intends to donate a total of 100,000,000 USD to a group of schools each year, for five years. They also wish to avoid investing in universities that have already received grants from major charitable organizations such as the Gates and Lumina Foundation.\\
 		
-		We present a mathematical model to outline an ranking and investment strategy to provide the maximal return on investment(ROI) appropriate for an education charity.  The model is split into two sections and is applicable in choosing $1\cdots N$ institutions. \\
+		We present a mathematical model to outline an ranking and investment strategy to provide the maximal return on investment(ROI) appropriate for an education charity.  The model is split into two parts and is applicable to choosing $1\cdots N$ institutions, as well as a unique way that would determine on its own which institutions require funding. \\
 
-The first section outlines determining bench mark points and comparing the rest of the institutions to them via a k-Nearest Neighbours(kNN) Algorithm. In the second section, we derive a ROI measuring the effect the grant would have on improving student performance. In particular, our ROI reflects changes in terms of incoming poverty and outgoing poverty. In the Model Testing section, we input a subset of the U.S. National Center on Education Statistics data set and College Scorecard data set and output a list of $1,\cdots{N}$ schools, the investment amount, and number of students affected. In Sensitivity Analysis, we restrict the distance in the kNN algorithm to obtain a subset of our prioritized schools and assess the model's stability. Lastly, we summarize the findings of the paper and suggest future additions. 
+		The first part of this model outlines a way to determine a benchmark point and then compare the rest of the institutions to them via a k-Nearest Neighbours(kNN) Algorithm. In the second section, we derive an ROI measure, from the effect the grant would have on improving poverty of students coming out of the institutions. In particular, our ROI reflects changes in terms of incoming poverty and outgoing poverty.\\ 
+
+		In the Model Testing section, we input a subset of the U.S. National Center on Education Statistics data set and College Scorecard data set and output a list of $1,\cdots{N}$ schools and the investment amount. In Sensitivity Analysis, we restrict the distance in the kNN algorithm to obtain a subset of our prioritized schools and assess the model's stability. Lastly, we summarize the findings of the paper and suggest future additions. 
 	
 	\subsection{Assumptions and Rationale/Justification}
 	\begin{itemize}
@@ -60,15 +63,15 @@ The first section outlines determining bench mark points and comparing the rest 
 		\item \textbf{Attainment of higher education improves poverty rates} According to the US Census Bureau, individuals with an advance degree earn on average \$72,824 per year which is significantly higher then individuals with a high school degree at \$45,400.\cite{dis} Generally, attending post-secondary education lifts individuals above the poverty-line. 
 
 	\end{itemize}
-	\newpage
+	
 	\subsection{Summary of our Approach}
 		\begin{itemize}
-		\item Create a benchmark setting: top 10 schools for each degree type school, that we consider to have good performance. Each school represent a class.  
+		\item Create a benchmark setting: top 10 schools for each set of schools, that we consider to have good performance. Each school represents a class. We divided the schools into sets based on the type of degree they predominately provide.  
 		\item Identify universities that have similar characteristics to the benchmark list. 
 		\item Prioritize universities to be invested in by the amount of grants they received from other sources.
 		\item Determine the amount of investment and allocation to maximize the return on investment. 
 		\end{itemize}
-				 
+				
 \section{Model Design and Approach}
 	\subsection{Notations and Definitions}
 	\begin{enumerate}
@@ -87,11 +90,11 @@ The first section outlines determining bench mark points and comparing the rest 
 	\end{enumerate}
 	
 	\subsection{Benchmark Selection}
-		First we omitted any below medium size universities or communal universities such as racial or religious schools. Then we partition all universities by number of years required for graduation. Lastly, we rank the universities by the amount of their poverty alleviation standards (PES), this is done based on the result and recommendation of Trombitas \cite{Trom} and College-Score Card \cite{US}.\\ 
+		\ \ First we partition all universities by number of years required for graduation. Lastly, we rank the universities by the amount of their poverty alleviation standards (PES), this is done based on the result and recommendation of Trombitas \cite{Trom} and College-Score Card \cite{US}.\\ 
 		\begin{align}
 			R_j^{[i]}=\frac{IP_j^{[i]}-OP_j^{[i]}}{IP_j^{[i]}}
 		\end{align}
-		Next we choose the top, highest ranking universities per `years of graduation'-group. We set these chosen universities as our benchmarks for each class in each group.\\
+		Next we choose the top, highest ranking universities. We set these chosen universities as our benchmarks for each class in each group.\\
 		i.e.
 		$$
 			o^{[i]} = \argmax_{j} R_j^{[i]}
@@ -99,9 +102,10 @@ The first section outlines determining bench mark points and comparing the rest 
 		Where $o$, is to represent the benchmark index of the class $i$.
 
 	\subsection{Categorizing Institutions into Classes}
-		We aim to classify each university into some class $i$. This is done via the kNN algorithm: a non-parametric method used in classification supervised learning problems. The output is determined by a majority vote, where the object is assigned to the class most common with it's neighbors. \cite{Hastie}\\
-		We set up the following model:
-		Assuming $j\in [1,n]$,where $n$ = amount of variables. For a detailed selection list please see Appendix 1. Let $y_j^{[i]}$ be the $j$-th variable for the $i$-th class benchmark. Let $x_j$ be the $j$-th variable of a particular university. A university $u$, is considered a member of the $k$-th class if the variables $x_i$ of that university is `close' to a particular variable of a given class in euclidean-space.\\
+		\ \ We classify each university into some class $i$. This is done via the kNN algorithm: a non-parametric method used in classification supervised learning problems. The output is determined by a majority vote, where the object is assigned to the class most common with it's neighbors. \cite{Hastie}\\
+		We set up the following model:\\
+
+		\ \ Assuming $j\in [1,n]$,where $n$ = amount of variables. Let $y_j^{[i]}$ be the $j$-th variable for the $i$-th class benchmark. Let $x_j$ be the $j$-th variable of a particular university. A university $u$, is considered a member of the $k$-th class if the variables $x_i$ of that university is `close' to a particular variable of a given class in euclidean-space.\\
 	
 		That is, if $u$ belongs to the $k$-th class then
 		$$
@@ -112,13 +116,13 @@ The first section outlines determining bench mark points and comparing the rest 
 	\subsection{Investment Strategy}
 
 	\subsubsection{Number of students-Helped}
-		Let $A_j^{[i]}$ be the amount we invest in university $j$ of the class $i$, and $T_j^{[i]}$ be the tuition of low-income students. Then we can compute the number of students who we help as:
+		\ \ Let $A_j^{[i]}$ be the amount we invest in university $j$ of the class $i$, and $T_j^{[i]}$ be the tuition of low-income students. Then we can compute the number of students who we help as:
 		\begin{align}
 			n_j^{[i]} &= \floor{\frac{A_j^{[i]}}{T_j^{[i]}}}
 		\end{align}
 
 	\subsubsection{Adjusted Poverty}
-		Next we computed the adjusted poverty rate. We make a crucial assumption here about the correlation between grant-money and retention rates. We assume that every student who receive the grant will stay in the program and university (this assumption can be adjusted by a future study on the probabilities between grant and retention rates).\\
+		\ \ Next we computed the adjusted poverty rate. We make a crucial assumption here about the correlation between grant-money and retention rates. We assume that every student who receive the grant will stay in the program and university (this assumption can be adjusted by a future study on the probabilities between grant and retention rates).\\
 		\\
 		Let $\phi_j^{[i]}$ be the total number of students in university $j$ for class $i$.\\
 		The adjusted rate of existing poor students based on our assumptions is:
@@ -133,7 +137,7 @@ The first section outlines determining bench mark points and comparing the rest 
 		We use this to compute the increase to the social well-being of students going to this university. 
 
 	\subsubsection{Return on Investment (ROI)}
-		The return on investment for our model will be the change in the level of alleviation of poverty provided by our investment.\\
+		\ \ The return on investment for our model will be the change in PES provided by our investment.\\
 		We do this as follows:
 		\begin{equation}
 			R_j^{[i]}(1+r_j^{[i]}) = R_j^{[i]*}
@@ -153,10 +157,11 @@ The first section outlines determining bench mark points and comparing the rest 
 		
 
 	\subsubsection{Maximization of return}
-		Now that we have a measure of return on investment, we wish to maximize this measure based on the physical restriction that are given to us.\\
-		Since we only have a limit of \$$100$M, and would not want to overshoot our investment by giving any particular university more than what the top-tier schools are given. We put the following restriction forth.\\
-		\\
-		Where $g_j^{[i]} = \max( \frac{  G_o^{[i]}  }{  \phi_o^{[i]} } - \frac{  G_j^{[i]}  }{  \phi_j^{[i]} } \ ,\ 0 )$, is the difference between per student investment with the benchmark school. We formulate the problem as follows:
+		\ \ Now that we have a measure of return on investment, we wish to maximize this measure based on the physical restriction that are given to us.\\
+		
+		\ \ Since we only have a limit of \$$100$M, and would not want to overshoot our investment by giving any particular university more than what the top-tier schools are given. We use these restrictions to set up our maximization problem.\\
+		
+		\ \ Where $g_j^{[i]} = \max( \frac{  G_o^{[i]}  }{  \phi_o^{[i]} } - \frac{  G_j^{[i]}  }{  \phi_j^{[i]} } \ ,\ 0 )$, is the difference between per student investment with the benchmark school. We formulate the problem as follows:
 		\begin{equation}
 				\begin{aligned}
 					& \underset{A}{\text{maximize}}
@@ -168,7 +173,7 @@ The first section outlines determining bench mark points and comparing the rest 
 		\end{equation}
 
 	\subsubsection{Simplifying the complexity}
-		In order to simplify the complexity of the previous problem we outlined before. We reformulated the problem as follows:\\
+		\ \ In order to simplify the complexity of the previous problem we outlined before. We reformulated the problem as follows:\\
 		First, we rewrote (5) using (2) as,
 		\begin{equation}
 			\begin{aligned}
@@ -176,12 +181,12 @@ The first section outlines determining bench mark points and comparing the rest 
 			r_j^{[i]} &= \Delta_j^{[i]} n_j^{[i]}
 			\end{aligned}
 		\end{equation}	
-		We note that $\Delta_j^{[i]}$ from (4) is the information given by our data. It must be positive as $$\Delta_j^{[i]}\implies IP_j^{[i]} < OP_j^{[i]}$$
+		We note that $\Delta_j^{[i]}$ from (8) is the information given by our data. It must be positive as $$\Delta_j^{[i]}\implies IP_j^{[i]} < OP_j^{[i]}$$
 		Which means that the considered university is getting more in funding than the benchmark one. If this happens, we omit that university from our dataset.\\ 
 		\\
 		Whereas $n_j^{[i]}$ is the number of students we invest in, which is a variable that will be controlled by us.\\
 		\\
-		Hence the problem as outlined in (6) return can be written as:
+		Hence the equation outlined in (6) return can be written as:
 		\begin{align}
 			\bar{r} &= \sum_{j=1}^\infty\sum_{i=1}^\infty \frac{ 1  }{ \Phi } r_j^{[i]} = \frac{ 1  }{ \Phi }\sum_{j=1}^\infty\sum_{i=1}^\infty \Delta_j^{[i]}n_j^{[i]}
 		\end{align}
@@ -196,18 +201,18 @@ The first section outlines determining bench mark points and comparing the rest 
 				\end{aligned}	
 		\end{equation}
 	\subsection{Limiting Schools}
-		The model outlined in the previous section, is given the ability to reject schools. This can be seen in the condition:
+		\ \ The model outlined in the previous section, is given the ability to reject schools. This can be seen in the condition:
 		\begin{align*}
 			\forall i,j \ \ 0\le n_j^{[i]} \le \frac{g_j^{[i]}\phi_j^{[i]}}{T_j^{[i]}}
 		\end{align*}
-		However, we wanted to eliminate this ability, in order to provide the capacity to maximize over any number of schools. So we reworte te condition as 
+		\ \ However, we wanted to eliminate this ability, in order to provide the capacity to maximize over any number of schools. So we rewrote the condition as 
 		\begin{align}
 			\forall i,j \ \ 1\le n_j^{[i]}T_j^{[i]} \le g_j^{[i]}\phi_j^{[i]}
 		\end{align}	
-		As a side note, this would mean that $g_j^{[i]}\phi_j^{[i]}\ge1$. Meaning, that some schools may be omitted before the optimization process starts.
+		\ \ As a side note, this would mean that $g_j^{[i]}\phi_j^{[i]}\ge1$. Meaning, that some schools may be omitted before the optimization process starts.
 \section{Model Application} 
 	\subsection{Partitioning and Benchmark}
-		As discussed in the previous section, the first goal in the analysis is to find a list of benchmark schools. However, before doing so, we partitioned the schools by the type of degrees that they predominantly provide. This was due to the fact that otherwise, many pieces of data become unusable, and the kNN algorithm becomes biased towards schools that have less-years-to-graduation.\\ 
+		\ \ As discussed in the previous section, the first goal in the analysis is to find a list of benchmark schools. However, before doing so, we partitioned the schools by the type of degrees that they predominantly provide. This was due to the fact that otherwise, many pieces of data become unusable, and the kNN algorithm becomes biased towards schools that have less-years-to-graduation.\\ 
 		\\
 		Once we acquired this data, we chose the top 10 schools from each school type as our benchmark schools. It is also important to note the schools here do not \underline{only} provide the designated degree, but rather have a predominate focus on such degrees.\\
 		\begin{figure}[H]
@@ -247,8 +252,8 @@ The first section outlines determining bench mark points and comparing the rest 
 			\end{itemize}
 			\ \ We did make use of [1], and [3], for cleaning and producing other variables (such as the PES rank), however we did not run the kNN algorithm on them.
 
-		\subsubsection{Selection of Variables from Given Data Sets}
-			Since many of the variables provided by scorecard, overlapped with the ones from IPEDS, we only withdrew the following variables:
+		\subsubsection{IPEDS Variables}
+			\ \ Since many of the variables provided by scorecard, overlapped with the ones from IPEDS, we only withdrew the following variables:
 			\begin{itemize}
 				\item \textbf{Number of students}, which we used for computation of kNN and for the maximization algorithm.
 				\item \textbf{Average Tuition of Low Income Students}, which we used mainly for the maximization.
@@ -329,7 +334,7 @@ The first section outlines determining bench mark points and comparing the rest 
 
 		\item \textbf{Determine the true poverty rate by adjusting for major type} Expanding on the idea above about partitioning into majors, we can refine the adjusted poverty rates. Particular institutions appeal more to lower-income individuals and conversely some universities have predominantly middle-income and above student-bodies. \cite{Carnevale}.
 	\end{itemize}
-\newpage
+
 \section{Conclusions}
 
 	\ \ After running our model on the real data, finding the top ranking universities and maximizing the investment of our donations to society. We found the top ranking universities to invest in, as presented in figure 2, and the top ranking universities that are better at taking individuals out of poverty as seen in figures (a),(b), and (c).\\
@@ -358,40 +363,32 @@ The next step was to determine which schools in the classified list that maximiz
 
 Our results found that schools that specialized in nursing, medical and other related hard sciences ranked the highest on the investment list. Providing support for these schools have a large positive effect on society by adding a larger workforce to the health care and technology field while simultaenously raising these students out of poverty. \\
 
-Overall, we are confident that the proposed investment strategy will exemplify Goodgrant’s fundamental charitable objective. \\
-
-Sincerely,
-Team \# 54301
+Overall, we are confident that the proposed investment strategy will exemplify Goodgrant’s fundamental charitable objective. 
 \newpage
 
 
 
 \begin{thebibliography}{10}
-\bibitem{Conkey} Conkey, Christopher 2006. ``Big donations to charity often include spending advice.” \emph{The Wall Street Journal Asia} 
-	
 	\bibitem{Trom} Trombitas, Kate.  \emph{Financial Stress: An Everyday Reality for College Students}. Inceptia, July 2012. PDF.
 	
 	\bibitem{dis} US Census Bureau  \emph{The Big Payoff: Educational Attainment and Synthetic Estimates of Work-Life Earnings}. Report, 2006 . PDF. 
 
-	\bibitem{US} ``Using Federal Data To Measure And Improve The Performance Of U.S. Institutions of Higher Education" Sept 2015. \textless https://collegescorecard.ed.gov/assets/UsingFederalDataToMeasureAnd- \\ImprovePerformance.pdf\textgreater.
+	\bibitem{Carnevale} Carnevale, Anthony, Ban Cheah, and Martin Van Der Werf. \emph{Ranking Your College}. Georgetown University Center on Education and the Workforce, Dec. 2015. PDF.
 	
-	\bibitem{Hastie} Hastie, Trevor, Robert Tibshirani, and Jerome Friedman. ``Prototype Methods and Nearest-Neighbors". \emph{The Elements of Statistical Learning: Data Mining, Inference, and Prediction.} 2nd ed. New York: Springer, 2009. Print. 
+	\bibitem{Conkey} Conkey,Christopher 2006. ``Big donations to charity often include spending advice” \emph{The Wall Street Journal Asia} 05:
 	
 	\bibitem{Bill} ``Bill \& Melinda Gates Foundation." \emph{Bill \& Melinda Gates Foundation}. Web. 29 Jan. 2016. 
 	
 	\bibitem{Grant} ``Grants Database." \emph{Grants Database}. Web. 29 Jan. 2016. $<$https://www.luminafoundation.org/grants-database/strategy/student-financial-supports$>$. 
-	
-	\bibitem{Winston} Winston, Wayne L. ``Linear Programming."  \emph{Operations Research: Applications and Algorithms}. 4th ed. Belmont, Calif.: Duxbury, 2003. Print.
-	
-	\bibitem{Carnevale} Carnevale, Anthony, Ban Cheah, and Martin Van Der Werf. \emph{Ranking Your College}. Georgetown University Center on Education and the Workforce, Dec. 2015. PDF.	
+
+	\bibitem{Hastie} Hastie, Trevor, Robert Tibshirani, and Jerome Friedman. ``Prototype Methods and Nearest-Neighbors". \emph{The Elements of Statistical Learning: Data Mining, Inference, and Prediction.} 2nd ed. New York: Springer, 2009. Print. 
 
 	\bibitem{IPEDS} ``IPEDS Data Center." \emph{IPEDS Data Center.} Web. 30 Jan. 2016. \textless https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx\textgreater.
 
 	\bibitem{Wayne} Hanushek, Eric and Margaret Raymond. 2005. ``Does School Accountability Lead to Improved School Performance?” \emph{Journal of Policy Analysis and Management} 24(2): 297-329.
 	
+	\bibitem{Winston} Winston, Wayne L. ``Linear Programming."  \emph{Operations Research: Applications and Algorithms}. 4th ed. Belmont, Calif.: Duxbury, 2003. Print.
 	
-
-	
-	
+	\bibitem{US} ``Using Federal Data To Measure And Improve The Performance Of U.S. Institutions of Higher Education" Sept 2015. \textless https://collegescorecard.ed.gov/assets/UsingFederalDataToMeasureAnd- \\ImprovePerformance.pdf\textgreater.
 \end{thebibliography}
 \end{document}
