@@ -71,7 +71,7 @@ def compute_scores(df_tocompute):
     norm = []
     rad = []
 
-    anchor = pd.read_csv('Analyzed-Data/benchmarks/4-cleaned-data-top10.csv').iloc[:, 2:]
+    anchor = pd.read_csv('Analyzed-Data/benchmarks/1-cleaned-data-top10.csv').iloc[:, 2:]
     anch_list = []
 
     for index, row in anchor.iterrows():
@@ -88,7 +88,7 @@ def compute_scores(df_tocompute):
         norm.append(ide+name+targ_np_norm)
 
     df_norm = pd.DataFrame(norm,columns = df_tocompute.columns.values.tolist())
-    df_norm.to_csv('Analyzed-Data/normed_filtered_data/normed-tot-cleaned-data.csv')
+    df_norm.to_csv('Analyzed-Data/normed_filtered_data/normed-1-cleaned-data.csv')
     
     
 
@@ -126,10 +126,10 @@ def radius(df_k):
 
 
 def main():
-    #school_test = pd.read_csv('Analyzed-Data/filtered/tot-cleaned-data.csv')
+    school_test = pd.read_csv('Analyzed-Data/filtered/1-cleaned-data.csv')
     #donations = pd.read_csv('External-data/microsoft_donations.csv')
     #normed_school_test = pd.read_csv('Analyzed-Data/normed_filtered_data/normed-1-cleaned-data.csv')
-    #scores = sorted(compute_scores(school_test))
+    scores = sorted(compute_scores(school_test))
 
     #df = pd.DataFrame(scores, columns=['Class', 'Distance', 'Name', 'ID'])
     #df = pd.DataFrame(scores,columns=['Class','Distance','P-Value','Name'])
