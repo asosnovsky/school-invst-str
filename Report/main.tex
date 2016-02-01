@@ -5,6 +5,7 @@
 \usepackage{lastpage}
 \usepackage{fancyhdr}
 \usepackage{graphicx}
+\usepackage{wrapfig}
 \usepackage{subfig}
 \usepackage{float}
 
@@ -205,12 +206,19 @@ The first section outlines determining bench mark points and comparing the rest 
 	\\
 	\begin{figure}[H]
 	\centering
-		\subfloat[][2 Year Program]{\includegraphics[width=0.33\textwidth]{2yr-col.png}\label{fig:subfig1}}
-	\centering
-		\subfloat[][Bachelor Program]{\includegraphics[width=0.33\textwidth]{4yr-col.png}\label{fig:subfig2}}
-		\subfloat[][6 Year Program]{\includegraphics[width=0.33\textwidth]{6yr-col.png}\label{fig:subfig3}}
+		\subfloat[2 Year Program]{\includegraphics[width=0.45\textwidth]{2yr-col.png}}
+	\qquad
+		\subfloat[Bachelor Program]{\includegraphics[width=0.45\textwidth]{4yr-col.png}}
 	\end{figure}
+	
+	\begin{wrapfigure}{l}{0.50\textwidth}
+	\centering
+	\includegraphics*[width=0.90\linewidth]{6yr-col.png}\caption*{6 Year Program}
+	\end{wrapfigure} 	
 	Once we acquired this data, we chose the top 10 schools from each school type as our benchmark schools. 
+	\clearpage
+
+	
 	\subsection{Variable Selection}
 		\subsubsection{Filtering by Grant}
 			Since we did not want to overlap with grants given by other institutions, we filtered the next list using the data given by the Gates\cite{Bill} and Lumina \cite{Grant} Foundations.\\
