@@ -19,15 +19,21 @@
 \renewcommand{\headrulewidth}{0pt}
 \pagestyle{fancy}
 
-\title{Emerging Markets: Comparing University Poverty Alleviation with Charitable Education Donations}
-\subtitle{A Model for Post-Secondary Investments}
+\title{\vspace{-1.7cm} Emerging Markets: Comparing University Poverty Alleviation with Charitable Education Donations}
+\subtitle{A Model for Post-Secondary Investments\vspace{-1.3cm}}
 
 \begin{document}
 \maketitle
+\thispagestyle{fancy}
+
+\section*{Summary}
+
+
+
 \newpage
 \tableofcontents
 \newpage
-\setcounter{page}{1}	
+	
 
 \section{Introduction}
 	\subsection{The Problem}
@@ -116,9 +122,10 @@ That is, if $u$ belongs to the $k$-th class then
 		\\
 		Let $\phi_j^{[i]}$ be the total number of students in university $j$ for class $i$.\\
 		The adjusted rate of existing poor students based on our assumptions is:
-		$$
+		\begin{equation}
 			OP_j^{[i]*} = \frac{  OP_j^{[i]}\phi_j^{[i]}-n_j^{[i]}  }{ \phi_j^{[i]}  }
-		$$
+		\end{equation}
+		
 		We can then provide a rank to this university, in the similar fashion we computed the rank for the benchmark universities:
 		$$
 			R_j^{[i]*}=\frac{IP_j^{[i]}-OP_j^{[i]*}}{IP_j^{[i]}}
@@ -128,11 +135,17 @@ That is, if $u$ belongs to the $k$-th class then
 	\subsubsection{Return on Investment (ROI)}
 		The return on investment for our model will be the change in the level of alleviation of poverty provided by our investment.\\
 		We do this as follows:
-		$$
+		\begin{equation}
 			R_j^{[i]}(1+r_j^{[i]}) = R_j^{[i]*}
-		$$
+		\end{equation}
+			
 		where $r_j^{[i]}$ is the return on investment for a particular school.\\
-		We also note that this can be rewritten as $r_j^{[i]} = \frac{ OP_j^{[i]} - OP_j^{[i]*}  }{ IP_j^{[i]} - OP_j^{[i]}  }$. This will later be used for simplification purpose of the maximization problem.\\
+		We also note that (2) can be rewritten as:
+		
+		\begin{equation}
+		r_j^{[i]} = \frac{ OP_j^{[i]} - OP_j^{[i]*}  }{ IP_j^{[i]} - OP_j^{[i]}  }
+		\end{equation}	
+	 	This will later be used for simplification purpose of the maximization problem.\\
 		\\
 		We then average these rates, to get the approximated return:
 		$$
@@ -163,15 +176,14 @@ That is, if $u$ belongs to the $k$-th class then
 
 	\subsubsection{Simplifying the complexity}
 		In order to simplify the complexity of the previous problem we outlined before. We reformulated the problem as follows:\\
-		First recall, results:\\
-		(1) $r_j^{[i]} = \frac{ OP_j^{[i]} - OP_j^{[i]*}  }{ IP_j^{[i]} - 
-		OP_j^{[i]}  }$\\
-		(2) $OP_j^{[i]*} = \frac{  OP_j^{[i]}\phi_j^{[i]}-n_j^{[i]}  }{ \phi_j^{[i]}  }$\\
-		, this can be further simplified:
-		\begin{align*}
+		First, recall (1) and (3) which can be further simplified into:
+		
+		\begin{equation}
+			\begin{aligned}
 			r_j^{[i]} &= \frac{1 }{ \phi_j^{[i]} (IP_j^{[i]} - OP_j^{[i]} ) } n_j^{[i]} = \Delta_j^{[i]} n_j^{[i]}
-		\end{align*}	
-		We note that $\Delta_j^{[i]}$ is the information given by our data. It must be positive as $$\Delta_j^{[i]}\implies IP_j^{[i]} < OP_j^{[i]}$$
+			\end{aligned}
+		\end{equation}	
+		We note that $\Delta_j^{[i]}$ from (4) is the information given by our data. It must be positive as $$\Delta_j^{[i]}\implies IP_j^{[i]} < OP_j^{[i]}$$
 		Which means that the considered university is getting more in funding than the benchmark one. If this happens, we omit that university from our dataset.\\ 
 		\\
 		Whereas $n_j^{[i]}$ is the number of students we invest in, which is a variable that will be controlled by us.\\
