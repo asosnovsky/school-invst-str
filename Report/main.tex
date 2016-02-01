@@ -29,17 +29,6 @@
 \begin{document}
 \maketitle
 \thispagestyle{fancy}
-
-\section*{Summary}
-	
-	\ \ These are the strategies of the consulting firm Team \#54301. It's five-year mission: to explore new ranking systems; to seek out new return on investments and new student performance metrics; to boldly go where no charity has gone before.\\
-	
-	\ \ Our strategy lies in finding the schools that are most beneficial to individual students. We recognize that the goal of students, when choosing a university is to find the best institution that would reduce their chances at poverty. We start by developing a metric for the level of alleviation of poverty caused by each university, we call it PES. We use this as the benchmark for the initial ranking of schools.\\ 
-
-	\ \ Once that is achieved, we use the kNN algorithm to create a list of institutions that are closest in structure to our selected benchmarks. This generated list of institutions would derive the largest benefit with an increase in funding. The main goal is to improve the well-being of future generations thus our proposed conceptual return of investment is the institutions' effect on reducing poverty.  A linear maximization algorithm is applied to determine donation amount, number of students positively affected and their respective institution. \\
-	
-	\ \ At the end of the report, we provide a list of schools selected from a subset of the U.S. National Center on Education Statistics and College Scorecard given data set. Our methods allows for the selection of fixed number of schools as well as a unique way of allowing the model to choose the number of schools that should be invested. \\
-\newpage
 \tableofcontents
 \newpage
 	
@@ -48,11 +37,11 @@
 	\subsection{The Problem}
 		\ \ The Goodgrant Foundation is a charitable organization with a mission to improve educational performance of students attending colleges and universities in the United States. The foundation intends to donate a total of 100,000,000 USD to a group of schools each year, for five years. They also wish to avoid investing in universities that have already received grants from major charitable organizations such as the Gates and Lumina Foundation.\\
 		
-		We present a mathematical model to outline an ranking and investment strategy to provide the maximal return on investment(ROI) appropriate for an education charity.  The model is split into two parts and is applicable to choosing $1\cdots N$ institutions, as well as a unique way that would determine on its own which institutions require funding. \\
+		We present a mathematical model to outline an ranking and investment strategy to provide the maximal return on investment(ROI) appropriate for an education charity.  The model is split into two parts and is applicable to choosing $1,\cdots,{N}$ institutions, as well as a unique way that would determine on its own which institutions require funding. \\
 
 		The first part of this model outlines a way to determine a benchmark point and then compare the rest of the institutions to them via a k-Nearest Neighbours(kNN) Algorithm. In the second section, we derive an ROI measure, from the effect the grant would have on improving poverty of students coming out of the institutions. In particular, our ROI reflects changes in terms of incoming poverty and outgoing poverty.\\ 
 
-		In the Model Testing section, we input a subset of the U.S. National Center on Education Statistics data set and College Scorecard data set and output a list of $1,\cdots{N}$ schools and the investment amount. In Sensitivity Analysis, we restrict the distance in the kNN algorithm to obtain a subset of our prioritized schools and assess the model's stability. Lastly, we summarize the findings of the paper and suggest future additions. 
+		In the Model Testing section, we input a subset of the U.S. National Center on Education Statistics data set and College Scorecard data set and output a list of $1,\cdots,{N}$ schools and the investment amount. In Sensitivity Analysis, we restrict the distance in the kNN algorithm to obtain a subset of our prioritized schools and assess the model's stability. Lastly, we summarize the findings of the paper and suggest future additions. 
 	
 	\subsection{Assumptions and Rationale/Justification}
 	\begin{itemize}
@@ -63,7 +52,7 @@
 		\item \textbf{Attainment of higher education improves poverty rates} According to the US Census Bureau, individuals with an advance degree earn on average \$72,824 per year which is significantly higher then individuals with a high school degree at \$45,400.\cite{dis} Generally, attending post-secondary education lifts individuals above the poverty-line. 
 
 	\end{itemize}
-	
+\newpage	
 	\subsection{Summary of our Approach}
 		\begin{itemize}
 		\item Create a benchmark setting: top 10 schools for each set of schools, that we consider to have good performance. Each school represents a class. We divided the schools into sets based on the type of degree they predominately provide.  
@@ -334,6 +323,7 @@
 
 		\item \textbf{Determine the true poverty rate by adjusting for major type} Expanding on the idea above about partitioning into majors, we can refine the adjusted poverty rates. Particular institutions appeal more to lower-income individuals and conversely some universities have predominantly middle-income and above student-bodies. \cite{Carnevale}.
 	\end{itemize}
+\newpage
 
 \section{Conclusions}
 
