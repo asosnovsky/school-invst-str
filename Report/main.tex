@@ -282,28 +282,40 @@ The first section outlines determining bench mark points and comparing the rest 
 		\end{figure}	
 
 \section{Discussion} 
-\subsection{Sensitivity Analysis}
-In order to test model stability, we impose a radius condition to the kNN selection algorithm. The model testing outlined in Section 3 used an unrestricted subset of the data. We compute the the mean and standard deviation for each class $i$. Then each value exceeding k from k = 1,..3 standard deviations away was omitted from the data passed to the investment algorithm. The goal is to partition the dataset such that the subset data will have 68\%, 95\%, and 99.7\% of the data.\\
+	\subsection{Sensitivity Analysis}
+		In order to test model stability, we impose a radius condition to the kNN selection algorithm. The model testing outlined in Section 3 used an unrestricted subset of the data. We compute the the mean and standard deviation for each class $i$. Then each value exceeding k from k = 1,..3 standard deviations away was omitted from the data passed to the investment algorithm. The goal is to partition the dataset such that the subset data will have 68\%, 95\%, and 99.7\% of the data.\\
 
-With all other variables the same the ROI for each standard deviation(STD) is:
-\begin{enumerate}
-\item STD 1 ROI: 0.0353
-\item STD 2 ROI: 0.0499
-\item STD 3 ROI: 0.0474
-\end{enumerate}
+		With all other variables the same the ROI for each standard deviation(STD) is:
+		\begin{enumerate}
+		\item STD 1 ROI: 0.0353
+		\item STD 2 ROI: 0.0499
+		\item STD 3 ROI: 0.0474
+		\end{enumerate}
 
-All ROI are relatively the same suggesting that the model does well with any size of data input. 
+		All ROI are relatively the same suggesting that the model does well with any size of data input. 
 
-\subsection{Strengths}
-\begin{itemize}
-\item \textbf{Wide Variety of Variables} The investment strategy looks at all variables provided in the COMAP College Score Card data set. This approach provides a large number of factors to assess an institution's potential for investment rather then the usual ones used by different education foundations. 
-\end{itemize}
-\subsection{Weaknesses}
-\begin{itemize}
-\item \textbf{Institutions with Missing Data} During the early stage process of the data cleaning, schools that did not have data for the two bench mark variables "Incoming Poverty" and "Outgoing Poverty" were removed from the list. It is a possibility that those particular institutions could have skewed the results.
-\item \textbf{Specialized Institutions} Similar to the point above, the data was filtered to remove any institutions that identified as religious-affiliated, race-affiliated, and gender-affiliated. In our first initial tests, many of the specialized institutions were at the top of the ranking systems due to the special nature of their student body. However the trade-off is smaller data set for the investment strategy. 
-\end{itemize}
+	\subsection{Strengths}
+		\begin{itemize}
+		\item \textbf{Wide Variety of Variables} The investment strategy looks at all variables provided in the COMAP College Score Card data set. This approach provides a large number of factors to assess an institution's potential for investment rather then the usual ones used by different education foundations. 
+		\end{itemize}
+
+	\subsection{Weaknesses}
+		\begin{itemize}
+		\item \textbf{Institutions with Missing Data} During the early stage process of the data cleaning, schools that did not have data for the two bench mark variables "Incoming Poverty" and "Outgoing Poverty" were removed from the list. It is a possibility that those particular institutions could have skewed the results.
+		\item \textbf{Specialized Institutions} Similar to the point above, the data was filtered to remove any institutions that identified as religious-affiliated, race-affiliated, and gender-affiliated. In our first initial tests, many of the specialized institutions were at the top of the ranking systems due to the special nature of their student body. However the trade-off is smaller data set for the investment strategy. 
+		\end{itemize}
+
 \section{Extensions}
+	\begin{itemize}
+		\item \textbf{Determine the correlation between tuition-grants and students' retention rates}
+
+		\item \textbf{Refine the number of observed variables used for the kNN method}, run a regression model that would determine the most relevant variables to use as predictors
+
+		\item \textbf{Run the model on major types}
+
+		\item \textbf{Determine the true poverty rate by adjusting for major type} as mentioned in Carnevale \cite{Carnevale}.
+	\end{itemize}
+
 \section{Conclusions}
 
 We present a model that optimize the return on investment (ROI) reflecting the changes of incoming poverty and outgoing poverty. The model identifies the top priority institutions, allocates the amount of money to be invested in and also return the number of students helped. The length of investment is equal to the program’s length for that institution. \\
@@ -336,7 +348,7 @@ Team \#54301 from the MCM proposes  a concept for return-on-investment (ROI) bas
 	\bibitem{Bill} ``Bill \& Melinda Gates Foundation." \emph{Bill \& Melinda Gates Foundation}. Web. 29 Jan. 2016. 
 	
 	\bibitem{Grant} ``Grants Database." \emph{Grants Database}. Web. 29 Jan. 2016. $<$https://www.luminafoundation.org/grants-database/strategy/student-financial-supports$>$. 
-	
+
 	\bibitem{Hastie} Hastie, Trevor, Robert Tibshirani, and Jerome Friedman. ``Prototype Methods and Nearest-Neighbors". \emph{The Elements of Statistical Learning: Data Mining, Inference, and Prediction.} 2nd ed. New York: Springer, 2009. Print. 
 
 	\bibitem{IPEDS} ``IPEDS Data Center." \emph{IPEDS Data Center.} Web. 30 Jan. 2016. \textless https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx\textgreater.
