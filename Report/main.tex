@@ -78,7 +78,7 @@ The first section outlines determining bench mark points and comparing the rest 
 	\end{enumerate}
 	
 	\subsection{Benchmark Selection}
-		First we omitted any below medium size universities or communal universities such as racial or religious schools. Then we partition all universities by number of years required for graduation. Lastly, we rank the universities by the amount of their poverty elevation standards, this is done based on the result and recommendation of Trombitas \cite{Trom} and College-Score Card \cite{US}.\\ 
+		First we omitted any below medium size universities or communal universities such as racial or religious schools. Then we partition all universities by number of years required for graduation. Lastly, we rank the universities by the amount of their poverty elevation standards (PES), this is done based on the result and recommendation of Trombitas \cite{Trom} and College-Score Card \cite{US}.\\ 
 		\begin{align}
 			R_j^{[i]}=\frac{IP_j^{[i]}-OP_j^{[i]}}{IP_j^{[i]}}
 		\end{align}
@@ -197,9 +197,10 @@ The first section outlines determining bench mark points and comparing the rest 
 		\end{align}	
 		As a side note, this would mean that $g_j^{[i]}\phi_j^{[i]}\ge1$. Meaning, that some schools may be omitted before the optimization process starts.
 \section{Model Application} 
-	As discussed in the previous section, the first goal in the analysis is to find a list of benchmark schools. However, before doing so, we partitioned the schools by the type of degrees that they predominantly provide. This was due to the fact that otherwise, many pieces of data become `null', and the kNN algorithm becomes biased towards schools that have less-years-to-graduation.\\ 
+	\subsection{Partitioning and Benchmark}
+	As discussed in the previous section, the first goal in the analysis is to find a list of benchmark schools. However, before doing so, we partitioned the schools by the type of degrees that they predominantly provide. This was due to the fact that otherwise, many pieces of data become unusable, and the kNN algorithm becomes biased towards schools that have less-years-to-graduation.\\ 
 	\\
-	Once the partitioning was done, we applied the poverty alleviation rank (PAK). Which was inspired by the results of Trombitas \cite{Trom} and College-Score Card \cite{US}.\\
+	Once the partitioning was done, we applied the PES rank.\\
 	\begin{figure}[h]
 		\centering
 		\includegraphics[width=0.5\textwidth]{2yr-col.png}
@@ -218,12 +219,34 @@ The first section outlines determining bench mark points and comparing the rest 
 		\caption{Grad program}
 		\label{fig:prog2}
 	\end{figure}
-	Once we acquired this data, we chose the top 10 schools from each school type as our benchmark schools. Since we did not want to overlap with grants given by other institutions, we filtered the next list using the data given by the Gates\cite{Bill} and Lumina \cite{Grant} Foundations.\\
+	Once we acquired this data, we chose the top 10 schools from each school type as our benchmark schools. 
+	\subsection{Variable Selection}
+		\subsubsection{Filtering by Grant}
+			Since we did not want to overlap with grants given by other institutions, we filtered the next list using the data given by the Gates\cite{Bill} and Lumina \cite{Grant} Foundations.\\
+		\subsubsection{Scorecard Variables}
+			First we created a dictionary for all the variables that were given to us by Scorecard. We had to categorize these variables as follows:
+			\begin{itemize}
+				\item \textbf{Irrelevant [0]}, values such as location of website, or miscellaneous ids.
+				\item \textbf{Informative [1]}, flags for women-only, historically black colleges and others. 
+				\item \textbf{Selected [2]}, the values we chose to focus on, such as SAT, ACT, retention rates etc. 
+				\item \textbf{Percentile [3]} values that refer to the composition of the student body (such as racial, sexual or income composition).
+			\end{itemize}
+			We did make use of [1], and [3], for cleaning and producing other variables (such as the PES rank), however we did not run the kNN algorithm on them.
+
+		\subsubsection{IPEDS Variables}
+			Since many of the variables provided by scorecard, overlapped with the ones from IPEDS, we only withdrew the following variables:
+			\begin{itemize}
+				\item \textbf{Number of students}, which we used for computation of kNN and for the maximization algorithm.
+				\item \textbf{Average Tuition of Low Income Students}, which we used mainly for the maximization.
+				\item \textbf{Total Grants Received}, we summed the various grants that each university received to get this number. We then used it for both kNN and maximization.
+			\end{itemize}
+	
+	\subsection{kNN Selection}
+	After this point, we used the kNN algorithm as the method of selection for the nearest best schools. As we wish to avoid investing in the top tier schools, and would rather invest in schools with the potential to become the top-tier. 
+	\\ \\
+	Prior to the application of the kNN algorithm we normalized the data by transforming each variable to a scale in $[0,1]$, in order to avoid bias for larger scaled-values.\\
 	\\
-	As this point, we used the kNN algorithm as the method of selection for the nearest best schools. As we wish to avoid investing in the top tier schools, and would rather invest in schools with the potential to become the top-tier.\\ 
-	Prior to the application of the kNN algorithm we had to normalize the data by transforming each variable to a scale in $[0,1]$, as otherwise variables measure in larger values would be favored to smaller variables.\\
-	\\
-	This identification provided us with the following schools (please note that this is not the entire dataset, the full dataset will be provided separately) \ref{fig:kNN}.
+	This identification provided us with the following schools (please note that this is not the entire dataset, the full dataset will be provided separately). As can be seen in fig.\ref{fig:kNN}.
 	\begin{figure}[h]
 		\centering
 		\includegraphics[width=0.6\textwidth]{6yr-col.png}
