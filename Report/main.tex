@@ -31,9 +31,13 @@
 \thispagestyle{fancy}
 
 \section*{Summary}
-These are the strategies of the consulting firm Team \#54301. It's five-year mission: to explore new ranking systems; to seek out new return on investments and new student performance metrics; to boldly go where no charity has gone before. 
+	\ \ These are the strategies of the consulting firm Team \#54301. It's five-year mission: to explore new ranking systems; to seek out new return on investments and new student performance metrics; to boldly go where no charity has gone before.\\
+	
+	\ \ Our strategy lies in finding the schools that are most beneficial to individual students. We recognize that the goal of students, when choosing a university is to find the best institution that would reduce their chances at poverty. We start by developing a metric for the level of alleviation of poverty caused by each university, we call it PES. We use this as the benchmark for the initial ranking of schools.\\ 
 
+	\ \ Once that is achieved, we use the kNN method tolook for the institutions that are closest in structure to the top universities. As these are the institutions that would benefit most from an increase in funding. Since, our goal is to benefit the well-being of future generation, our return on investment measure, looks at the increase in poverty reduction. Which we maximize by running a linear maximization algorithm on our investments.\\
 
+	\ \ At the end of the report we list the schools that would benefit the most out of an increase in investments, as well as a way to prioritize them. Our methods allows for the selection of fixed number of schools as well as a unique way of allowing the model to choose the number of schools that should be invested. 
 \newpage
 \tableofcontents
 \newpage
@@ -84,7 +88,7 @@ The first section outlines determining bench mark points and comparing the rest 
 	\end{enumerate}
 	
 	\subsection{Benchmark Selection}
-		First we omitted any below medium size universities or communal universities such as racial or religious schools. Then we partition all universities by number of years required for graduation. Lastly, we rank the universities by the amount of their poverty elevation standards (PES), this is done based on the result and recommendation of Trombitas \cite{Trom} and College-Score Card \cite{US}.\\ 
+		First we omitted any below medium size universities or communal universities such as racial or religious schools. Then we partition all universities by number of years required for graduation. Lastly, we rank the universities by the amount of their poverty alleviation standards (PES), this is done based on the result and recommendation of Trombitas \cite{Trom} and College-Score Card \cite{US}.\\ 
 		\begin{align}
 			R_j^{[i]}=\frac{IP_j^{[i]}-OP_j^{[i]}}{IP_j^{[i]}}
 		\end{align}
@@ -318,12 +322,15 @@ The first section outlines determining bench mark points and comparing the rest 
 
 \section{Conclusions}
 
-We present a model that optimize the return on investment (ROI) reflecting the changes of incoming poverty and outgoing poverty. The model identifies the top priority institutions, allocates the amount of money to be invested in and also return the number of students helped. The length of investment is equal to the program’s length for that institution. \\
-	
-Using our benchmark list, we find the top 20 prioritized institutions given in figure 2: Top 20 Schools. Our model also allows to invest in any number of institutions given that it is less than the maximum number. \\
-	
-We do a sensitivity analysis on the model and find that it does well with any size of data input because the ROI are relatively close to each other. This should not surprise us given that the \$100,000,000 USD is fixed. 
-
+	After running our model on the real data, finding the top ranking universities and maximizing the investment of our donations to society. We found the top ranking universities to invest in, as presented in figure 2, and the top ranking universities that are better at taking individuals out of poverty as seen in figures (a),(b), and (c).\\
+	\\
+	We note that we treated each university as having equal footing in our investment strategy. We saw that this did not matter	as universities with smaller years-to-graduation would still provide a return within 5 years, and each return is only realized after 10 years of graduation.\\
+	\\	
+	Our sensitivity analysis on the model, found that it did well with any size of data input after being filtered by the amount of schools that it is allowed to look at. Since the ROI's were relatively close to each other it affirmed our model's results.\\
+	\\
+	However, we do believe that applying each of the ideas outlined in the extensions section of this report would improve the results of the model. Thereby providing the correct schools with the right amount of funds.\\
+	\\
+	Lastly, we would like to point out that while we measured schools as institutions that battle poverty, many may disagree on this view point. If one were to use SAT scores or ACT scores as the variable to determine the ranking of the university, they would still be able to make use of our model, a simple tweaking of the assumption would be required.
 \clearpage
 
 \section{Letter to Mr. Alpha Chiang}
