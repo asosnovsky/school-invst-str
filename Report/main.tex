@@ -23,15 +23,15 @@
 \renewcommand{\headrulewidth}{0pt}
 \pagestyle{fancy}
 
-\title{\vspace{-1.7cm} Emerging Markets: Comparing University Poverty Alleviation with Charitable Education Donations}
-\subtitle{A Model for Post-Secondary Investments\vspace{-1.3cm}}
+\title{\vspace{-1.7cm} GoodGrant Foundation: \\Next Generation Investing }
+\subtitle{A Model for Post-Secondary Educational Grants\vspace{-1.3cm}}
 
 \begin{document}
 \maketitle
 \thispagestyle{fancy}
 
 \section*{Summary}
-
+These are the strategies of the consulting firm Team \#54301. It's five-year mission: to explore new ranking systems; to seek out new return on investments and new student performance metrics; to boldly go where no charity has gone before. 
 
 
 \newpage
@@ -45,13 +45,15 @@
 		
 		We present a mathematical model to outline an ranking and investment strategy to provide the maximal return on investment(ROI) appropriate for an education charity.  The model is split into two sections and is applicable in choosing $1\cdots N$ institutions. \\
 
-The first section outlines determining bench mark points and comparing the rest of the institutions to them via a k-Nearest Neighbours(k-NN) Algorithm. In the second section, we derive a ROI measuring the effect the grant would have on improving student performance. In particular, our ROI reflects changes in terms of incoming poverty and outgoing poverty. In the Model Testing section, we input a subset of the U.S. National Center on Education Statistics data set and College Scorecard data set and output a list of $1,\cdots{N}$ schools, the investment amount, and number of students affected. In Sensitivity Analysis, we restrict the distance in the kNN algorithm to obtain a subset of our prioritized schools and assess the model's stability. Lastly, we summarize the findings of the paper and suggest future additions. 
+The first section outlines determining bench mark points and comparing the rest of the institutions to them via a k-Nearest Neighbours(kNN) Algorithm. In the second section, we derive a ROI measuring the effect the grant would have on improving student performance. In particular, our ROI reflects changes in terms of incoming poverty and outgoing poverty. In the Model Testing section, we input a subset of the U.S. National Center on Education Statistics data set and College Scorecard data set and output a list of $1,\cdots{N}$ schools, the investment amount, and number of students affected. In Sensitivity Analysis, we restrict the distance in the kNN algorithm to obtain a subset of our prioritized schools and assess the model's stability. Lastly, we summarize the findings of the paper and suggest future additions. 
 	
 	\subsection{Assumptions and Rationale/Justification}
 	\begin{itemize}
 		\item \textbf{The Gates Foundation and Lumina Foundation will continue to donate to the same school for at least two years:} Typically large charities often donate sums over the course of number years to allow highest impact. \cite{Conkey} We are able to remove those particular schools from our candidate list to avoid duplicating the two foundation efforts. 
 				
-		\item \textbf{Students who receive a grant will stay in the program and successfully graduate:} There are many factors that could cause students to not be able to graduate, but we will focus on financial support because it is the root of other factors..\cite{Trom}
+		\item \textbf{Students that attend GoodGrant Grant Recipients will continue to graduation.:}  Lack of financial support is the leading cause of students dropping out of institutions. Students who receive grants have less financial stress and can focus on graduating.\cite{Trom}
+		
+		\item \textbf{Attainment of higher education improves poverty rates} According to the US Census Bureau, individuals with an advance degree earn on average \$72,824 per year which is significantly higher then individuals with a high school degree at \$45,400.\cite{dis} Generally, attending post-secondary education lifts individuals above the poverty-line. 
 
 	\end{itemize}
 	
@@ -284,8 +286,15 @@ With all other variables the same the ROI for each standard deviation(STD) is:
 All ROI are relatively the same suggesting that the model does well with any size of data input. 
 
 \subsection{Strengths}
+\begin{itemize}
+\item \textbf{Wide Variety of Variables} The investment strategy looks at all variables provided in the COMAP College Score Card data set. This approach provides a large number of factors to assess an institution's potential for investment rather then the usual ones used by different education foundations. 
+\end{itemize}
 \subsection{Weaknesses}
-
+\begin{itemize}
+\item \textbf{Institutions with Missing Data} During the early stage process of the data cleaning, schools that did not have data for the two bench mark variables "Incoming Poverty" and "Outgoing Poverty" were removed from the list. It is a possibility that those particular institutions could have skewed the results.
+\item \textbf{Specialized Institutions} Similar to the point above, the data was filtered to remove any institutions that identified as religious-affiliated, race-affiliated, and gender-affiliated. In our first initial tests, many of the specialized institutions were at the top of the ranking systems due to the special nature of their student body. However the trade-off is smaller data set for the investment strategy. 
+\end{itemize}
+\section{Extensions}
 \section{Conclusions}
 \clearpage
 
@@ -298,7 +307,9 @@ Dear Mr. Alpha Chiang,
 
 
 \begin{thebibliography}{10}
-	\bibitem{Trom} Trombitas, Kate.  \emph{Financial Stress: An Everyday Reality for College Students}. Inceptia, July 2012. PDF. 
+	\bibitem{Trom} Trombitas, Kate.  \emph{Financial Stress: An Everyday Reality for College Students}. Inceptia, July 2012. PDF.
+	
+	\bibitem{dis} US Census Bureau  \emph{The Big Payoff: Educational Attainment and Synthetic Estimates of Work-Life Earnings}. Report, 2006 . PDF. 
 
 	\bibitem{Carnevale} Carnevale, Anthony, Ban Cheah, and Martin Van Der Werf. \emph{Ranking Your College}. Georgetown University Center on Education and the Workforce, Dec. 2015. PDF.
 	
