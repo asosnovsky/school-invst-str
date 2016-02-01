@@ -252,7 +252,7 @@ The first section outlines determining bench mark points and comparing the rest 
 		This identification provided us with the following schools as can be seen in fig.\ref{fig:kNN}.
 		\begin{figure}[H]
 			\centering
-			\includegraphics[width=0.6\textwidth]{nearest-schools.png}
+			\includegraphics[width=0.45\textwidth]{nearest-schools.png}
 			\caption{Sample of kNN results}
 			\label{fig:kNN}
 		\end{figure}
@@ -305,10 +305,19 @@ All ROI are relatively the same suggesting that the model does well with any siz
 \end{itemize}
 \section{Extensions}
 \section{Conclusions}
+
+We present a model that optimize the return on investment (ROI) reflecting the changes of incoming poverty and outgoing poverty. The model identifies the top priority institutions, allocates the amount of money to be invested in and also return the number of students helped. The length of investment is equal to the program’s length for that institution. \\
+	
+Using our benchmark list, we find the top 20 prioritized institutions given in figure 2: Top 20 Schools. Our model also allows to invest in any number of institutions given that it is less than the maximum number. \\
+	
+We do a sensitivity analysis on the model and find that it does well with any size of data input because the ROI are relatively close to each other. This should not surprise us given that the \$100,000,000 USD is fixed. 
+
 \clearpage
 
 \section{Letter to Mr. Alpha Chiang}
-Dear Mr. Alpha Chiang,
+Dear Mr. Alpha Chiang, \\
+
+Team \#54301 from the MCM proposes  a concept for return-on-investment (ROI) based on the incoming and outgoing poverty rate of the institution. Given the poverty rate, we rank the institutions and the ROI is calculated by the change in rank (i.e. how much better the institutions work after receiving Goodgrant's donation). 
 
 
 \newpage
