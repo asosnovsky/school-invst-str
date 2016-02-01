@@ -36,9 +36,9 @@
 	
 	\ \ Our strategy lies in finding the schools that are most beneficial to individual students. We recognize that the goal of students, when choosing a university is to find the best institution that would reduce their chances at poverty. We start by developing a metric for the level of alleviation of poverty caused by each university, we call it PES. We use this as the benchmark for the initial ranking of schools.\\ 
 
-	\ \ Once that is achieved, we use the kNN algorithm to look for the institutions that are closest in structure to the top universities. As these are the institutions that would benefit most from an increase in funding. Since, our goal is to benefit the well-being of future generation, our return on investment measure, looks at the increase in poverty reduction. Which we maximize by running a linear maximization algorithm on our investments.\\
-
-	\ \ At the end of the report we list the schools that would benefit the most out of an increase in investments, as well as a way to prioritize them. Our methods allows for the selection of fixed number of schools as well as a unique way of allowing the model to choose the number of schools that should be invested. 
+	\ \ Once that is achieved, we use the kNN algorithm to create a list of institutions that are closest in structure to our selected benchmarks. This generated list of institutions would derive the largest benefit with an increase in funding. The main goal is to improve the well-being of future generations thus our proposed conceptual return of investment is the institutions' effect on reducing poverty.  A linear maximization algorithm is applied to determine donation amount, number of students positively affected and their respective institution. \\
+	
+At the end of the report, we provide a list of schools selected from a subset of the U.S. National Center on Education Statistics and College Scorecard given data set. Our methods allows for the selection of fixed number of schools as well as a unique way of allowing the model to choose the number of schools that should be invested. \\
 \newpage
 \tableofcontents
 \newpage
@@ -244,7 +244,7 @@
 			\end{itemize}
 			We did make use of [1], and [3], for cleaning and producing other variables (such as the PES rank), however we did not run the kNN algorithm on them.
 
-		\subsubsection{IPEDS Variables}
+		\subsubsection{Selection of Variables from Given Data Sets}
 			Since many of the variables provided by scorecard, overlapped with the ones from IPEDS, we only withdrew the following variables:
 			\begin{itemize}
 				\item \textbf{Number of students}, which we used for computation of kNN and for the maximization algorithm.
@@ -352,7 +352,10 @@ The next step was to determine which schools in the classified list that maximiz
 
 Our results found that schools that specialized in nursing, medical and other related hard sciences ranked the highest on the investment list. Providing support for these schools have a large positive effect on society by adding a larger workforce to the health care and technology field while simultaenously raising these students out of poverty. \\
 
-Overall, we are confident that the proposed investment strategy will exemplify Goodgrant’s fundamental charitable objective. 
+Overall, we are confident that the proposed investment strategy will exemplify Goodgrant’s fundamental charitable objective. \\
+
+Sincerely,
+Team \# 54301
 \newpage
 
 
