@@ -10,9 +10,9 @@ setwd("C:/Github/school-invst-str/Code")
 #2	Variable
 #3	Prcentile
 
-dic   <- (read.csv("Analyzed-Data/NEW-DIC-AN.csv",stringsAsFactors=FALSE)[,c(1,3)])
+dic   <- (read.csv("Analyzed-Data/filtered/NEW-DIC-AN.csv",stringsAsFactors=FALSE)[,c(1,3)])
 scard <- read.csv( "Contest-Data/collegescorecard_data.csv",stringsAsFactors=FALSE)
-poor_students <- read.csv("Analyzed-Data/poor_prop_per_uni.csv")[,2:3]
+poor_students <- read.csv("Analyzed-Data/misc/poor_prop_per_uni.csv")[,2:3]
 
 Info = ((scard[,dic[dic[,2]==1,1]])) 
 VARs = ((scard[,dic[dic[,2]==2,1]])) 
@@ -43,7 +43,7 @@ sData <- cbind(Info[,!grepl("CONTROL|LOCALE|DISTANCEONLY|CITY",names(Info))],VAR
       sData <- merge(sData,ddply(ipeds.tot,"UNITID",numcolwise(max)))
 
 #Compute Rank
-  sData <- mutate(sData, GG_NO_re=(1-gt_25k_p6)-POOR_Prop)
+  sData <- mutate(sData, GG_NO_re=(POOR_Prop-(1-gt_25k_p6))/POOR_Prop)
   
 #Ensure only needed vars are kept
   sData <- sData[!is.na(sData$GG_NO_re),]
@@ -63,10 +63,10 @@ omitMe <- function(DD,BY=2) apply(DD,BY,function(x) sum(is.na(x))/length(x) )
 for(name in names(spD)) {  
   spD[[name]] = spD[[name]][,as.logical(omitMe(spD[[name]]) < 0.5)]
   spD[[name]] = spD[[name]][as.logical(omitMe(spD[[name]],1) == 0),]
-  write.csv(arrange(spD[[name]][,!grepl("PREDDEG",colnames(spD[[name]]))],desc(GG_NO_re)),paste0('Analyzed-Data/',name,'-cleaned-data.csv'),row.names=FALSE)
+  write.csv(arrange(spD[[name]][,!grepl("PREDDEG",colnames(spD[[name]]))],desc(GG_NO_re)),paste0('Analyzed-Data/filtered/',name,'-cleaned-data.csv'),row.names=FALSE)
 }
 
 sData = sData[,as.logical(omitMe(sData) < 0.5)]
 sData = sData[as.logical(omitMe(sData,1) == 0),]
-write.csv(sData,'Analyzed-Data/Tot-cleaned-data.csv',row.names=FALSE)
+write.csv(sData,'Analyzed-Data/filtered/Tot-cleaned-data.csv',row.names=FALSE)
 
